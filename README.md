@@ -1,4 +1,4 @@
-AMC
+HRPlantform
 ===
 
-AMD
+HR平台
