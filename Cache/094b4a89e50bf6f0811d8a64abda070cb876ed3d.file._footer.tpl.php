@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-01 17:11:19
-         compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:486416152547c30b70076f0-84732172%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-17 11:03:57
+         compiled from "/web/www/hrPlatform/Public/html//_footer.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2311398275490f29da97f25-38469024%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'f614a50e673401369cb4b57eecde7a50b2e1600d' => 
+    '094b4a89e50bf6f0811d8a64abda070cb876ed3d' => 
     array (
-      0 => '/Users/Lev/Sites/hrPlatform/Public/html//_footer.tpl',
-      1 => 1417424967,
+      0 => '/web/www/hrPlatform/Public/html//_footer.tpl',
+      1 => 1418785339,
     ),
   ),
-  'nocache_hash' => '486416152547c30b70076f0-84732172',
+  'nocache_hash' => '2311398275490f29da97f25-38469024',
   'function' => 
   array (
   ),
