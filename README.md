@@ -1,2 +1,4 @@
-hrPlatform
-==========
+AMC
+===
+
+AMD

@@ -1,0 +1,72 @@
+Oct 21 08:59:27 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:02:35 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:03:14 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:04:01 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:04:03 [SQL]_null_0.0.0.0_/AMC/home/timeShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 3     
+Oct 21 09:05:31 [SQL]_null_0.0.0.0_/AMC/home/timeShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 3     
+Oct 21 09:05:34 [SQL]_null_0.0.0.0_/AMC/home/timeShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 3     
+Oct 21 09:05:37 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:05:55 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:08:16 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:09:34 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:10:50 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:10:53 [SQL]_null_0.0.0.0_/AMC/home/showDetail
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 2     
+Oct 21 09:10:55 [SQL]_null_0.0.0.0_/AMC/home/timeShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 3     
+Oct 21 09:10:57 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:17:49 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:17:51 [SQL]_null_0.0.0.0_/AMC/home/artShop
+SELECT * FROM AMC.commodity  WHERE 1  AND inventory > 0     LIMIT 2 
+Oct 21 09:18:51 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:18:53 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:29:30 [SQL]_null_0.0.0.0_/AMC/home/oldShow
+SELECT * FROM AMC.exhibition  WHERE 1  AND exhibition_id  = 1     
+Oct 21 09:55:44 [SQL]_null_0.0.0.0_/AMC/user/registerAjax
+SELECT * FROM AMC.user  WHERE 1  AND user_email like "11@qq.com"     
+Oct 21 09:55:44 [SQL]__0.0.0.0_/AMC/user/registerAjax
+insert into AMC.user (user_email,user_md5_password,user_password,user_login_time,user_register_time) values('11@qq.com','b6d767d2f8ed5d21a44b0e5886680cb9','22','1413856544','1413856544')
+Oct 21 09:57:00 [SQL]_null_0.0.0.0_/AMC/user/registerAjax
+SELECT * FROM AMC.user  WHERE 1  AND user_email like "11@qq.com"     
+Oct 21 09:57:01 [SQL]_null_0.0.0.0_/AMC/user/registerAjax
+SELECT * FROM AMC.user  WHERE 1  AND user_email like "11@qq.com"     
+Oct 21 09:57:01 [SQL]_null_0.0.0.0_/AMC/user/registerAjax
+SELECT * FROM AMC.user  WHERE 1  AND user_email like "11@qq.com"     
+Oct 21 09:57:01 [SQL]_null_0.0.0.0_/AMC/user/registerAjax
+SELECT * FROM AMC.user  WHERE 1  AND user_email like "11@qq.com"     
+Oct 21 10:08:52 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:09:11 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:09:12 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:11:18 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:11:23 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:11:36 [SQL]_null_0.0.0.0_/AMC/home/buyTickets
+SELECT * FROM AMC.ticket  WHERE 1      
+Oct 21 10:11:38 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:16:42 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:21:07 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     
+Oct 21 10:22:11 [SQL]_null_0.0.0.0_/AMC/user/userCenter
+SELECT * FROM AMC.shop_cart  LEFT JOIN commodity ON commodity.commodity_id = shop_cart.commodity_id  WHERE 1  AND user_id = 2     

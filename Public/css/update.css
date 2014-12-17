@@ -1,0 +1,9 @@
+/*
+ * 
+ * 添加，修改或更新页面css
+ */
+
+.main-nav ul li a{
+	font-size: 1.2em;font-weight: bold;color: #333; 
+}
+.secondary-color{ cursor: pointer;}
