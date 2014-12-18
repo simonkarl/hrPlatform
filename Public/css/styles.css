@@ -129,10 +129,10 @@ nav.main-nav ul li {
 	height: 500px;
 	padding: 25px 0 0 0;
 	/*background: url(http://placehold.it/1730x1155) fixed;*/
-	background: url(https://abs.twimg.com/a/1416252746/img/t1/front_page/exp_photo_set_redbull.jpg) fixed;
+/*	background: url(https://abs.twimg.com/a/1416252746/img/t1/front_page/exp_photo_set_redbull.jpg) fixed;*/
 	background-size: cover;
 	background-position: 100% top;
-	background-color: rgb(204,204,204);
+	/*background-color: rgb(204,204,204);*/
 }
 .home-text-wrapper {
 	width: 960px;

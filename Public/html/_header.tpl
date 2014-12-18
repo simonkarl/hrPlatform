@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="{$WebSiteUrlPublic}/css/font-awesome.min.css">
     <link rel="stylesheet" href="{$WebSiteUrlPublic}/css/prettyPhoto.css">
 
-    <link rel="stylesheet" href="{$WebSiteUrlPublic}/css/update.css">
-
     <!--[if lt IE 8]>
         <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -20,6 +18,8 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="{$WebSiteUrlPublic}/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="{$WebSiteUrlPublic}/js/slide.js"></script>
 
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -34,11 +34,9 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-
+    <link rel="stylesheet" href="{$WebSiteUrlPublic}/css/update.css">
 
     <script src="{$WebSiteUrlPublic}/js/public.js"></script>
-
-
 
     <!-- Favicons
     ================================================== -->
@@ -125,6 +123,8 @@ border-bottom-color: transparent;
 
 .main-nav ul li a{
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 .main-nav ul li a:hover{
     text-decoration: none;
@@ -196,10 +196,43 @@ border-bottom-color: transparent;
 
             </ul>
         </nav>
-
-
     </section>
 </article>
+
+<style>
+
+.twoBanner{
+     border: solid 1px red;
+     height: 45px;
+     line-height: 45px;
+width: 1170px;
+     background-color: rgb(215,48,39);
+     color: #fff;
+     margin: 0 auto;
+}
+    
+.twoBanner span a{
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+}
+</style>
+
+<div class="twoBanner">
+    <span style="font-size: 16px;font-weight: bold;margin-left: 8px;">热门搜索：</span>
+    <span>
+        <a>交互设计</a>
+        <a>.NET</a>
+        <a>项目经理</a>
+        <a>数据运营</a>
+        <a>SEO</a>
+        <a>移动产品经理</a>
+        <a>IOS</a>
+        <a>金融分析师</a>
+    </span>
+    <span><img style="width: 170px; float: right;" src="{$WebSiteUrlPublic}/images/ba2.png"></span>
+
+</div>
 
 
 <script>
