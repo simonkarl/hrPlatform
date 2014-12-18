@@ -29,5 +29,10 @@ class HomeAction extends Action {
          $this->display();
         
     }
+    //订阅
+    function rss(){
+         $this->display();
+        
+    }
 
 }

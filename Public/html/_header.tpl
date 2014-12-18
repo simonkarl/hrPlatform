@@ -140,7 +140,7 @@ border-bottom-color: transparent;
     <section class="sectionOne">
 
         <!-- Site Logo -->
-        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 20px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
+        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
         </div>
 
     </section>
@@ -187,7 +187,7 @@ border-bottom-color: transparent;
         <!-- Main Navigation-->
         <nav class="main-nav eleven columns" style="">
 
-            <ul style="width: 425px;padding-top: 70px;height: 135px;">
+            <ul style="width: 405px;padding-top: 70px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>信息推送</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>服务定制</a></li>
@@ -202,7 +202,7 @@ border-bottom-color: transparent;
 <style>
 
 .twoBanner{
-     border: solid 1px red;
+     /*border: solid 1px red;*/
      height: 45px;
      line-height: 45px;
 width: 1170px;

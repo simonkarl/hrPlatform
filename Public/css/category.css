@@ -53,6 +53,7 @@ text-align: center;
 .category-title-list li a{
 	font-size: 15px;
 	line-height: 38px;
+	cursor: pointer;
 }
 .category-title a{
 	color: #2c3e51;
@@ -126,6 +127,7 @@ background-color: #fff;
     -webkit-box-direction:normal;//设置mormal默认值
     box-direction:normal;//设置mormal默认值
     margin-top: -1px;
+    z-index: -10;
 }
 .sectionOnea{
     background:orange;
@@ -141,5 +143,33 @@ background-color: #fff;
     box-flex:2;
     margin-top: -2px;
     width: 58px;
+}
+
+.take{
+	border: solid 1px #ccc;
+padding: 10px;
+width: 225px;
+margin: 0 auto;
+font-size: 26px;
+margin-top: 7px;
+text-indent: 7px;
+height: 70px;
+font-weight: bold;
+cursor: pointer;
+line-height: 47px;
+}
+.take:hover{
+		border: solid 1px #ccc;
+padding: 10px;
+width: 225px;
+margin: 0 auto;
+font-size: 26px;
+margin-top: 7px;
+text-indent: 7px;
+height: 70px;
+color: rgb(1,152,117);
+font-weight: bold;
+cursor: pointer;
+line-height: 47px;
 }
 

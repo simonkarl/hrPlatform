@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 12:44:45
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 16:52:49
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:47491988654925bbd3ff951-54871205%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16222739549295e1e8aa10-43142686%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1418877883,
+      1 => 1418892243,
     ),
   ),
-  'nocache_hash' => '47491988654925bbd3ff951-54871205',
+  'nocache_hash' => '16222739549295e1e8aa10-43142686',
   'function' => 
   array (
   ),
@@ -37,7 +37,7 @@ $_smarty_tpl->decodeProperties(array (
     <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
-    <div class="container header-banner"><!-- main header banner -->
+    <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
 
         <!-- 分类 -->
 
@@ -595,10 +595,10 @@ $_smarty_tpl->decodeProperties(array (
 
     <section class="sectionTwob">
         <div style=" border: solid 1px #ccc; padding: 10px;width: 225px;
-margin: 0 auto; margin-top: 5px;">
+margin: 0 auto; margin-top: 2px;">
 
-            <div style="font-size: 20px;font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
-            <div style="font-size: 16px; margin-top: 5px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
+            <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
+            <div style="font-size: 16px; margin-top: 15px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
             <div style=" margin-top: 12px; margin-bottom: 12px;">
                 <input type="email" class="form-control" id="inputEmail" placeholder="请输入登陆邮箱">
             </div>
@@ -613,10 +613,17 @@ margin: 0 auto; margin-top: 5px;">
             </div>
 
             <div style=" text-align: center;">
-                <button type="button" style="width: 200px;background-color: rgb(44,151,222);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
+                <button type="button" style="width: 200px;background-color: rgb(1,152,117);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
                     登 录
                 </button>
             </div>
+        </div>
+
+        <div class="take"  onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/servicesCustom"'>
+
+            订阅服务
+            <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </div>
 
     </section>
@@ -677,18 +684,23 @@ margin: 0 auto; margin-top: 5px;">
     
     $(document).ready(function() {
 
-        $(".category-list-item,.category-title,category-title-list").hover(function(){
+        $(".category-list-item").hover(function(){
 
             //$(".sub-category-list").show();
             $(this).children('.sub-category-list').show();
             $(this).css('z-index','9999');
             
         })
-        $(".category-list-item,.category-title,category-title-list").mouseout(function(){
-
-            //$(".sub-category-list").show();
+        $(".category-list-item").mouseout(function() {
+            /* Act on the event */
             $(this).children('.sub-category-list').hide();
-        })
+        });
+
+        // $(".category-list-item,.category-title,category-title-list").mouseout(function(){
+
+        //     //$(".sub-category-list").show();
+        //     $(this).children('.sub-category-list').hide();
+        // })
 
 });
 

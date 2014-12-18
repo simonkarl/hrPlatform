@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 12:00:22
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 15:45:48
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10430857335492515699aa94-83170487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7570437965492862c381129-37330848%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '20dfe9405e457f93bb77415fd966eab7866ca26a' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl',
-      1 => 1418875220,
+      1 => 1418888746,
     ),
   ),
-  'nocache_hash' => '10430857335492515699aa94-83170487',
+  'nocache_hash' => '7570437965492862c381129-37330848',
   'function' => 
   array (
   ),
@@ -19,16 +19,19 @@ $_smarty_tpl->decodeProperties(array (
 
 <style>
 .sliderStyle{
-  width: 100%;
-  height: 417px;
-  position: relative;
+width: 710px;
+height: 417px;
+position: relative;
+margin-left: 6px;
+/* z-index: -1; */
+margin-left: 220px;
 }
-ul  li {
+ #slides  li {
             list-style: none;
         }
 #slides li,#slides_ li {
             display: block;
-            width: 711px;
+            width: 705px;
             height: 100%;
             list-style: none;
             padding: 0;
@@ -40,7 +43,7 @@ ul  li {
 
     position: absolute;
 top: 127px;
-left:218px;
+left:5px;
 width: 60px;
 height: 59px;
 display: block;
@@ -51,7 +54,7 @@ z-index: 1000;
 
 position: absolute;
 top: 127px;
-left: 869px;
+left: 650px;
 width: 60px;
 height: 59px;
 display: block;
@@ -63,7 +66,7 @@ z-index: 1000;
 <div class="sliderStyle">
     <div>
 
-       <ul id="slides" style="z-index: 0; margin-left: 219px; margin-top: -11px; padding: 0;">
+       <ul id="slides" style="z-index: 0; margin-left: 5px; margin-top: -11px; padding: 0;">
           <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/slide/s1.jpg'); z-index: 0; display:block; background-repeat: no-repeat;" > </li>
 

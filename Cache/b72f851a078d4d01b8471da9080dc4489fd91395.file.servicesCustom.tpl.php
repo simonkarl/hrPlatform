@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-01 17:11:23
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 16:53:44
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1264559351547c30bb732cd4-33634369%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:195444398754929618dcb664-12984514%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b72f851a078d4d01b8471da9080dc4489fd91395' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl',
-      1 => 1417425068,
+      1 => 1418892822,
     ),
   ),
-  'nocache_hash' => '1264559351547c30bb732cd4-33634369',
+  'nocache_hash' => '195444398754929618dcb664-12984514',
   'function' => 
   array (
   ),
@@ -34,7 +34,8 @@ $_smarty_tpl->decodeProperties(array (
 
 
 .sureBuyStyle{
-	width: 100px;height: 35px;background-color: rgb(255,85,0);color: #fff;border: none;font-size: 17px;font-weight: bold; cursor: pointer;
+	width: 100px;height: 35px;background-color: rgba(215,48,39,0.9);color: #fff;border: none;font-size: 17px;font-weight: bold; cursor: pointer;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 </style>
 
@@ -42,9 +43,14 @@ $_smarty_tpl->decodeProperties(array (
 <section>
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;">
 
-<div style=" height: 2.5em; line-height: 2.5em; text-indent: 7px;
-background-color: rgb(240,240,240); font-size: 1.2em; font-weight: bold;">推送服务定制: <span class="glyphicon glyphicon-volume-up" style=" color: rgb(233,141,36); font-size: 0.8em;"></span>
-<span style=" font-size: 0.7em;">所订阅服务信息将发送至您的邮箱,可在<a>个人中心</a>更换邮箱.</span>
+<div style=" height: 5.5em; margin-top: 5px; line-height: 2.5em; text-indent: 7px;
+background-color: rgb(236,240,241); font-size: 1.2em; font-weight: bold;">服务订阅: <span class="glyphicon glyphicon-volume-up" style=" color: rgb(233,141,36); font-size: 0.8em;"></span>
+  <span style=" font-size: 0.7em;">
+    所订阅服务信息将发送至您的邮箱,可在<a style=" cursor: pointer">个人中心</a>更换邮箱.
+  </span>
+  <div style="font-size: 14px;">
+  说明：订阅邮件中包含以下信息,请根据你的具体需要选择不同套餐进行订阅!
+  </div>
 </div>
 
 <div style=" height: 10px;"></div>
@@ -138,7 +144,7 @@ background-color: rgb(240,240,240); font-size: 1.2em; font-weight: bold;">推送
 </table>
 
 	<div style=" width: 99.5%; text-align: right;">
-		<input class="sureBuyStyle" type="button" name="sureBuy" value="确认购买">
+		<input class="sureBuyStyle" type="button" value="下一步">
 </div>
 
 
@@ -150,14 +156,21 @@ background-color: rgb(240,240,240); font-size: 1.2em; font-weight: bold;">推送
 		$(".checkboxStyle").click(function() {
 			/* Act on the event */
 			if(this.checked){
-				$(this).parent().parent().css("background-color","rgba(255,85,0,0.8)");
-				$(this).parent().parent().css("color","#fff");
+				$(this).parent().parent().css("background-color","rgb(236,240,241)");
+				$(this).parent().parent().css("color","rgb(215,48,39)");
 			}else{
 				$(this).parent().parent().css("background-color","#fff");
 				$(this).parent().parent().css("color","#000");
 			}
 
 		});
+
+    $(".sureBuyStyle").click(function() {
+      /* Act on the event */
+
+      window.open('<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/rss')
+    });
 
 	})
 

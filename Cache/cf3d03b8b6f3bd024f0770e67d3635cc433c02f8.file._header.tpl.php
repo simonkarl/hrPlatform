@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 11:59:22
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 15:15:55
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:19028872145492511a70c050-54073817%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:72211236254927f2b8bfbe5-25994886%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1418875159,
+      1 => 1418886953,
     ),
   ),
-  'nocache_hash' => '19028872145492511a70c050-54073817',
+  'nocache_hash' => '72211236254927f2b8bfbe5-25994886',
   'function' => 
   array (
   ),
@@ -173,7 +173,7 @@ border-bottom-color: transparent;
 
         <!-- Site Logo -->
         <div class="logo secondary-color five columns" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' style="text-indent: 20px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
+/home/index"' style="text-indent: 14px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
         </div>
 
     </section>
@@ -220,7 +220,7 @@ border-bottom-color: transparent;
         <!-- Main Navigation-->
         <nav class="main-nav eleven columns" style="">
 
-            <ul style="width: 425px;padding-top: 70px;height: 135px;">
+            <ul style="width: 405px;padding-top: 70px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -240,7 +240,7 @@ border-bottom-color: transparent;
 <style>
 
 .twoBanner{
-     border: solid 1px red;
+     /*border: solid 1px red;*/
      height: 45px;
      line-height: 45px;
 width: 1170px;

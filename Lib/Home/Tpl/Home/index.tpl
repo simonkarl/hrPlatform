@@ -17,7 +17,7 @@
     
     {include file="$path/_header.tpl"}
 
-    <div class="container header-banner"><!-- main header banner -->
+    <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
 
         <!-- 分类 -->
 
@@ -574,10 +574,10 @@
 
     <section class="sectionTwob">
         <div style=" border: solid 1px #ccc; padding: 10px;width: 225px;
-margin: 0 auto; margin-top: 5px;">
+margin: 0 auto; margin-top: 2px;">
 
-            <div style="font-size: 20px;font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
-            <div style="font-size: 16px; margin-top: 5px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
+            <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
+            <div style="font-size: 16px; margin-top: 15px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
             <div style=" margin-top: 12px; margin-bottom: 12px;">
                 <input type="email" class="form-control" id="inputEmail" placeholder="请输入登陆邮箱">
             </div>
@@ -592,10 +592,16 @@ margin: 0 auto; margin-top: 5px;">
             </div>
 
             <div style=" text-align: center;">
-                <button type="button" style="width: 200px;background-color: rgb(44,151,222);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
+                <button type="button" style="width: 200px;background-color: rgb(1,152,117);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
                     登 录
                 </button>
             </div>
+        </div>
+
+        <div class="take"  onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>
+
+            订阅服务
+            <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </div>
 
     </section>
@@ -650,18 +656,23 @@ margin: 0 auto; margin-top: 5px;">
     
     $(document).ready(function() {
 
-        $(".category-list-item,.category-title,category-title-list").hover(function(){
+        $(".category-list-item").hover(function(){
 
             //$(".sub-category-list").show();
             $(this).children('.sub-category-list').show();
             $(this).css('z-index','9999');
             
         })
-        $(".category-list-item,.category-title,category-title-list").mouseout(function(){
-
-            //$(".sub-category-list").show();
+        $(".category-list-item").mouseout(function() {
+            /* Act on the event */
             $(this).children('.sub-category-list').hide();
-        })
+        });
+
+        // $(".category-list-item,.category-title,category-title-list").mouseout(function(){
+
+        //     //$(".sub-category-list").show();
+        //     $(this).children('.sub-category-list').hide();
+        // })
 
 });
 
