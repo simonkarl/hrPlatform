@@ -1,9 +1,46 @@
-/*
+
  * 
  * 添加，修改或更新页面css
  */
+
+/*模版本身*/
 
 .main-nav ul li a{
 	font-size: 1.2em;font-weight: bold;color: #333; 
 }
 .secondary-color{ cursor: pointer;}
+.header-banner{ 
+	/*border: solid 1px red;*/
+}
+
+.header-banner{
+padding: 0;
+}
+
+.header-banner{
+	height: 421px;
+	border: solid 1px #ccc;
+}
+
+/*模版本身*/
+
+
+a:hover{
+	color: rgb(231,76,60);
+}
+
+
+/*bootstrap*/
+.container{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/*bootstrap
+
+
+
+
+
+/* add css*/
+

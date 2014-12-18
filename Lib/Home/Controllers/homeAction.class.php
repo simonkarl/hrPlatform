@@ -67,5 +67,10 @@ class HomeAction extends Action {
          
         
     }
+    //订阅
+    function rss(){
+         $this->display();
+        
+    }
 
 }

@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-09 15:57:15
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 15:15:55
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14434836885486ab5b15c3c8-98672728%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:72211236254927f2b8bfbe5-25994886%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1418111833,
+      1 => 1418886953,
     ),
   ),
-  'nocache_hash' => '14434836885486ab5b15c3c8-98672728',
+  'nocache_hash' => '72211236254927f2b8bfbe5-25994886',
   'function' => 
   array (
   ),
@@ -33,9 +33,6 @@ $_smarty_tpl->decodeProperties(array (
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /css/prettyPhoto.css">
 
-    <link rel="stylesheet" href="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/css/update.css">
-
     <!--[if lt IE 8]>
         <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -45,6 +42,9 @@ $_smarty_tpl->decodeProperties(array (
     <![endif]-->
     <script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/js/slide.js"></script>
 
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -59,12 +59,11 @@ $_smarty_tpl->decodeProperties(array (
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/css/update.css">
 
     <script src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /js/public.js"></script>
-
-
 
     <!-- Favicons
     ================================================== -->
@@ -156,6 +155,8 @@ border-bottom-color: transparent;
 
 .main-nav ul li a{
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 .main-nav ul li a:hover{
     text-decoration: none;
@@ -172,7 +173,7 @@ border-bottom-color: transparent;
 
         <!-- Site Logo -->
         <div class="logo secondary-color five columns" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' style="text-indent: 20px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
+/home/index"' style="text-indent: 14px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
         </div>
 
     </section>
@@ -219,7 +220,7 @@ border-bottom-color: transparent;
         <!-- Main Navigation-->
         <nav class="main-nav eleven columns" style="">
 
-            <ul style="width: 425px;padding-top: 70px;height: 135px;">
+            <ul style="width: 405px;padding-top: 70px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -233,10 +234,44 @@ border-bottom-color: transparent;
 
             </ul>
         </nav>
-
-
     </section>
 </article>
+
+<style>
+
+.twoBanner{
+     /*border: solid 1px red;*/
+     height: 45px;
+     line-height: 45px;
+width: 1170px;
+     background-color: rgb(215,48,39);
+     color: #fff;
+     margin: 0 auto;
+}
+    
+.twoBanner span a{
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+}
+</style>
+
+<div class="twoBanner">
+    <span style="font-size: 16px;font-weight: bold;margin-left: 8px;">热门搜索：</span>
+    <span>
+        <a>交互设计</a>
+        <a>.NET</a>
+        <a>项目经理</a>
+        <a>数据运营</a>
+        <a>SEO</a>
+        <a>移动产品经理</a>
+        <a>IOS</a>
+        <a>金融分析师</a>
+    </span>
+    <span><img style="width: 170px; float: right;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/ba2.png"></span>
+
+</div>
 
 
 <script>
