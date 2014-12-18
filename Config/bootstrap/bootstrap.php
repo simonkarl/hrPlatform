@@ -28,6 +28,8 @@ class website {
          */
         include_once 'extends.php';
 
+        include_once 'Api.php';
+
 
         include_once 'Action.php';
 
@@ -43,7 +45,7 @@ class website {
         /**
          * 加载Model以及DB层
          */
-        $file_path = array('Config' => array('DB'),'Model','Plug');
+        $file_path = array('Config' => array('DB'),'Plug','Api');
 
         foreach ($file_path as $fileKey => $fileValue) {
 

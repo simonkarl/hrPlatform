@@ -26,7 +26,45 @@ class HomeAction extends Action {
     }
     //精准搜索
     function acurateSearch(){
-         $this->display();
+
+         switch ($_REQUEST['type']) {
+
+             case '0':
+
+                 $resumeApi = new resumeApi();
+
+                 if(!empty($_REQUEST['page'])){
+
+                    $page = $_REQUEST['page'];
+
+                 } else{
+
+                    $page = 1;
+
+                 }
+
+                 $result = $resumeApi->serachResume($_REQUEST['keyword'],$page);
+
+                 $page = new page('home/acurateSearch',$_REQUEST['keyword'],$_REQUEST['type']);
+
+                 $fenye = $page->coutPage($result['current_page'],$result['fina_page']);
+
+                 $this->assign('result',$result['data']);
+
+                 $this->assign('fenye',$fenye);
+
+                 $this->display('serach_resume');
+
+                 break;
+             
+             default:
+                 # code...
+                 break;
+         }
+
+        
+
+         
         
     }
 

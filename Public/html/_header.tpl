@@ -50,17 +50,6 @@
         <!-- Header Area
     ================================================== -->
 
-    <script>
-
-        $(function(){
-
-           domain = '{$websiteUrl}'
-
-           setPublic(domain)
-
-        })
-
-    </script>
 
 <style>
 
@@ -159,21 +148,39 @@ border-bottom-color: transparent;
 
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade in active" id="home">
-        <span><input type="text" class="inputSearch" name="positionInput" placeholder="快来“全民搜索”热门职位,试试手气"  />
-        <input type="button" class="searchBtn" name="positionBtn" value="搜 索"  />
-        </span>
+
+        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form0' name='form0'>
+            <span>
+                <input type="hidden" name='type' value='0'>
+
+                <input type="text" class="inputSearch"  id='keyword' name="keyword" placeholder="快来“全民搜索”热门职位,试试手气"  />
+                <input type="button" class="searchBtn" onclick='searchBefore("form0")' name="positionBtn" value="搜 索"  />
+            </span>
+
+        </form>
       </div>
 
       <div role="tabpanel" class="tab-pane fade" id="profile">
-        <span><input type="text" class="inputSearch" name="companyInput"  placeholder="看看别的企业在干嘛..."  />
-        <input type="button" class="searchBtn" name="companyBtn" value="搜 索"  />
-        </span>
+
+        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form1' name='form1'>
+
+            <input type="hidden" name='type' value='1'>
+
+            <span><input type="text" class="inputSearch" id='keyword' name="keyword"  placeholder="看看别的企业在干嘛..."  />
+            <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="companyBtn" value="搜 索"  />
+            </span>
+
+        </form>
       </div>
 
       <div role="tabpanel" class="tab-pane fade" id="messages">
-        <span><input type="text" class="inputSearch" name="resumeInput" placeholder="各种“高大上”的简历等着你..."   />
-        <input type="button" class="searchBtn" name="resumeBtn" value="搜 索" />
+
+        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form2' name='form2'>
+        <input type="hidden" name='type' value='2'>
+        <span><input type="text" class="inputSearch" id='keyword' name="keyword" placeholder="各种“高大上”的简历等着你..."   />
+        <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="resumeBtn" value="搜 索" />
         </span>
+        </form>
       </div>
     </div>
 </span>

@@ -23,27 +23,78 @@ class page{
 	 * $model  commodity/list   page 1  
 	 */
  	
- 	public function page($model,$page,$modelName){
+ 	public function page($model,$keyword,$type){
 
- 		$this->url = WebSiteUrl.'/'.$model;
+ 		$this->url = WebSiteUrl.'/'.$model.'?keyword='.$keyword.'&type='.$type;
 
- 		$this->page = $page;
-
-        $result = new $modelName();
-
-        $dateCount = $this->pagesize * ($page - 1);
-
-        $result->initialize();
-
- 		$this->pageCount = $result->vars_number;
-
-        $result->addOffset($dateCount, $this->pagesize);
-        
-        $result->initialize();
-
-        $this->array = $result->vars_all;
+ 		#$this->page = $page;
 
  	}
+
+    public function coutPage($currpage,$fina_page){
+
+        $this->page = $currpage;
+
+        $page_count = $maxPage = $pages = $fina_page;
+
+        if (empty($this->page) || $this->page < 0) {  //判断传送的页码
+
+            $this->page = 1;
+        } 
+        $offset = $this->pagesize * ($this->page - 1);
+
+        $page_len = ($this->page_len % 2) ? $this->page_len : $this->page_len + 1; //页码个数
+
+        $pageoffset = ($page_len - 1) / 2; //页码个数左右偏移量
+
+        $key1 = '<ul class="pagination pagination-sm">';
+
+        if ($this->page != 1) {
+
+            $key1.="<li class='usablePage'><a href=\"" . $this->url . "&page=" . ($this->page - 1) . "\">&laquo;</a></li>"; //上一页
+
+        } else {
+
+            $key1.="<li  class='disabled'><a>&laquo;</a></li>"; //上一页
+
+        }
+
+        if ($pages > $page_len) {//如果当前页小于等于左偏移
+            if ($this->page <= $pageoffset) {
+                $this->init = 1;
+                $maxPage = $page_len;
+            } else {//如果当前页大于左偏移/如果当前页码右偏移超出最大分页数
+                if ($this->page + $pageoffset >= $pages + 1) {
+                    $this->init = $pages - $page_len + 1;
+                } else {//左右偏移都存在时的计算
+                    $this->init = $this->page - $pageoffset;
+                    $maxPage = $this->page + $pageoffset;
+                }
+            }
+        }
+        for ($i = $this->init; $i <= $maxPage; $i++) {
+            if ($i == $this->page) {
+
+                $key1.=' <li class="active"><span>' . $i . '</span></li>';
+
+            } else {
+
+                $key1.=" <li class='usablePage'><a disabled href=\"" . $this->url . "&page=" . $i .  "\">" . $i . "</a></li>";
+                
+            }
+        }
+
+        if ($this->page != $pages) {
+           
+            $key1.=" <li class='usablePage'><a  href=" . $this->url . "&page=" . ($this->page + 1) .  ">&raquo;</a></li>"; //下一页
+          
+        } else {
+            $key1.="<li class='disabled'><a>&raquo;</a></li> "; //下一页
+            //  $key1.="&nbsp;&nbsp;最后一页"; //最后一页
+        }
+        $key1.='</ul>';
+        return $key1;
+    }
 
 	public function getPages() {
         
