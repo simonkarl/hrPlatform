@@ -13,6 +13,7 @@ class resumeApi extends Api {
 
 	}
 
+
 	public function getResumeDetail($id){
 
 		if(!empty($id) && $id > 0){

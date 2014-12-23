@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 15:15:55
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-22 16:27:46
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:72211236254927f2b8bfbe5-25994886%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6489181875497d6027d5146-83324135%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1418886953,
+      1 => 1419236863,
     ),
   ),
-  'nocache_hash' => '72211236254927f2b8bfbe5-25994886',
+  'nocache_hash' => '6489181875497d6027d5146-83324135',
   'function' => 
   array (
   ),
@@ -79,18 +79,6 @@ $_smarty_tpl->decodeProperties(array (
         <!-- Header Area
     ================================================== -->
 
-    <script>
-
-        $(function(){
-
-           domain = '<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-'
-
-           setPublic(domain)
-
-        })
-
-    </script>
 
 <style>
 
@@ -192,21 +180,42 @@ border-bottom-color: transparent;
 
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade in active" id="home">
-        <span><input type="text" class="inputSearch" name="positionInput" placeholder="快来“全民搜索”热门职位,试试手气"  />
-        <input type="button" class="searchBtn" name="positionBtn" value="搜 索"  />
-        </span>
+
+        <form action='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch' method="post" id='form0' name='form0'>
+            <span>
+                <input type="hidden" name='type' value='0'>
+
+                <input type="text" class="inputSearch"  id='keyword' name="keyword" placeholder="快来“全民搜索”热门职位,试试手气"  />
+                <input type="button" class="searchBtn" onclick='searchBefore("form0")' name="positionBtn" value="搜 索"  />
+            </span>
+
+        </form>
       </div>
 
       <div role="tabpanel" class="tab-pane fade" id="profile">
-        <span><input type="text" class="inputSearch" name="companyInput"  placeholder="看看别的企业在干嘛..."  />
-        <input type="button" class="searchBtn" name="companyBtn" value="搜 索"  />
-        </span>
+
+        <form action='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch' method="post" id='form1' name='form1'>
+
+            <input type="hidden" name='type' value='1'>
+
+            <span><input type="text" class="inputSearch" id='keyword' name="keyword"  placeholder="看看别的企业在干嘛..."  />
+            <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="companyBtn" value="搜 索"  />
+            </span>
+
+        </form>
       </div>
 
       <div role="tabpanel" class="tab-pane fade" id="messages">
-        <span><input type="text" class="inputSearch" name="resumeInput" placeholder="各种“高大上”的简历等着你..."   />
-        <input type="button" class="searchBtn" name="resumeBtn" value="搜 索" />
+
+        <form action='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch' method="post" id='form2' name='form2'>
+        <input type="hidden" name='type' value='2'>
+        <span><input type="text" class="inputSearch" id='keyword' name="keyword" placeholder="各种“高大上”的简历等着你..."   />
+        <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="resumeBtn" value="搜 索" />
         </span>
+        </form>
       </div>
     </div>
 </span>
@@ -228,9 +237,9 @@ border-bottom-color: transparent;
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/servicesCustom"'>服务定制</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/acurateSearch"'>精准搜索</a></li>
+/home/forum"'>招聘论坛</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/user/userCenter"'>个人中心</a></li>
+/home/advancedSearch"'>高级搜索</a></li>
 
             </ul>
         </nav>
@@ -259,14 +268,22 @@ width: 1170px;
 <div class="twoBanner">
     <span style="font-size: 16px;font-weight: bold;margin-left: 8px;">热门搜索：</span>
     <span>
-        <a>交互设计</a>
-        <a>.NET</a>
-        <a>项目经理</a>
-        <a>数据运营</a>
-        <a>SEO</a>
-        <a>移动产品经理</a>
-        <a>IOS</a>
-        <a>金融分析师</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=交互设计&type=0">交互设计</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=.NET&type=0">.NET</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=项目经理&type=0">项目经理</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=UI设计&type=0">UI设计</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=SEO&type=0">SEO</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=移动产品经理&type=0">移动产品经理</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=IOS&type=0">IOS</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=金融分析师&type=0">金融分析师</a>
     </span>
     <span><img style="width: 170px; float: right;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/ba2.png"></span>
