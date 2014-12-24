@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 13:56:14
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 14:40:40
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1765906072549903fe74dc08-28470142%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2103410592549a5fe8174928-70492887%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c13cc7d5ab005f95da410be5849b9493ad3f74eb' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl',
-      1 => 1419314165,
+      1 => 1419314185,
     ),
   ),
-  'nocache_hash' => '1765906072549903fe74dc08-28470142',
+  'nocache_hash' => '2103410592549a5fe8174928-70492887',
   'function' => 
   array (
   ),
@@ -81,8 +81,8 @@ border-bottom: solid 2px rgb(71,135,191);
 #exampleInputPassword1{
     width: 80%;   
 }
-.bg-danger{
-   /* display: none;*/
+.alert-danger{
+    display: none;
 }
 
 </style>
@@ -94,7 +94,7 @@ border-bottom: solid 2px rgb(71,135,191);
     <section class="companyResectionLeft">
         <div class="reContentWarp">
             <div style=" height: 60px;">
-                <p class="bg-danger">错误报告</p>
+                <div class="alert alert-danger" role="alert">错误报告</div>
             </div>
 
              <div class="reTitle">企业注册</div>
