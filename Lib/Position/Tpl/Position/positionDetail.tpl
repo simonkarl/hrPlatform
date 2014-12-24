@@ -33,7 +33,6 @@
     font-size: 22px;
     line-height: 50px;
     color: rgb(44,62,80);
-    margin-top: 45px;
 }
 .titleBorder{
     border-bottom: solid 5px rgb(71,135,191);
@@ -97,6 +96,7 @@
 
 <article class="wrapSearch">
     <section class="sectionLeft">
+        <div style=" height: 45px;"></div>
         <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;{$position_label}</div>
 
             <table class="table">

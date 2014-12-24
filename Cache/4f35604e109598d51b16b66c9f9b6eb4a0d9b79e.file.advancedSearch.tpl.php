@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 11:11:53
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 17:24:16
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:26033595498dd79ed4e81-32163938%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1992415759549934c08e2794-86307882%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4f35604e109598d51b16b66c9f9b6eb4a0d9b79e' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl',
-      1 => 1419304311,
+      1 => 1419326655,
     ),
   ),
-  'nocache_hash' => '26033595498dd79ed4e81-32163938',
+  'nocache_hash' => '1992415759549934c08e2794-86307882',
   'function' => 
   array (
   ),
@@ -157,7 +157,9 @@ display: none;
             </div>
             <div class="filter">尚未选择相关分类...</div>
             <div class="confim">[确定]</div>
-            <div class="chooseCat"></div>
+            <div>
+                <span class="chooseCat"></span>
+            </div>
         </div>
             <tr class="trTag">
                 <td class="tagNameTd">行业:</td>
@@ -216,10 +218,13 @@ display: none;
         $(".subFilter").click(function(event) {
             /* Act on the event */
             var chooseSub = $(this).html();
+
             $(".cancel").show();
             $(".confim").show();
             $(".filter").html('已选择:');
 
+
+            $(".chooseCat").css("border","1px solid red");
             $(".chooseCat").append(chooseSub);
             $(".chooseCat").append(",");
         });

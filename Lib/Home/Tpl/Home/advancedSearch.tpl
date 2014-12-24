@@ -138,7 +138,9 @@ display: none;
             </div>
             <div class="filter">尚未选择相关分类...</div>
             <div class="confim">[确定]</div>
-            <div class="chooseCat"></div>
+            <div>
+                <span class="chooseCat"></span>
+            </div>
         </div>
             <tr class="trTag">
                 <td class="tagNameTd">行业:</td>
@@ -197,10 +199,13 @@ display: none;
         $(".subFilter").click(function(event) {
             /* Act on the event */
             var chooseSub = $(this).html();
+
             $(".cancel").show();
             $(".confim").show();
             $(".filter").html('已选择:');
 
+
+            $(".chooseCat").css("border","1px solid red");
             $(".chooseCat").append(chooseSub);
             $(".chooseCat").append(",");
         });

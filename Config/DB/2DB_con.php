@@ -7,14 +7,9 @@ class DB_Mysql_search extends DB_Mysql {
     protected $user = 'root';
     protected $pass = '123456';
     protected $dbhost = '127.0.0.1';
-    protected $dbname = 'AMC';
+    protected $dbname = '';
 
     // protected $newDB = '';
-
-    // protected $user = 'zchuan';
-    // protected $pass = 'UbRuvappSsp7wEXB';
-    // protected $dbhost = '127.0.0.1';
-    // protected $dbname = 'zchuan';
 
     protected $newDB = '';
 

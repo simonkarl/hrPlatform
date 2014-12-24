@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 18:08:03
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 16:12:41
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:431865745492a78323b849-49182455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2088121564549923f9eba052-15046236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '19336a31dcdc95bc00d3555ce76c749f8eb3ec46' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
-      1 => 1418897280,
+      1 => 1419322360,
     ),
   ),
-  'nocache_hash' => '431865745492a78323b849-49182455',
+  'nocache_hash' => '2088121564549923f9eba052-15046236',
   'function' => 
   array (
   ),
@@ -23,7 +23,7 @@ $_smarty_tpl->decodeProperties(array (
 <style>
 
 .rssTitle{
-  border-bottom: solid 1px #CCc;
+  border-bottom: solid 2px rgb(71,135,191);
   width: 95%;
   margin: 0 auto;
   height: 55px;
@@ -103,10 +103,10 @@ $_smarty_tpl->decodeProperties(array (
         <label class="col-sm-2 control-label" for="formGroupInputLarge">邮件频率</label>
 
           <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 每天一次
+          <input type="radio" name="time" id="time" value="option1"> 每天一次
           </label>
           <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 每周一次
+            <input type="radio" name="time" id="time" value="option2"> 每周一次
           </label>
       </div>
   

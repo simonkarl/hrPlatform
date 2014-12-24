@@ -4,7 +4,7 @@
 <style>
 
 .rssTitle{
-  border-bottom: solid 1px #CCc;
+  border-bottom: solid 2px rgb(71,135,191);
   width: 95%;
   margin: 0 auto;
   height: 55px;
@@ -84,10 +84,10 @@
         <label class="col-sm-2 control-label" for="formGroupInputLarge">邮件频率</label>
 
           <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 每天一次
+          <input type="radio" name="time" id="time" value="option1"> 每天一次
           </label>
           <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 每周一次
+            <input type="radio" name="time" id="time" value="option2"> 每周一次
           </label>
       </div>
   

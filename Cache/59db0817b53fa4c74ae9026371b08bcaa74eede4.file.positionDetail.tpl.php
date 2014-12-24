@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-22 14:04:54
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 13:58:38
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13171975125497b4861dbfb2-78265985%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:327278965499048e3c95f8-88740398%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419228291,
+      1 => 1419314316,
     ),
   ),
-  'nocache_hash' => '13171975125497b4861dbfb2-78265985',
+  'nocache_hash' => '327278965499048e3c95f8-88740398',
   'function' => 
   array (
   ),
@@ -52,7 +52,6 @@ $_smarty_tpl->decodeProperties(array (
     font-size: 22px;
     line-height: 50px;
     color: rgb(44,62,80);
-    margin-top: 45px;
 }
 .titleBorder{
     border-bottom: solid 5px rgb(71,135,191);
@@ -116,6 +115,7 @@ $_smarty_tpl->decodeProperties(array (
 
 <article class="wrapSearch">
     <section class="sectionLeft">
+        <div style=" height: 45px;"></div>
         <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('position_label')->value;?>
 </div>
 
