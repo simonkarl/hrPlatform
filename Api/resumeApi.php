@@ -2,30 +2,38 @@
 
 class resumeApi extends Api {
 
+    public function serachResume($keyword, $page) {
 
-	public function serachResume($keyword,$page){
+        $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
 
-		$api_url = $this->api_url.'/position?keyword='.$keyword.'&page='.$page;
+        $result = transferData($api_url, 'get');
 
-		$result = transferData($api_url,'get');
+        return json_decode($result, true);
+    }
 
-		return json_decode($result,true);
+    public function getResumeDetail($id) {
 
-	}
+        if (!empty($id) && $id > 0) {
 
-	public function getResumeDetail($id){
+            $api_url = $this->api_url . '/positionDetail?id=' . $id;
 
-		if(!empty($id) && $id > 0){
+            $result = transferData($api_url, 'get');
 
-			$api_url = $this->api_url.'/positionDetail?id='.$id;
+            return json_decode($result, true);
+        }
+    }
 
-		    $result = transferData($api_url,'get');
+    public function test(){
 
-		    return json_decode($result,true);
+        $url ='http://112.124.25.155/voice_api/voice/get_voice_list/?type=japan';
 
-		}
+        $result = transferData($url, 'get');
 
-	}
+        return json_decode($result, true);
+
+
+    }
 
 }
+
 ?>

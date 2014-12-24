@@ -24,25 +24,27 @@
 
         <div class="job-category-widget ">
 
-    <ul class="category-list">
+      <ul class="category-list">
 
         <!-- IT行业开始-->
-        <li class="category-list-item">
+       
+            
+             <li class="category-list-item">
             <h4 class="category-title">
                 <a href="#">IT行业</a>
             </h4>
             <ul class="category-title-list">
                 <li>
-                    <a class="text-label" href="#">C/C++</a>
+                    <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=C/C++&type=0">C/C++</a>
                 </li>
                 <li>
-                    <a class="text-label" href="#">.Net</a>
+                    <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=.Net&type=0">.Net</a>
                 </li>
                 <li>
-                    <a class="text-label" href="#">Java</a>
+                    <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Java&type=0">Java</a>
                 </li>
                 <li>
-                    <a class="text-label" href="#">Hadoop</a>
+                    <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Hadoop&type=0">Hadoop</a>
                 </li>
             </ul>
             <div class="right-indicator"></div>
@@ -54,28 +56,28 @@
                     </h4>
                     <ul class="category-title-list">
                         <li>
-                            <a class="text-label" href="#">C#</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Hadoop&type=0">C#</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">C/C++</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=C/C++&type=0">C/C++</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">node.js</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=node.js&type=0">node.js</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">.NET</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=.NET&type=0">.NET</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">C/C++</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=C/C++&type=0">C/C++</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">Java</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Java&type=0">Java</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">Hadoop</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Hadoop&type=0">Hadoop</a>
                         </li>
                         <li>
-                            <a class="text-label" href="#">Python</a>
+                            <a class="text-label" href="{$websiteUrl}/home/acurateSearch?keyword=Python&type=0">Python</a>
                         </li>
                     </ul>
 
@@ -116,6 +118,7 @@
               <div class="mask"></div>
 
         </li>
+       
         <!-- IT行业结束-->
 
         <!-- 互联网行业开始-->
@@ -656,17 +659,19 @@ margin: 0 auto; margin-top: 2px;">
     
     $(document).ready(function() {
 
-        $(".category-list-item").hover(function(){
 
-            //$(".sub-category-list").show();
-            $(this).children('.sub-category-list').show();
-            $(this).css('z-index','9999');
+
+        // $(".category-list-item").hover(function(){
+
+        //     //$(".sub-category-list").show();
+        //     $(this).children('.sub-category-list').show();
+        //     $(this).css('z-index','9999');
             
-        })
-        $(".category-list-item").mouseout(function() {
-            /* Act on the event */
-            $(this).children('.sub-category-list').hide();
-        });
+        // })
+        // $(".category-list-item").mouseout(function() {
+        //     /* Act on the event */
+        //     $(this).children('.sub-category-list').hide();
+        // });
 
         // $(".category-list-item,.category-title,category-title-list").mouseout(function(){
 
@@ -675,6 +680,8 @@ margin: 0 auto; margin-top: 2px;">
         // })
 
 });
+
+    
 
 </script>
 
