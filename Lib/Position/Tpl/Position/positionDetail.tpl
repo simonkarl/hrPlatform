@@ -114,7 +114,7 @@
                 </tr>
                 <tr>
                     <td><b class="otherBorder">发布时间:</b>{$created_at}</td>
-                    <td><b class="otherBorder">更新时间:</b>{$updated_at}</td>
+                    <td><b class="otherBorder"></b></td>
                 </tr>
             </table>
 

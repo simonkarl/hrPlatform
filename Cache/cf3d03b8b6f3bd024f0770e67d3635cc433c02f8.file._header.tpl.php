@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 11:58:01
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:14:12
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:125799482549b8b492df561-14685377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1040548506549bb9446564e9-25471367%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1419479879,
+      1 => 1419491214,
     ),
   ),
-  'nocache_hash' => '125799482549b8b492df561-14685377',
+  'nocache_hash' => '1040548506549bb9446564e9-25471367',
   'function' => 
   array (
   ),
@@ -151,6 +151,18 @@ border-bottom-color: transparent;
     color: rgb(231,76,60);
 }
 </style>
+
+<script>
+    
+    $(function(){
+
+        var website = '<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+'
+        setPublic(website)
+    })
+
+</script>
+
 
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 

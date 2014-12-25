@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 17:41:36
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:35:53
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1099224234549a8a50be14e7-57947784%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:58539294549bbe59d552b8-50370884%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419414095,
+      1 => 1419492946,
     ),
   ),
-  'nocache_hash' => '1099224234549a8a50be14e7-57947784',
+  'nocache_hash' => '58539294549bbe59d552b8-50370884',
   'function' => 
   array (
   ),
@@ -139,8 +139,7 @@ $_smarty_tpl->decodeProperties(array (
                 <tr>
                     <td><b class="otherBorder">发布时间:</b><?php echo $_smarty_tpl->getVariable('created_at')->value;?>
 </td>
-                    <td><b class="otherBorder">更新时间:</b><?php echo $_smarty_tpl->getVariable('updated_at')->value;?>
-</td>
+                    <td><b class="otherBorder"></b></td>
                 </tr>
             </table>
 

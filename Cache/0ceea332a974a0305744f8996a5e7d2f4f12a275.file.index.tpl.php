@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 11:56:41
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:14:12
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:365285014549b8af9039169-15455791%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2055562783549bb9444f3578-23791636%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1419479797,
+      1 => 1419491215,
     ),
   ),
-  'nocache_hash' => '365285014549b8af9039169-15455791',
+  'nocache_hash' => '2055562783549bb9444f3578-23791636',
   'function' => 
   array (
   ),
@@ -30,10 +30,14 @@ $_smarty_tpl->decodeProperties(array (
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /css/category.css">
 
+   
+
 </head>
 <body class="third-color">
 
     
+
+  
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
@@ -435,6 +439,7 @@ $_smarty_tpl->decodeProperties(array (
 
             </div>
 
+
         </div>
 
     <!-- 分类结束 -->
@@ -451,28 +456,12 @@ $_smarty_tpl->decodeProperties(array (
 
             <section class="sectionTwob">
                 <div style=" border: solid 1px #ccc; padding: 10px;width: 225px;
-        margin: 0 auto; margin-top: 2px;">
+              margin: 0 auto; margin-top: 2px;">
 
-                    <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
-                    <div style="font-size: 16px; margin-top: 15px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
-                    <div style=" margin-top: 12px; margin-bottom: 12px;">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="请输入登陆邮箱">
-                    </div>
-                    <div style="font-size: 16px;font-weight: bold;color:rgb(44,62,81);">密码:</div>
-                    <div style=" margin-top: 12px; margin-bottom: 12px;">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
-                    </div>
+              <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_userLogin.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
-                    <div style=" margin-top: 10px;">
-                        <b style=" margin-left: 5px; cursor: pointer">忘记密码？</b>
-                        <b id="register" style=" margin-left: 65px; color: #333; cursor: pointer">免费注册</b>
-                    </div>
-
-                    <div style=" text-align: center;">
-                        <button type="button" style="width: 200px;background-color: rgb(71,135,191);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
-                            登 录
-                        </button>
-                    </div>
+                  
                 </div>
 
                 <div class="take"  onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -554,9 +543,11 @@ $_smarty_tpl->decodeProperties(array (
     
     $(document).ready(function() {
 
+
         $(".menu_box").hover(function() {
 
             $(this).find('.dn').show();
+
 
         }, function() {
 
@@ -571,6 +562,8 @@ $_smarty_tpl->decodeProperties(array (
         });
 
 });
+
+    
 
 </script>
 
