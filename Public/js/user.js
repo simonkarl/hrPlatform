@@ -31,6 +31,8 @@ function userLogin(){
 
    	 	alert('登录成功!');
 
+         location.reload();
+
    	 	return false;
    	 }
 

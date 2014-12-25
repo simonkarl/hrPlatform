@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 16:24:31
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:42:38
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1664300779549a783f4e84d5-74890602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:65981564549bbfeeab6de0-57198799%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c13cc7d5ab005f95da410be5849b9493ad3f74eb' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl',
-      1 => 1419409443,
+      1 => 1419491214,
     ),
   ),
-  'nocache_hash' => '1664300779549a783f4e84d5-74890602',
+  'nocache_hash' => '65981564549bbfeeab6de0-57198799',
   'function' => 
   array (
   ),
@@ -144,7 +144,7 @@ border-bottom: solid 2px rgb(71,135,191);
       $.ajax({
          type: "get",
          url: "<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/user/companyRegister",
+/user/companyRegisterAjax",
          data: {
           email:$("#exampleInputEmail1").val(),
           password:$("#exampleInputPassword1").val(),
@@ -152,7 +152,18 @@ border-bottom: solid 2px rgb(71,135,191);
          },
 
          success: function(res){
-            alert(res);
+          
+            if(res == 0){
+
+              alert('注册成功！')
+
+              return false;
+            } else if(res == 1002){
+
+              alert('邮箱已注册!');
+
+              return false;
+            }
          },
          error: function(){
           alert("网络异常");

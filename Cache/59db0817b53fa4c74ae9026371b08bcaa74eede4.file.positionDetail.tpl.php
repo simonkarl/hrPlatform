@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:40:37
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 16:31:55
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1469496481549bbf75d29d46-00962342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1602221450549bcb7ba0ca72-89348344%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419493235,
+      1 => 1419496209,
     ),
   ),
-  'nocache_hash' => '1469496481549bbf75d29d46-00962342',
+  'nocache_hash' => '1602221450549bcb7ba0ca72-89348344',
   'function' => 
   array (
   ),
@@ -44,7 +44,7 @@ $_smarty_tpl->decodeProperties(array (
     -webkit-box-flex:1;
     box-flex:1;
     background-color: rgb(250,250,250);
-    width: 85%;;
+    width: 65%;;
     padding-left: 30px;
 }
 .postionLabel{
@@ -106,6 +106,7 @@ $_smarty_tpl->decodeProperties(array (
 .companyOtherDiv{
     height: 45px;
     line-height: 45px;
+    overflow: hidden;
 }
 .companyOtherDiv a{
     font-weight: normal;

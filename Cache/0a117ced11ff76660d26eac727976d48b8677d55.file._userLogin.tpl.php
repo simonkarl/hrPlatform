@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:14:12
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 16:15:08
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_userLogin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1392732069549bb9446d0492-78024118%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1836115591549bc78c99a515-60395253%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0a117ced11ff76660d26eac727976d48b8677d55' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_userLogin.tpl',
-      1 => 1419491214,
+      1 => 1419495230,
     ),
   ),
-  'nocache_hash' => '1392732069549bb9446d0492-78024118',
+  'nocache_hash' => '1836115591549bc78c99a515-60395253',
   'function' => 
   array (
   ),
@@ -18,11 +18,42 @@ $_smarty_tpl->decodeProperties(array (
 )); /*/%%SmartyHeaderCode%%*/?>
 <script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /js/user.js"></script>
+<style>
 
-
+.loginedTable{
+	 height: 330px;
+	 width: 111%;
+	 margin: -11px;
+}
+.loginedTable tr td{
+	border: solid 1px #ccc;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+width: 50%;
+line-height: 68px;
+cursor: pointer;
+}
+.loginedTable tr td:hover{
+	color: rgb(231,76,60);
+}
+.loginedTable tr td span{
+	font-size: 32px;
+}
+</style>
 
 <?php if ($_smarty_tpl->getVariable('whether_login')->value==1){?>
-dasjhdjkas
+
+	 <table class="loginedTable">
+	 	<tr>
+	 		<td>简历库<br /><span class="glyphicon glyphicon-folder-open"></span></td>
+	 		<td>订阅<br /><span class="glyphicon glyphicon-send"></span></td>
+	 	</tr>
+	 	<tr>
+	 		<td>消息<br /><span class="glyphicon glyphicon-envelope"></span></td>
+	 		<td>退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
+	 	</tr>
+	 </table>
 
 <?php }else{ ?>
 <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>

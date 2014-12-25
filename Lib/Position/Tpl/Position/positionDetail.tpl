@@ -25,7 +25,7 @@
     -webkit-box-flex:1;
     box-flex:1;
     background-color: rgb(250,250,250);
-    width: 85%;;
+    width: 65%;;
     padding-left: 30px;
 }
 .postionLabel{
@@ -87,6 +87,7 @@
 .companyOtherDiv{
     height: 45px;
     line-height: 45px;
+    overflow: hidden;
 }
 .companyOtherDiv a{
     font-weight: normal;

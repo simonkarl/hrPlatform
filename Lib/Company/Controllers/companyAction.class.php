@@ -11,7 +11,25 @@ class CompanyAction extends Action {
 
 			$result = $companyApi->getCompanyDetail($_REQUEST['id']);
 
-			var_dump($result);
+			//print_r($result['list']);
+
+         $company_detail_array = $result['company_detail'];
+         $company_name = $company_detail_array['company_name'];
+         $company_info = $company_detail_array['company_info'];
+         $company_industry = substr($company_detail_array['company_industry'],12);
+         $company_scale = substr($company_detail_array['company_scale'],0,strlen($company_detail_array['company_scale'])-2);
+         $company_nature = $company_detail_array['company_nature'];
+
+         $otherPositionList = $result['list'];
+
+         $this->assign('company_name',$company_name);
+         $this->assign('company_info',$company_info);
+         $this->assign('company_industry',$company_industry);
+         $this->assign('company_nature',$company_nature);
+         $this->assign('company_scale',$company_scale);
+
+         $this->assign('otherPositionList',$otherPositionList);
+
 		}
 
 		$this->display();

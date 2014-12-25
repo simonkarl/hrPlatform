@@ -1,9 +1,40 @@
 <script type="text/javascript" src="{$WebSiteUrlPublic}/js/user.js"></script>
+<style>
 
-
+.loginedTable{
+	 height: 330px;
+	 width: 111%;
+	 margin: -11px;
+}
+.loginedTable tr td{
+	border: solid 1px #ccc;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+width: 50%;
+line-height: 68px;
+cursor: pointer;
+}
+.loginedTable tr td:hover{
+	color: rgb(231,76,60);
+}
+.loginedTable tr td span{
+	font-size: 32px;
+}
+</style>
 
 {if $whether_login == 1}
-dasjhdjkas
+
+	 <table class="loginedTable">
+	 	<tr>
+	 		<td>简历库<br /><span class="glyphicon glyphicon-folder-open"></span></td>
+	 		<td>订阅<br /><span class="glyphicon glyphicon-send"></span></td>
+	 	</tr>
+	 	<tr>
+	 		<td>消息<br /><span class="glyphicon glyphicon-envelope"></span></td>
+	 		<td>退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
+	 	</tr>
+	 </table>
 
 {else}
 <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
