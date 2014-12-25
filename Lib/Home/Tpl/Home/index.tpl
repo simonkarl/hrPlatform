@@ -11,10 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{$WebSiteUrlPublic}/css/category.css">
 
+   
+
 </head>
 <body class="third-color">
 
     
+
+  
 {include file="$path/_header.tpl"}
 
 <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
@@ -304,6 +308,7 @@
 
             </div>
 
+
         </div>
 
     <!-- 分类结束 -->
@@ -319,28 +324,11 @@
 
             <section class="sectionTwob">
                 <div style=" border: solid 1px #ccc; padding: 10px;width: 225px;
-        margin: 0 auto; margin-top: 2px;">
+              margin: 0 auto; margin-top: 2px;">
 
-                    <div style="font-size: 20px; border-bottom: solid 1px #ccc; font-weight: bold;color:rgb(44,62,81);height: 50px; line-height: 50px;">用户登录</div>
-                    <div style="font-size: 16px; margin-top: 15px; font-weight: bold;color:rgb(44,62,81)">邮箱:</div>
-                    <div style=" margin-top: 12px; margin-bottom: 12px;">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="请输入登陆邮箱">
-                    </div>
-                    <div style="font-size: 16px;font-weight: bold;color:rgb(44,62,81);">密码:</div>
-                    <div style=" margin-top: 12px; margin-bottom: 12px;">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
-                    </div>
+              {include file="$path/_userLogin.tpl"}
 
-                    <div style=" margin-top: 10px;">
-                        <b style=" margin-left: 5px; cursor: pointer">忘记密码？</b>
-                        <b id="register" style=" margin-left: 65px; color: #333; cursor: pointer">免费注册</b>
-                    </div>
-
-                    <div style=" text-align: center;">
-                        <button type="button" style="width: 200px;background-color: rgb(71,135,191);border: solid 1px #369;color: #fff;height: 35px;font-size: 16px; border-radius: 5px; --webkit-border-radius: 5px; --moz-border-radius: 5px; margin-top: 30px;">
-                            登 录
-                        </button>
-                    </div>
+                  
                 </div>
 
                 <div class="take"  onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>
@@ -413,9 +401,11 @@
     
     $(document).ready(function() {
 
+
         $(".menu_box").hover(function() {
 
             $(this).find('.dn').show();
+
 
         }, function() {
 
@@ -430,6 +420,8 @@
         });
 
 });
+
+    
 
 </script>
 

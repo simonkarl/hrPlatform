@@ -1,5 +1,24 @@
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 14:40:10
+         compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:117620868549bb14a70b426-21339473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'e5b592098f839de36b18bfcf6b1508185acde37a' => 
+    array (
+      0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
+      1 => 1419489609,
+    ),
+  ),
+  'nocache_hash' => '117620868549bb14a70b426-21339473',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 
-{include file="$path/_header.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 <style>
 
@@ -33,7 +52,8 @@
   <div class="form-group form-group-lg">
     <label class="col-sm-2 control-label" for="formGroupInputLarge">接收邮箱:</label>
     <div class="col-sm-3">
-      <input class="form-control" style="height: 40px;" type="text" id="formGroupInputLarge" placeholder="接收邮箱" value='{$userInfo.user_email}'>
+      <input class="form-control" style="height: 40px;" type="text" id="formGroupInputLarge" placeholder="接收邮箱" value='<?php echo $_smarty_tpl->getVariable('userInfo')->value['user_email'];?>
+'>
     </div>
   </div>
 
@@ -118,4 +138,5 @@
 </section>
 
 
-{include file="$path/_footer.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

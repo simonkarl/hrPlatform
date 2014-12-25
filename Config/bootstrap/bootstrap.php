@@ -8,9 +8,6 @@ class website {
 
         $host = $_SERVER['HTTP_HOST'];
 
-
-        session_destroy();
-
         /**
          * 判断 访问的网址  如为localhost的时 加载本地配置文件 其他加载服务器匹配页面
          */

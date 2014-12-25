@@ -11,6 +11,7 @@ class HomeAction extends Action {
     //首页
     function index() {
 
+      
         $this->display();
     }
     //推送信息
