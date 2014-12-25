@@ -26,49 +26,13 @@
 
     width: 25.5%;
 }
-
-.tableTag{
-/*	border: solid 1px #ccc;*/
-	/*width: 100%;*/
-    width: 1168px;
-}
-
-.tableTag tr{
-	height: 2.5em;
-	line-height: 2.5em;
-}
-.trTag{
-	border: dashed 1px #ccc;
-}
-.trTag td{
-	padding-left: 30px;
-	cursor: pointer;
-}
-.trTag td a{
-	color: rgb(0,90,160);
-	font-size: 0.8em;
-}
-.trTag td a:hover{
-	color: red;
-	font-size: 0.8em;
-	text-decoration: none;
-}
-.tagNameTd{
-	font-weight: bold;
-}
-.titleDiv{
-	background-color: rgb(240,240,240);
-	height: 2.5em;
-	line-height: 2.5em;
-	font-weight: bold;
-	text-indent: 5px;
-}
 /*
 ----------*/
 
 .tableContent{
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .tableContentTrTag{
     height: 2.5em;
@@ -76,7 +40,7 @@
     border: solid 1px #ccc;
 }
 .tableContentTrTag td{
-    border: solid 1px #ccc;
+ /*   border: solid 1px #ccc;*/
     text-indent: 20px;
 }
 .ContentNameTd{
@@ -89,6 +53,7 @@
     width: 90%;
 margin: 0 auto;
 height: 2em;
+margin-top: 40px;
 line-height: 2em;
 text-align: center;
 text-align: center;
@@ -104,35 +69,11 @@ font-size: 1.6em;
 <article class="wrapSearch">
    <!--  <section class="sectionLeft">01</section> -->
     <section class="sectionRight">
-    	<table class="tableTag">
-
-    		<div class="titleDiv">信息筛选:</div>
-    		<tr class="trTag">
-    			<td class="tagNameTd">行业:</td>
-    			<td><a>IT</a></td>
-    			<td><a>互联网</a></td>
-    			<td><a>通信</a></td>
-    			<td><a>电子</a></td>
-    			<td><a>金融</a></td>
-    			<td><a>制造业</a></td>
-    		</tr>
-    		<tr class="trTag">
-    			<td class="tagNameTd">职位:</td>
-    			<td><a>UI设计师</a></td>
-    			<td><a>IOS工程师</a></td>
-    			<td><a>微电子工程师</a></td>
-    			<td><a>金融咨询师</a></td>
-    			<td><a>投资顾问</a></td>
-    			<td><a>数控高级技工</a></td>
-    		</tr>
-
-    	</table>
 
     </section>
 
 </article>
 
-<div style=" height: 30px;"></div>
 <div style="">
 
     <div class="contentTableHeader">职位名称数据分析</div>
@@ -156,14 +97,13 @@ font-size: 1.6em;
             </tr>
 
             {/foreach}
-           
-
 
         </table>
 
 
 </div>
- <div>
+
+ <div style="text-align: center; margin-top: 30px; font-size: 16px;">
 
   {$fenye}
 </div>

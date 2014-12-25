@@ -1,5 +1,24 @@
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 13:58:38
+         compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:327278965499048e3c95f8-88740398%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
+    array (
+      0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
+      1 => 1419314316,
+    ),
+  ),
+  'nocache_hash' => '327278965499048e3c95f8-88740398',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 
-{include file="$path/_header.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 
 <style>
@@ -97,25 +116,33 @@
 <article class="wrapSearch">
     <section class="sectionLeft">
         <div style=" height: 45px;"></div>
-        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;{$position_label}</div>
+        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('position_label')->value;?>
+</div>
 
             <table class="table">
                 <tr>
-                    <td><b class="otherBorder">薪资:</b>{$salary_range}</td>
-                    <td><b class="otherBorder">学历:</b>{$formal_schooling}</td>
+                    <td><b class="otherBorder">薪资:</b><?php echo $_smarty_tpl->getVariable('salary_range')->value;?>
+</td>
+                    <td><b class="otherBorder">学历:</b><?php echo $_smarty_tpl->getVariable('formal_schooling')->value;?>
+</td>
                 </tr>
                 <tr>
-                    <td><b class="otherBorder">工作经验:</b>{$work_year}</td>
-                    <td><b class="otherBorder">工作地点:</b>{$working_place}</td>
+                    <td><b class="otherBorder">工作经验:</b><?php echo $_smarty_tpl->getVariable('work_year')->value;?>
+</td>
+                    <td><b class="otherBorder">工作地点:</b><?php echo $_smarty_tpl->getVariable('working_place')->value;?>
+</td>
                 </tr>
                 <tr>
-                    <td><b class="otherBorder">发布时间:</b>{$created_at}</td>
-                    <td><b class="otherBorder">更新时间:</b>{$updated_at}</td>
+                    <td><b class="otherBorder">发布时间:</b><?php echo $_smarty_tpl->getVariable('created_at')->value;?>
+</td>
+                    <td><b class="otherBorder">更新时间:</b><?php echo $_smarty_tpl->getVariable('updated_at')->value;?>
+</td>
                 </tr>
             </table>
 
         <div class="job_description">
-            {$job_description}
+            <?php echo $_smarty_tpl->getVariable('job_description')->value;?>
+
         </div>
 
         <div class="onlineResume">可在线投递简历</div>
@@ -152,4 +179,5 @@
 
 </div>
 </section>
-{include file="$path/_footer.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

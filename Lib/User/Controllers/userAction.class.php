@@ -3,12 +3,12 @@
 class UserAction extends Action {
 
 	//登陆
-	function login(){
+	function personRegister(){
 
 		$this->display();
 	}
 	//注册
-	public function register(){
+	public function companyRegister(){
 
 		$this->display();
 

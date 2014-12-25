@@ -29,7 +29,7 @@ left:5px;
 width: 60px;
 height: 59px;
 display: block;
-z-index: 1000;
+z-index: 800;
 }
 
 .next{
@@ -40,7 +40,7 @@ left: 650px;
 width: 60px;
 height: 59px;
 display: block;
-z-index: 1000;
+z-index: 800;
 
 }
 </style>

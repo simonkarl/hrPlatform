@@ -38,7 +38,7 @@ defined('WebSiteUrl') or define('WebSiteUrl', 'http://' . $_SERVER['HTTP_HOST'] 
 
 defined('WebSiteUrlPublic') or define('WebSiteUrlPublic', 'http://' . $_SERVER['HTTP_HOST'] . '/' . WebSiteName . '/Public');
 
-
+defined('WebSiteUrlPublicPath') or define('WebSiteUrlPublicPath', ROOT_DIR.'/Public/html/');
 defined('URL_PATHINFO_FETCH') or define('URL_PATHINFO_FETCH', 'ORIG_PATH_INFO,REDIRECT_PATH_INFO,REDIRECT_URL');
 /**
  * 关闭报错信息 把报错信息存储到错误文件中

@@ -11,13 +11,17 @@
 .badge{ background-color:rgb(241,91,64);}
 .table-bordered tr td{ text-align: center;}
 .table-bordered tr td span{ color: rgb(61,181,73);}
-.servicesTitleTr{ font-size: 1.2em; font-weight: bold;}
-
+.servicesTitleTr{ font-size: 1em; font-weight: bold;}
+.servicesTitleTr td{ font-size: 14px;}
 
 .sureBuyStyle{
-	width: 100px;height: 35px;background-color: rgba(215,48,39,0.9);color: #fff;border: none;font-size: 17px;font-weight: bold; cursor: pointer;
+	width: 100px;height: 35px;background-color: rgba(71,135,191,1);color: #fff;border: none;font-size: 17px;font-weight: bold; cursor: pointer;
   border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
+.s_dis{
+  font-size: 0.7em; color: rgb(71,135,191);font-weight: bold;
+}
+
 </style>
 
 
@@ -37,27 +41,23 @@ background-color: rgb(236,240,241); font-size: 1.2em; font-weight: bold;">服务
 <div style=" height: 10px;"></div>
 
 <div style="height: 2em; text-indent: 10px; line-height: 2em;font-size: 1.2em; width: 100%; border: dashed 1px #ccc">
-	<span style=" font-weight: bold">套餐一:</span> 
-	<span style="font-size: 0.8em;">(免费 注册即可获得,可退订)</span>
+	<span style=" font-weight: bold">HR套餐一:</span> 
+	<span class="s_dis">(适用于HR)</span>
 	<span style='float: right;padding-right: 10px;'><input class="checkboxStyle" type="checkbox"></span>
 </div>
 
 <table class="table table-bordered">
   <tr class="servicesTitleTr">
-  	<td>行业资讯</td>
-  	<td>职位搜索</td>
-  	<td>招聘法则</td>
-  	<td>企业搜索</td>
-  	<td>高端简历搜索</td>
-  	<td>企业简历库计划</td>
-  	<td>企业人才库计划</td>
+  	<td>各行业招聘最多的TOP5职位</td>
+  	<td>行业热招TOP5职位有哪些公司在招聘</td>
+  	<td>行业热招TOP5职位工作经验和人数分布</td>
+  	<td>行业热招TOP5职位招聘时间</td>
+  	<td>行业热招TOP5职位相似的职位发布名称</td>
   </tr>
   <tr>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td></td>
-  	<td></td>
-  	<td></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
   	<td></td>
   	<td></td>
   </tr>
@@ -67,29 +67,25 @@ background-color: rgb(236,240,241); font-size: 1.2em; font-weight: bold;">服务
 
 
 <div style="height: 2em; text-indent: 10px; line-height: 2em;font-size: 1.2em; width: 100%; border: dashed 1px #ccc">
-	<span style=" font-weight: bold">套餐二:</span> 
-	<span style="font-size: 0.8em;">(使用时间达三个月以上免费赠送,可退订)</span>
+	<span style=" font-weight: bold">HR套餐二:</span> 
+	<span class="s_dis">(适用于HR)</span>
 	<span style='float: right;padding-right: 10px;'><input class="checkboxStyle" type="checkbox"></span>
 </div>
 
 <table class="table table-bordered">
   <tr class="servicesTitleTr">
-  	<td>行业资讯</td>
-  	<td>职位搜索</td>
-  	<td>招聘法则</td>
-  	<td>企业搜索</td>
-  	<td>高端简历搜索</td>
-  	<td>企业简历库计划</td>
-  	<td>企业人才库计划</td>
+    <td>各行业招聘最多的TOP5职位</td>
+    <td>行业热招TOP5职位有哪些公司在招聘</td>
+    <td>行业热招TOP5职位工作经验和人数分布</td>
+    <td>行业热招TOP5职位招聘时间</td>
+    <td>行业热招TOP5职位相似的职位发布名称</td>
   </tr>
   <tr>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td></td>
-  	<td></td>
-  	<td></td>
-  	<td></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
   </tr>
 
 </table>
@@ -97,35 +93,31 @@ background-color: rgb(236,240,241); font-size: 1.2em; font-weight: bold;">服务
 
 
 <div style="height: 2em; text-indent: 10px; line-height: 2em;font-size: 1.2em; width: 100%;border: dashed 1px #ccc">
-	<span style=" font-weight: bold">VIP套餐:</span> 
-	<span style="font-size: 0.8em;">(299RMB/月)</span>
+	<span style=" font-weight: bold">基础套餐:</span> 
+	<span class="s_dis">(适用于HR和求职者)</span>
 	<span style='float: right;padding-right: 10px;'><input class="checkboxStyle" type="checkbox"></span>
 </div>
 
 <table class="table table-bordered">
   <tr class="servicesTitleTr">
-  	<td>行业资讯</td>
-  	<td>职位搜索</td>
-  	<td>招聘法则</td>
-  	<td>企业搜索</td>
-  	<td>高端简历搜索</td>
-  	<td>企业简历库计划</td>
-  	<td>企业人才库计划</td>
+    <td>职位的行业资讯</td>
+    <td>高端招聘信息</td>
+    <td>行业热招TOP5职位有哪些公司在招聘</td>
+    <td>行业热招TOP5职位工作经验和人数分布</td>
+    <td>行业热招TOP5职位相似的职位发布名称</td>
   </tr>
   <tr>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
-  	<td><span class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
+  	<td><span style=" color: rgb(7,135,191)" class="glyphicon glyphicon-ok"></span></td>
   </tr>
 
 </table>
 
 	<div style=" width: 99.5%; text-align: right;">
-		<input class="sureBuyStyle" type="button" value="下一步">
+    <button type="submit" class="sureBuyStyle btn btn-primary">下一步</button>
 </div>
 
 

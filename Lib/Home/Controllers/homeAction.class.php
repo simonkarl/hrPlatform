@@ -46,6 +46,20 @@ class HomeAction extends Action {
     	$this->display();
     	
     }
+
+    //高级搜索
+    function advancedSearch(){
+
+        $this->display();
+    }
+
+    //招聘论坛
+    function forum(){
+
+        $this->display();
+        
+    }
+
     //精准搜索
     function acurateSearch(){
 
@@ -86,7 +100,7 @@ class HomeAction extends Action {
 
         
 
-         
+    
         
     }
     //订阅
