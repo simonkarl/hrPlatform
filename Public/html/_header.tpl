@@ -232,7 +232,6 @@ width: 1170px;
         <a href="{$websiteUrl}/home/acurateSearch?keyword=.NET&type=0">.NET</a>
         <a href="{$websiteUrl}/home/acurateSearch?keyword=项目经理&type=0">项目经理</a>
         <a href="{$websiteUrl}/home/acurateSearch?keyword=UI设计&type=0">UI设计</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=SEO&type=0">SEO</a>
         <a href="{$websiteUrl}/home/acurateSearch?keyword=移动产品经理&type=0">移动产品经理</a>
         <a href="{$websiteUrl}/home/acurateSearch?keyword=IOS&type=0">IOS</a>
         <a href="{$websiteUrl}/home/acurateSearch?keyword=金融分析师&type=0">金融分析师</a>

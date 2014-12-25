@@ -12,7 +12,7 @@ body {
 	width: 220px;
 }
 #sidebar .menu_main {
-	width: 200px;
+	width: 205px;
 	padding: 5px 12px;
 	border: 2px solid #fafafa;
 	border-right: none;
@@ -24,10 +24,10 @@ body {
 	padding: 10px 30px 5px 30px;
 	position: absolute;
 	top: 0;
-	left: 220px;
+	left: 219px;
 	z-index: 999;
 	border: 1px solid #c9cbce;
-	border-left: none;
+	/*border-left: none;*/
 	background: #fff;
 }
 .dn{
