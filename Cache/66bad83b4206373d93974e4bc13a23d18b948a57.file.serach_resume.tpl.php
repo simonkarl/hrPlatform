@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 18:16:47
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:24:52
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16407919745492a98f7d2d02-79339713%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:961150505549bbbc47f6fd3-63160776%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '66bad83b4206373d93974e4bc13a23d18b948a57' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl',
-      1 => 1418812421,
+      1 => 1419492170,
     ),
   ),
-  'nocache_hash' => '16407919745492a98f7d2d02-79339713',
+  'nocache_hash' => '961150505549bbbc47f6fd3-63160776',
   'function' => 
   array (
   ),
@@ -45,49 +45,13 @@ $_smarty_tpl->decodeProperties(array (
 
     width: 25.5%;
 }
-
-.tableTag{
-/*	border: solid 1px #ccc;*/
-	/*width: 100%;*/
-    width: 1168px;
-}
-
-.tableTag tr{
-	height: 2.5em;
-	line-height: 2.5em;
-}
-.trTag{
-	border: dashed 1px #ccc;
-}
-.trTag td{
-	padding-left: 30px;
-	cursor: pointer;
-}
-.trTag td a{
-	color: rgb(0,90,160);
-	font-size: 0.8em;
-}
-.trTag td a:hover{
-	color: red;
-	font-size: 0.8em;
-	text-decoration: none;
-}
-.tagNameTd{
-	font-weight: bold;
-}
-.titleDiv{
-	background-color: rgb(240,240,240);
-	height: 2.5em;
-	line-height: 2.5em;
-	font-weight: bold;
-	text-indent: 5px;
-}
 /*
 ----------*/
 
 .tableContent{
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .tableContentTrTag{
     height: 2.5em;
@@ -95,7 +59,7 @@ $_smarty_tpl->decodeProperties(array (
     border: solid 1px #ccc;
 }
 .tableContentTrTag td{
-    border: solid 1px #ccc;
+ /*   border: solid 1px #ccc;*/
     text-indent: 20px;
 }
 .ContentNameTd{
@@ -108,6 +72,7 @@ $_smarty_tpl->decodeProperties(array (
     width: 90%;
 margin: 0 auto;
 height: 2em;
+margin-top: 40px;
 line-height: 2em;
 text-align: center;
 text-align: center;
@@ -123,35 +88,11 @@ font-size: 1.6em;
 <article class="wrapSearch">
    <!--  <section class="sectionLeft">01</section> -->
     <section class="sectionRight">
-    	<table class="tableTag">
-
-    		<div class="titleDiv">信息筛选:</div>
-    		<tr class="trTag">
-    			<td class="tagNameTd">行业:</td>
-    			<td><a>IT</a></td>
-    			<td><a>互联网</a></td>
-    			<td><a>通信</a></td>
-    			<td><a>电子</a></td>
-    			<td><a>金融</a></td>
-    			<td><a>制造业</a></td>
-    		</tr>
-    		<tr class="trTag">
-    			<td class="tagNameTd">职位:</td>
-    			<td><a>UI设计师</a></td>
-    			<td><a>IOS工程师</a></td>
-    			<td><a>微电子工程师</a></td>
-    			<td><a>金融咨询师</a></td>
-    			<td><a>投资顾问</a></td>
-    			<td><a>数控高级技工</a></td>
-    		</tr>
-
-    	</table>
 
     </section>
 
 </article>
 
-<div style=" height: 30px;"></div>
 <div style="">
 
     <div class="contentTableHeader">职位名称数据分析</div>
@@ -175,8 +116,10 @@ if (count($_from) > 0){
 /position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
 '><?php echo $_smarty_tpl->tpl_vars['results']->value['position_name'];?>
 </a></td>
-                <td><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
-</td>
+                <td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['company_id'];?>
+'><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+</a></td>
                 <td><?php echo $_smarty_tpl->tpl_vars['results']->value['hiring'];?>
 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['results']->value['working_place'];?>
@@ -186,14 +129,13 @@ if (count($_from) > 0){
             </tr>
 
             <?php }} ?>
-           
-
 
         </table>
 
 
 </div>
- <div>
+
+ <div style="text-align: center; margin-top: 30px; font-size: 16px;">
 
   <?php echo $_smarty_tpl->getVariable('fenye')->value;?>
 

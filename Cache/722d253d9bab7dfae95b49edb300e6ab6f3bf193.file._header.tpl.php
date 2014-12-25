@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 12:41:17
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:24:52
          compiled from "/web/www/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:93828841549b956d8658a7-71257151%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:119123638549bbbc4df4230-20430307%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '722d253d9bab7dfae95b49edb300e6ab6f3bf193' => 
     array (
       0 => '/web/www/hrPlatform/Public/html//_header.tpl',
-      1 => 1419482433,
+      1 => 1419492284,
     ),
   ),
-  'nocache_hash' => '93828841549b956d8658a7-71257151',
+  'nocache_hash' => '119123638549bbbc4df4230-20430307',
   'function' => 
   array (
   ),
@@ -208,12 +208,12 @@ border-bottom-color: transparent;
       <div role="tabpanel" class="tab-pane fade" id="profile">
 
         <form action='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/acurateSearch' method="post" id='form1' name='form1'>
+/company/searchCompany' method="post" id='form2' name='form2'>
 
             <input type="hidden" name='type' value='1'>
 
             <span><input type="text" class="inputSearch" id='keyword' name="keyword"  placeholder="看看别的企业在干嘛..."  />
-            <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="companyBtn" value="搜 索"  />
+            <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="companyBtn" value="搜 索"  />
             </span>
 
         </form>

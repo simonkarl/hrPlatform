@@ -19,8 +19,6 @@ class PositionAction extends Action {
             $resultPosition = $resumeApi->getResumeDetail($_GET['id']);
             $result = $resultPosition['position_detail'];
             $resultCompanyInfo = $resultPosition['company_info'];
-
-            
             $position_label = $result['position_label'];
             $work_year = $result['work_year'];
             $working_place = $result['working_place'];

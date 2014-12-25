@@ -1,5 +1,24 @@
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:07:25
+         compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1305170075549bb7add448b1-56534336%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'dc8f5bd68212e89773229ef8c8fb7d2d1bee8ecb' => 
+    array (
+      0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl',
+      1 => 1419408608,
+    ),
+  ),
+  'nocache_hash' => '1305170075549bb7add448b1-56534336',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 
-{include file="$path/_header.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 
 <style>
@@ -221,4 +240,5 @@ display: none;
 
 </script>
 
-{include file="$path/_footer.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
