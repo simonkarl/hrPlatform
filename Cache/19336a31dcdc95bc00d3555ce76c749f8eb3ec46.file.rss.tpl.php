@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 16:12:41
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 17:42:01
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2088121564549923f9eba052-15046236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1686663999549a8a69c74691-08901625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '19336a31dcdc95bc00d3555ce76c749f8eb3ec46' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
-      1 => 1419322360,
+      1 => 1419407830,
     ),
   ),
-  'nocache_hash' => '2088121564549923f9eba052-15046236',
+  'nocache_hash' => '1686663999549a8a69c74691-08901625',
   'function' => 
   array (
   ),
@@ -23,13 +23,15 @@ $_smarty_tpl->decodeProperties(array (
 <style>
 
 .rssTitle{
-  border-bottom: solid 2px rgb(71,135,191);
   width: 95%;
   margin: 0 auto;
-  height: 55px;
-  line-height: 60px;
+  height: 100px;
+  line-height: 150px;
   font-size: 20px;
-  font-weight: bold;
+}
+.rssTitle b{
+    border-bottom: solid 5px rgb(71,135,191);
+    margin-left: 68px;
 }
 .control-label{
   font-size: 16px;
@@ -41,7 +43,9 @@ $_smarty_tpl->decodeProperties(array (
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;">
 
 
-  <div class="rssTitle">订阅服务</div>
+  <div class="rssTitle">
+    <b>订阅服务</b>
+  </div>
 
   <div style=" margin-top: 30px;">
       <form class="form-horizontal" role="form">
@@ -119,7 +123,11 @@ $_smarty_tpl->decodeProperties(array (
         </div>
       </div>
     </form>
+
+
   </div>
+
+  <div style=" height: 30px;"></div>
 
 </div>
 

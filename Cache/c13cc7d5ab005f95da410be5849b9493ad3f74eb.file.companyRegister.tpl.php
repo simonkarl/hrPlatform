@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 14:40:40
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 16:24:31
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2103410592549a5fe8174928-70492887%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1664300779549a783f4e84d5-74890602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c13cc7d5ab005f95da410be5849b9493ad3f74eb' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl',
-      1 => 1419314185,
+      1 => 1419409443,
     ),
   ),
-  'nocache_hash' => '2103410592549a5fe8174928-70492887',
+  'nocache_hash' => '1664300779549a783f4e84d5-74890602',
   'function' => 
   array (
   ),
@@ -114,7 +114,7 @@ border-bottom: solid 2px rgb(71,135,191);
                           <input type="checkbox">我已阅读并同意相关协议
                         </label>
                       </div>
-                      <button type="button" style=" width: 120px;height: 40px;
+                      <button type="button" id="btnRegister" style=" width: 120px;height: 40px;
     line-height: 20px;" class="btn btn-primary btn-lg">注&nbsp;&nbsp;册</button>
                     </form>
 
@@ -130,5 +130,41 @@ border-bottom: solid 2px rgb(71,135,191);
 
 </div>
 </section>
+<script>
+  $(function(){
+    $("#btnRegister").click(function(event) {
+      /* Act on the event */
+
+      userRegister();
+
+    });
+
+    function userRegister(){
+
+      $.ajax({
+         type: "get",
+         url: "<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/companyRegister",
+         data: {
+          email:$("#exampleInputEmail1").val(),
+          password:$("#exampleInputPassword1").val(),
+
+         },
+
+         success: function(res){
+            alert(res);
+         },
+         error: function(){
+          alert("网络异常");
+         }
+      });
+    }
+
+
+  })
+
+
+</script>
+
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

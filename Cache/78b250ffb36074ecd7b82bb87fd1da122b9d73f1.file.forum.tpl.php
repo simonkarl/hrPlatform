@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 16:15:29
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 17:44:25
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/forum.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:508682873549924a1cdec45-26841571%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1772037514549a8af9aca380-21507561%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '78b250ffb36074ecd7b82bb87fd1da122b9d73f1' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/forum.tpl',
-      1 => 1419304854,
+      1 => 1419414263,
     ),
   ),
-  'nocache_hash' => '508682873549924a1cdec45-26841571',
+  'nocache_hash' => '1772037514549a8af9aca380-21507561',
   'function' => 
   array (
   ),
@@ -53,7 +53,7 @@ $_smarty_tpl->decodeProperties(array (
 <article class="wrapSearch">
    <!--  <section class="sectionLeft">01</section> -->
     <section class="sectionRight">
-                    sectionRight
+                    开发中....
     </section>
 
 </article>

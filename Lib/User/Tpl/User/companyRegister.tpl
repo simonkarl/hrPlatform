@@ -95,7 +95,7 @@ border-bottom: solid 2px rgb(71,135,191);
                           <input type="checkbox">我已阅读并同意相关协议
                         </label>
                       </div>
-                      <button type="button" style=" width: 120px;height: 40px;
+                      <button type="button" id="btnRegister" style=" width: 120px;height: 40px;
     line-height: 20px;" class="btn btn-primary btn-lg">注&nbsp;&nbsp;册</button>
                     </form>
 
@@ -111,4 +111,39 @@ border-bottom: solid 2px rgb(71,135,191);
 
 </div>
 </section>
+<script>
+  $(function(){
+    $("#btnRegister").click(function(event) {
+      /* Act on the event */
+
+      userRegister();
+
+    });
+
+    function userRegister(){
+
+      $.ajax({
+         type: "get",
+         url: "{$websiteUrl}/user/companyRegister",
+         data: {
+          email:$("#exampleInputEmail1").val(),
+          password:$("#exampleInputPassword1").val(),
+
+         },
+
+         success: function(res){
+            alert(res);
+         },
+         error: function(){
+          alert("网络异常");
+         }
+      });
+    }
+
+
+  })
+
+
+</script>
+
 {include file="$path/_footer.tpl"}
