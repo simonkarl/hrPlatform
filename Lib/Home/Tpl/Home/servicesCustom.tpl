@@ -49,7 +49,17 @@ line-height: 25px;">根据大量数据分析和技术手段的加工我们为你
         </div>
 
 	<div style="width: 87%; text-align: right;">
-    <button type="submit" class="sureBuyStyle btn btn-primary">下一步</button>
+
+	{if $whether_login == 0}
+
+	 <button type="submit" class=" btn btn-primary" onclick='javascript:alert("还未登录")'>下一步</button>
+
+	{else}
+
+	<button type="submit" class="sureBuyStyle btn btn-primary" >下一步</button>
+
+	{/if}
+    
 	</div>
 
 	<div style=" height: 30px;"></div>
