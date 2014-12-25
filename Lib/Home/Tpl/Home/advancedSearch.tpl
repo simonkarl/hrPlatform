@@ -139,48 +139,58 @@ display: none;
             <div class="filter">尚未选择相关分类...</div>
             <div class="confim">[确定]</div>
             <div>
-                <span class="chooseCat"></span>
+                <span class="chooseCat" style='display:none'>
+                    
+                    <span class='type_1 types' style='color:red'></span>
+
+                    <span class='type_2 types' style='color:red'></span>
+
+                    <span class='type_3 types' style='color:red'></span>
+
+                    <span class='type_4 types' style='color:red'></span>
+
+                </span>
             </div>
         </div>
             <tr class="trTag">
                 <td class="tagNameTd">行业:</td>
-                <td><a class="subFilter">IT</a></td>
-                <td><a class="subFilter">互联网</a></td>
-                <td><a class="subFilter">通信</a></td>
-                <td><a class="subFilter">电子</a></td>
-                <td><a class="subFilter">金融</a></td>
-                <td><a class="subFilter">制造业</a></td>
-                <td><a class="subFilter"></a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>IT</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>互联网</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>通信</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>电子</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>金融</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'>制造业</a></td>
+                <td><a class="subFilter" onclick='selectType("1",this);'></a></td>
             </tr>
             <tr class="trTag">
                 <td class="tagNameTd">职位:</td>
-                <td><a class="subFilter">UI设计师</a></td>
-                <td><a class="subFilter">IOS工程师</a></td>
-                <td><a class="subFilter">微电子工程师</a></td>
-                <td><a class="subFilter">交互设计</a></td>
-                <td><a class="subFilter">投资顾问</a></td>
-                <td><a class="subFilter">UE设计</a></td>
-                <td><a class="subFilter">产品经理</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>UI设计师</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>IOS工程师</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>微电子工程师</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>交互设计</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>投资顾问</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>UE设计</a></td>
+                <td><a class="subFilter" onclick='selectType("2",this);'>产品经理</a></td>
             </tr>
             <tr class="trTag">
                 <td class="tagNameTd">工作经验:</td>
-                <td><a class="subFilter">实习生</a></td>
-                <td><a class="subFilter">0～1年</a></td>
-                <td><a class="subFilter">1～3年</a></td>
-                <td><a class="subFilter">3～5年</a></td>
-                <td><a class="subFilter">5～8年</a></td>
-                <td><a class="subFilter">8～10年</a></td>
-                <td><a class="subFilter">10年以上</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>实习生</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>0～1年</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>1～3年</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>3～5年</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>5～8年</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>8～10年</a></td>
+                <td><a class="subFilter" onclick='selectType("3",this);'>10年以上</a></td>
             </tr>
             <tr class="trTag">
                 <td class="tagNameTd">薪资范围:</td>
-                <td><a class="subFilter">2～3K</a></td>
-                <td><a class="subFilter">3～5K</a></td>
-                <td><a class="subFilter">5～8K</a></td>
-                <td><a class="subFilter">8～10K</a></td>
-                <td><a class="subFilter">10～15K</a></td>
-                <td><a class="subFilter">15～25K</a></td>
-                <td><a class="subFilter">25K以上</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>2～3K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>3～5K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>5～8K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>8～10K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>10～15K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>15～25K</a></td>
+                <td><a class="subFilter" onclick='selectType("4",this);'>25K以上</a></td>
             </tr>
 
         </table>
@@ -196,28 +206,65 @@ display: none;
 
 <script>
     $(document).ready(function() {
-        $(".subFilter").click(function(event) {
-            /* Act on the event */
-            var chooseSub = $(this).html();
 
-            $(".cancel").show();
-            $(".confim").show();
-            $(".filter").html('已选择:');
-
-
-            $(".chooseCat").css("border","1px solid red");
-            $(".chooseCat").append(chooseSub);
-            $(".chooseCat").append(",");
-        });
 
         $(".cancel").click(function(event) {
             /* Act on the event */
 
-            $(".chooseCat").html('');
+            $(".types").html('');
+
+             $('.chooseCat').css('display','none')
             $(".filter").html('尚未选择相关分类...');
         });
 
     });
+
+
+    function selectType(type,obj){
+
+        divhtml = '';
+
+        htmls = $(obj).html();
+
+        $(".cancel").show();
+        $(".confim").show();
+        $(".filter").html('已选择:');
+
+        $('.chooseCat').css('display','block')
+
+        switch(type){
+
+            case '1':
+
+            $('.type_1').html(htmls)
+
+        
+            break;
+
+            case '2':
+
+             $('.type_2').html(htmls)
+
+            break;
+
+            case '3':
+
+            $('.type_3').html(htmls)
+
+
+            break;
+
+            case '4':
+
+            $('.type_4').html(htmls)
+
+            
+
+            break;
+
+        }
+
+    }
 
 </script>
 

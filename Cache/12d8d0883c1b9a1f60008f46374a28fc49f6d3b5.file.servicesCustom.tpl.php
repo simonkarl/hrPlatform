@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 14:39:18
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 16:21:19
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1070861100549bb1166ac8a1-23581269%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1779139284549bc8ff2e3190-40496265%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '12d8d0883c1b9a1f60008f46374a28fc49f6d3b5' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl',
-      1 => 1419476119,
+      1 => 1419493837,
     ),
   ),
-  'nocache_hash' => '1070861100549bb1166ac8a1-23581269',
+  'nocache_hash' => '1779139284549bc8ff2e3190-40496265',
   'function' => 
   array (
   ),
@@ -68,7 +68,17 @@ line-height: 25px;">根据大量数据分析和技术手段的加工我们为你
         </div>
 
 	<div style="width: 87%; text-align: right;">
-    <button type="submit" class="sureBuyStyle btn btn-primary">下一步</button>
+
+	<?php if ($_smarty_tpl->getVariable('whether_login')->value==0){?>
+
+	 <button type="submit" class=" btn btn-primary" onclick='javascript:alert("还未登录")'>下一步</button>
+
+	<?php }else{ ?>
+
+	<button type="submit" class="sureBuyStyle btn btn-primary" >下一步</button>
+
+	<?php }?>
+    
 	</div>
 
 	<div style=" height: 30px;"></div>

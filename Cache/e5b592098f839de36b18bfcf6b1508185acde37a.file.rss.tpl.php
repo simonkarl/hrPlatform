@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 14:40:10
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:50:32
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:117620868549bb14a70b426-21339473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2037401876549bc1c81d82e4-81051487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e5b592098f839de36b18bfcf6b1508185acde37a' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
-      1 => 1419489609,
+      1 => 1419493829,
     ),
   ),
-  'nocache_hash' => '117620868549bb14a70b426-21339473',
+  'nocache_hash' => '2037401876549bc1c81d82e4-81051487',
   'function' => 
   array (
   ),
@@ -120,7 +120,7 @@ $_smarty_tpl->decodeProperties(array (
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary">确认订阅</button>
+          <button type="submit" class="btn btn-primary" onclick="javascrit:alert('订阅成功! 明日开始定制发送邮件')">确认订阅</button>
         </div>
       </div>
     </form>

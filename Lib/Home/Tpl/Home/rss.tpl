@@ -100,7 +100,7 @@
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary">确认订阅</button>
+          <button type="submit" class="btn btn-primary" onclick="javascrit:alert('订阅成功! 明日开始定制发送邮件')">确认订阅</button>
         </div>
       </div>
     </form>
