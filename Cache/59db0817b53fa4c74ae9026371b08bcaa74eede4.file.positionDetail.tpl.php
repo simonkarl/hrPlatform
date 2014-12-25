@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 13:58:38
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 17:41:36
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:327278965499048e3c95f8-88740398%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1099224234549a8a50be14e7-57947784%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419314316,
+      1 => 1419414095,
     ),
   ),
-  'nocache_hash' => '327278965499048e3c95f8-88740398',
+  'nocache_hash' => '1099224234549a8a50be14e7-57947784',
   'function' => 
   array (
   ),
@@ -52,6 +52,7 @@ $_smarty_tpl->decodeProperties(array (
     font-size: 22px;
     line-height: 50px;
     color: rgb(44,62,80);
+    overflow: hidden;
 }
 .titleBorder{
     border-bottom: solid 5px rgb(71,135,191);
@@ -106,6 +107,9 @@ $_smarty_tpl->decodeProperties(array (
     height: 45px;
     line-height: 45px;
 }
+.companyOtherDiv a{
+    font-weight: normal;
+}
 
 
 </style>
@@ -154,23 +158,34 @@ $_smarty_tpl->decodeProperties(array (
     </section>
 
     <section class="sectionRight">
+         <div style=" height: 50px;"></div>
+        <div class="companyOtherDiv">
+            <b>公司名称:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_name')->value;?>
 
-        <div class="companyDiv">
-            <b class="companyBorder">公司名称:</b>
-        </div>
-
-        <div class="companyOtherDiv">
-            <b>领域:</b>
-        </div>
-        <div class="companyOtherDiv">
-            <b>规模:</b>
-        </div>
-        <div class="companyOtherDiv">
-            <b>主页:</b>
         </div>
 
         <div class="companyOtherDiv">
-            <b>公司地址:</b>
+            <b>所属领域:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_industry')->value;?>
+
+        </div>
+        <div class="companyOtherDiv">
+            <b>企业规模:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_scale')->value;?>
+
+        </div>
+        <div class="companyOtherDiv">
+            <b>企业性质:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_nature')->value;?>
+
+        </div>
+
+<!--         <div class="companyOtherDiv">
+            <b>公司主页:</b><a href="javascript:window.location.href='<?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+'">&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+</a>
+        </div> -->
+
+        <div class="companyOtherDiv">
+            <b>公司地址:</b>&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal"><?php echo $_smarty_tpl->getVariable('company_address')->value;?>
+</span>
         </div>
 
     </section>

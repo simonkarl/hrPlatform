@@ -33,6 +33,7 @@
     font-size: 22px;
     line-height: 50px;
     color: rgb(44,62,80);
+    overflow: hidden;
 }
 .titleBorder{
     border-bottom: solid 5px rgb(71,135,191);
@@ -87,6 +88,9 @@
     height: 45px;
     line-height: 45px;
 }
+.companyOtherDiv a{
+    font-weight: normal;
+}
 
 
 </style>
@@ -127,23 +131,27 @@
     </section>
 
     <section class="sectionRight">
-
-        <div class="companyDiv">
-            <b class="companyBorder">公司名称:</b>
+         <div style=" height: 50px;"></div>
+        <div class="companyOtherDiv">
+            <b>公司名称:</b>&nbsp;&nbsp;&nbsp;{$company_name}
         </div>
 
         <div class="companyOtherDiv">
-            <b>领域:</b>
+            <b>所属领域:</b>&nbsp;&nbsp;&nbsp;{$company_industry}
         </div>
         <div class="companyOtherDiv">
-            <b>规模:</b>
+            <b>企业规模:</b>&nbsp;&nbsp;&nbsp;{$company_scale}
         </div>
         <div class="companyOtherDiv">
-            <b>主页:</b>
+            <b>企业性质:</b>&nbsp;&nbsp;&nbsp;{$company_nature}
         </div>
 
+<!--         <div class="companyOtherDiv">
+            <b>公司主页:</b><a href="javascript:window.location.href='{$company_website}'">&nbsp;&nbsp;&nbsp;{$company_website}</a>
+        </div> -->
+
         <div class="companyOtherDiv">
-            <b>公司地址:</b>
+            <b>公司地址:</b>&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal">{$company_address}</span>
         </div>
 
     </section>

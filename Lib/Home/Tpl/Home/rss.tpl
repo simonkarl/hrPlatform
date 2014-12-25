@@ -4,13 +4,15 @@
 <style>
 
 .rssTitle{
-  border-bottom: solid 2px rgb(71,135,191);
   width: 95%;
   margin: 0 auto;
-  height: 55px;
-  line-height: 60px;
+  height: 100px;
+  line-height: 150px;
   font-size: 20px;
-  font-weight: bold;
+}
+.rssTitle b{
+    border-bottom: solid 5px rgb(71,135,191);
+    margin-left: 68px;
 }
 .control-label{
   font-size: 16px;
@@ -22,7 +24,9 @@
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;">
 
 
-  <div class="rssTitle">订阅服务</div>
+  <div class="rssTitle">
+    <b>订阅服务</b>
+  </div>
 
   <div style=" margin-top: 30px;">
       <form class="form-horizontal" role="form">
@@ -100,7 +104,11 @@
         </div>
       </div>
     </form>
+
+
   </div>
+
+  <div style=" height: 30px;"></div>
 
 </div>
 
