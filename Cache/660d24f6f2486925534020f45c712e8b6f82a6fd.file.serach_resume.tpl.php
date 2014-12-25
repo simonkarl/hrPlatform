@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-23 11:02:18
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:39:25
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:594401815498db3a7ed547-39397986%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:923804787549bbf2d3c3e72-51456127%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '660d24f6f2486925534020f45c712e8b6f82a6fd' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl',
-      1 => 1419303666,
+      1 => 1419493018,
     ),
   ),
-  'nocache_hash' => '594401815498db3a7ed547-39397986',
+  'nocache_hash' => '923804787549bbf2d3c3e72-51456127',
   'function' => 
   array (
   ),
@@ -116,8 +116,10 @@ if (count($_from) > 0){
 /position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
 '><?php echo $_smarty_tpl->tpl_vars['results']->value['position_name'];?>
 </a></td>
-                <td><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
-</td>
+                <td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['company_id'];?>
+'><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+</a></td>
                 <td><?php echo $_smarty_tpl->tpl_vars['results']->value['hiring'];?>
 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['results']->value['working_place'];?>

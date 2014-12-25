@@ -25,7 +25,7 @@
     -webkit-box-flex:1;
     box-flex:1;
     background-color: rgb(250,250,250);
-    width:700px;
+    width: 85%;;
     padding-left: 30px;
 }
 .postionLabel{
@@ -114,7 +114,7 @@
                 </tr>
                 <tr>
                     <td><b class="otherBorder">发布时间:</b>{$created_at}</td>
-                    <td><b class="otherBorder">更新时间:</b>{$updated_at}</td>
+                    <td><b class="otherBorder"></b></td>
                 </tr>
             </table>
 
