@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 17:29:34
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 11:40:04
          compiled from "/web/www/hrPlatform/Public/html//_slide.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:129030688954929e7e96ad80-16036316%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1636836601549b8714d80f47-41618401%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5f092aaf506d0cef8b0b68cf49c270b62e418a29' => 
     array (
       0 => '/web/www/hrPlatform/Public/html//_slide.tpl',
-      1 => 1418894808,
+      1 => 1419408608,
     ),
   ),
-  'nocache_hash' => '129030688954929e7e96ad80-16036316',
+  'nocache_hash' => '1636836601549b8714d80f47-41618401',
   'function' => 
   array (
   ),
@@ -47,7 +47,7 @@ left:5px;
 width: 60px;
 height: 59px;
 display: block;
-z-index: 1000;
+z-index: 800;
 }
 
 .next{
@@ -58,7 +58,7 @@ left: 650px;
 width: 60px;
 height: 59px;
 display: block;
-z-index: 1000;
+z-index: 800;
 
 }
 </style>

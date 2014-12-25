@@ -121,6 +121,17 @@ border-bottom-color: transparent;
 }
 </style>
 
+<script>
+    
+    $(function(){
+
+        var website = '{$websiteUrl}'
+        setPublic(website)
+    })
+
+</script>
+
+
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 
 

@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-18 17:29:34
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 12:41:17
          compiled from "/web/www/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:171592548054929e7e0d8691-84793236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:93828841549b956d8658a7-71257151%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '722d253d9bab7dfae95b49edb300e6ab6f3bf193' => 
     array (
       0 => '/web/www/hrPlatform/Public/html//_header.tpl',
-      1 => 1418894808,
+      1 => 1419482433,
     ),
   ),
-  'nocache_hash' => '171592548054929e7e0d8691-84793236',
+  'nocache_hash' => '93828841549b956d8658a7-71257151',
   'function' => 
   array (
   ),
@@ -152,6 +152,18 @@ border-bottom-color: transparent;
 }
 </style>
 
+<script>
+    
+    $(function(){
+
+        var website = '<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+'
+        setPublic(website)
+    })
+
+</script>
+
+
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 
 
@@ -237,9 +249,9 @@ border-bottom-color: transparent;
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/servicesCustom"'>服务定制</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/acurateSearch"'>精准搜索</a></li>
+/home/forum"'>招聘论坛</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/user/userCenter"'>个人中心</a></li>
+/home/advancedSearch"'>高级搜索</a></li>
 
             </ul>
         </nav>
@@ -268,14 +280,22 @@ width: 1170px;
 <div class="twoBanner">
     <span style="font-size: 16px;font-weight: bold;margin-left: 8px;">热门搜索：</span>
     <span>
-        <a>交互设计</a>
-        <a>.NET</a>
-        <a>项目经理</a>
-        <a>数据运营</a>
-        <a>SEO</a>
-        <a>移动产品经理</a>
-        <a>IOS</a>
-        <a>金融分析师</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=交互设计&type=0">交互设计</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=.NET&type=0">.NET</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=项目经理&type=0">项目经理</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=UI设计&type=0">UI设计</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=SEO&type=0">SEO</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=移动产品经理&type=0">移动产品经理</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=IOS&type=0">IOS</a>
+        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/acurateSearch?keyword=金融分析师&type=0">金融分析师</a>
     </span>
     <span><img style="width: 170px; float: right;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/ba2.png"></span>

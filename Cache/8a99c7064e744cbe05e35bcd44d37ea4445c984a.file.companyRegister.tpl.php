@@ -1,5 +1,24 @@
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 12:27:20
+         compiled from "/web/www/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2009007083549b92284ae165-09445794%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '8a99c7064e744cbe05e35bcd44d37ea4445c984a' => 
+    array (
+      0 => '/web/www/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl',
+      1 => 1419481637,
+    ),
+  ),
+  'nocache_hash' => '2009007083549b92284ae165-09445794',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 
-{include file="$path/_header.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 
 <style>
@@ -124,7 +143,8 @@ border-bottom: solid 2px rgb(71,135,191);
 
       $.ajax({
          type: "get",
-         url: "{$websiteUrl}/user/companyRegisterAjax",
+         url: "<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/companyRegisterAjax",
          data: {
           email:$("#exampleInputEmail1").val(),
           password:$("#exampleInputPassword1").val(),
@@ -132,7 +152,8 @@ border-bottom: solid 2px rgb(71,135,191);
          },
 
          success: function(res){
-          
+            alert(res);
+
             if(res == 0){
 
               alert('注册成功！')
@@ -157,4 +178,5 @@ border-bottom: solid 2px rgb(71,135,191);
 
 </script>
 
-{include file="$path/_footer.tpl"}
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

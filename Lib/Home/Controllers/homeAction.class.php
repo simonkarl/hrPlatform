@@ -11,28 +11,7 @@ class HomeAction extends Action {
     //首页
     function index() {
 
-        $resumeApi = new resumeApi();
-
-        $json = $resumeApi->test();
-
-        if(!empty($json)){
-
-            foreach($json as $v){
-
-                if($v['message'] == 'voice'){
-
-                    $currentTime = time().rand(0,99999).'.amr';
-
-                    file_put_contents($currentTime, base64_decode($v['voice_data']));
-
-                }
-            }
-        }
-
-        var_dump($json);
-
-        die;
-
+      
         $this->display();
     }
     //推送信息
