@@ -173,12 +173,12 @@ border-bottom-color: transparent;
 
       <div role="tabpanel" class="tab-pane fade" id="profile">
 
-        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form1' name='form1'>
+        <form action='{$websiteUrl}/company/searchCompany' method="post" id='form2' name='form2'>
 
             <input type="hidden" name='type' value='1'>
 
             <span><input type="text" class="inputSearch" id='keyword' name="keyword"  placeholder="看看别的企业在干嘛..."  />
-            <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="companyBtn" value="搜 索"  />
+            <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="companyBtn" value="搜 索"  />
             </span>
 
         </form>

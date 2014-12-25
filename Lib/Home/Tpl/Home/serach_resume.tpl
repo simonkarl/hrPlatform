@@ -90,7 +90,7 @@ font-size: 1.6em;
 
              <tr class="tableContentTrTag">
                 <td class="ContentNameTd"><a href='{$websiteUrl}/position/positionDetail/?id={$results.id}'>{$results.position_name}</a></td>
-                <td>{$results.company_name}</td>
+                <td><a href='{$websiteUrl}/company/companyDetail/?id={$results.company_id}'>{$results.company_name}</a></td>
                 <td>{$results.hiring}</td>
                 <td>{$results.working_place}</td>
                 <td>{$results.update_time}</td>

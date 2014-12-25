@@ -15,6 +15,8 @@ class Action {
    
    public function __construct(){
 
+    header("Content-type: text/html; charset=utf-8");
+
         if(!empty($_SESSION['user']['user_id']) && $_SESSION['user']['user_id'] > 0){
 
             $this->assign('whether_login',1);

@@ -25,7 +25,7 @@
     -webkit-box-flex:1;
     box-flex:1;
     background-color: rgb(250,250,250);
-    width:700px;
+    width: 85%;;
     padding-left: 30px;
 }
 .postionLabel{

@@ -60,6 +60,8 @@ class HomeAction extends Action {
 
                  $result = $resumeApi->serachResume($_REQUEST['keyword'],$page);
 
+              
+
                  $page = new page('home/acurateSearch',$_REQUEST['keyword'],$_REQUEST['type']);
 
                  $fenye = $page->coutPage($result['current_page'],$result['fina_page']);
