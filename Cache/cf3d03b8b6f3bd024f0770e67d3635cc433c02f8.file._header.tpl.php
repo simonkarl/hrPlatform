@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-22 16:27:46
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 11:58:01
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:6489181875497d6027d5146-83324135%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:125799482549b8b492df561-14685377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1419236863,
+      1 => 1419479879,
     ),
   ),
-  'nocache_hash' => '6489181875497d6027d5146-83324135',
+  'nocache_hash' => '125799482549b8b492df561-14685377',
   'function' => 
   array (
   ),
@@ -276,8 +276,6 @@ width: 1170px;
 /home/acurateSearch?keyword=项目经理&type=0">项目经理</a>
         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=UI设计&type=0">UI设计</a>
-        <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/acurateSearch?keyword=SEO&type=0">SEO</a>
         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=移动产品经理&type=0">移动产品经理</a>
         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
