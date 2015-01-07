@@ -1,3 +1,6 @@
+
+
+
 function userLogin(){
 
    var email = $('#userLoginEmail').val();
@@ -21,7 +24,9 @@ function userLogin(){
 
    	 	case '1001':
 
-   	 	alert('邮件或密码错误!');
+   	 	  $(".alert-danger").show();
+        $(".alert-danger").html('邮件或密码错误');
+        setTimeout("$('.alert-danger').hide()", 3000);
 
    	 	return false;
 
@@ -29,12 +34,35 @@ function userLogin(){
 
    	 	case '0':
 
-   	 	alert('登录成功!');
+   	  $(".alert-success").show();
+      $(".alert-success").html('登陆成功');
+      setTimeout("$('.alert-success').hide()", 3000);
 
-         location.reload();
+      window.location.href = domain
 
    	 	return false;
    	 }
 
+   }else{
+        $(".alert-danger").show();
+        $(".alert-danger").html('邮箱或密码为空');
+        setTimeout("$('.alert-danger').hide()", 3000);
    }
+}
+
+function userlogout(){
+
+   var api_url = domain + '/user/userLogout';
+
+       var params = {
+
+       }
+
+       res = webSiteAjaxRequst(api_url,params,'get');
+
+
+       alert(domain);
+
+      location.reload();
+
 }

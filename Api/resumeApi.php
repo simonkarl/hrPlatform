@@ -24,6 +24,19 @@ class resumeApi extends Api {
         }
     }
 
+     public function getResumeAdvanced($info,$page) {
+
+
+        $string = 'name='.$info['position'].'&work_experience='.$info['work_experience'].'&salary='.$info['salary'].'&page='.$page;
+
+        $api_url = $this->api_url . '/advanced?' . $string;
+
+        $result = transferData($api_url, 'get');
+
+        return json_decode($result, true);
+       
+    }
+
 
 }
 

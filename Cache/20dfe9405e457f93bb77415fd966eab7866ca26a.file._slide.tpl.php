@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-22 16:02:15
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 17:07:12
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15630258365497d007228965-18835526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:140741114054aba5c070df31-40418738%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '20dfe9405e457f93bb77415fd966eab7866ca26a' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl',
-      1 => 1419235332,
+      1 => 1420535230,
     ),
   ),
-  'nocache_hash' => '15630258365497d007228965-18835526',
+  'nocache_hash' => '140741114054aba5c070df31-40418738',
   'function' => 
   array (
   ),
@@ -19,10 +19,9 @@ $_smarty_tpl->decodeProperties(array (
 
 <style>
 .sliderStyle{
-width: 710px;
-height: 417px;
+width: 950px;
+height: 420px;
 position: relative;
-margin-left: 6px;
 /* z-index: -1; */
 margin-left: 220px;
 }
@@ -31,7 +30,7 @@ margin-left: 220px;
         }
 #slides li,#slides_ li {
             display: block;
-            width: 705px;
+            width: 99.3%;
             height: 100%;
             list-style: none;
             padding: 0;
@@ -42,7 +41,7 @@ margin-left: 220px;
 .prev{
 
     position: absolute;
-top: 127px;
+top: 175px;
 left:5px;
 width: 60px;
 height: 59px;
@@ -53,8 +52,8 @@ z-index: 800;
 .next{
 
 position: absolute;
-top: 127px;
-left: 650px;
+top: 175px;
+left: 887px;
 width: 60px;
 height: 59px;
 display: block;
@@ -66,15 +65,18 @@ z-index: 800;
 <div class="sliderStyle">
     <div>
 
-       <ul id="slides" style="z-index: 0; margin-left: 5px; margin-top: -11px; padding: 0;">
-          <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/slide/s1.jpg'); z-index: 0; display:block; background-repeat: no-repeat;" > </li>
+       <ul id="slides" style="z-index: 0; margin-left: 5px; margin-top: -10px; padding: 0;">
 
-          <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/slide/s2.jpg'); z-index: 0; display:none; background-repeat: no-repeat;" > </li>
+<!--             <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/slide/s2.jpg'); z-index: 0; display:none; background-repeat: no-repeat;" > </li> -->
 
-          <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/slide/s3.jpg'); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(240,240,240); z-index: 0; background-repeat: no-repeat;" > </li>
+
+
+          <li style=" cursor: pointer; background-color: rgb(180,180,180); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+
+          <li style=" cursor: pointer; background-color: rgb(120,120,120); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+
         </ul>
 
     </div>

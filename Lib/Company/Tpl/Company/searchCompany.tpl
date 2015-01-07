@@ -30,7 +30,7 @@
 ----------*/
 
 .tableContent{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -59,6 +59,7 @@ text-align: center;
 text-align: center;
 font-size: 1.6em;
 font-weight: bold;
+
 }
 
 </style>
@@ -76,30 +77,18 @@ font-weight: bold;
 
 <div style="">
 
-    <div class="contentTableHeader">职位名称搜索列表</div>
+    <div class="contentTableHeader">相关公司名称</div>
         <table class="tableContent">
-            <tr class="tableContentTrTag">
-                <td class="ContentNameTd">职位名称</td>
-                <td class="ContentNameTd">公司名称</td>
-                <td class="ContentNameTd">招聘人数</td>
-                <td class="ContentNameTd">主要招聘地区</td>
-                <td class="ContentNameTd">更新日期</td>
-            </tr>
 
             {foreach from=$result item=results}
 
              <tr class="tableContentTrTag">
-                <td class="ContentNameTd"><a href='{$websiteUrl}/position/positionDetail/?id={$results.id}'>{$results.position_name}</a></td>
-                <td><a href='{$websiteUrl}/company/companyDetail/?id={$results.company_id}'>{$results.company_name}</a></td>
-                <td>{$results.hiring}</td>
-                <td>{$results.working_place}</td>
-                <td>{$results.update_time}</td>
+                <td class="ContentNameTd"><a href='{$websiteUrl}/company/companyDetail/?id={$results.id}'>{$results.company_name}</a></td>
             </tr>
 
             {/foreach}
 
         </table>
-
 
 </div>
 

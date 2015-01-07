@@ -51,6 +51,9 @@ line-height: 100px;
 .companyPosition{
     /*border: solid 1px red;*/
 }
+.companyPosition b{
+    border-bottom: solid 3px rgb(71,135,191);
+}
 .companyOtherPositionTable{
     margin-top: 15px;
    /* border: solid 1px red;*/
@@ -93,7 +96,7 @@ line-height: 100px;
         <table class="companyOtherPositionTable">
 
             {foreach from=$otherPositionList item=otherPositionLists}
-            <tr onclick='window.location.href="{$websiteUrl}/home/acurateSearch?keyword={$otherPositionLists.name}&type=0"'>
+            <tr onclick='window.location.href="{$websiteUrl}/position/positionDetail/?id={$otherPositionLists.id}"'>
                 <td style="text-indent: 10px;width: 75%; font-weight: bold">{$otherPositionLists.name}</td>
                 <td>{$otherPositionLists.company_update_time}</td>
             </tr>
@@ -102,6 +105,8 @@ line-height: 100px;
         </table>
 
     </div>
+
+    <div style=" height: 50px;"></div>
 
 
     </section>

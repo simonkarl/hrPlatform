@@ -23,6 +23,8 @@ function searchBefore(formName){
 }
 
 
+
+
 // $(".searchBtn").click(function(){
 
 // 	var typeName = $(this).attr("name");

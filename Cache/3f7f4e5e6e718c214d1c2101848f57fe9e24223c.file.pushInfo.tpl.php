@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-01 17:11:22
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 15:10:48
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1811043232547c30ba9821c7-90885339%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:155022022554acdbf8038163-73027239%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3f7f4e5e6e718c214d1c2101848f57fe9e24223c' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfo.tpl',
-      1 => 1417425061,
+      1 => 1420614639,
     ),
   ),
-  'nocache_hash' => '1811043232547c30ba9821c7-90885339',
+  'nocache_hash' => '155022022554acdbf8038163-73027239',
   'function' => 
   array (
   ),
@@ -21,28 +21,26 @@ $_smarty_tpl->decodeProperties(array (
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 <style>
-.list-group-item{
-	cursor: pointer;
-}
-.list-group-item:hover{
-	background-color: rgb(236,240,241);
-}
-.badge{ background-color:rgb(241,91,64);}
-
-
 .pushInfo_warpDiv{
 	 min-height: 30em;
 	 width: 1170px; 
 	 margin: 0 auto; 
 	 border: solid 1px #ccc;
+	 border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 margin-top: 10px;
 }
-.pushInfo_warpTitle{
-	height: 2.5em; 
-	line-height: 2.5em; 
-	text-indent: 7px;
-	background-color: rgb(240,240,240); 
-	font-size: 1.2em; 
-	font-weight: bold;
+.pushInfo_warpTitle{ 
+width: 87%;
+text-indent: 7px;
+margin: 0 auto;
+height: 120px;
+line-height: 28px;
+}
+
+.pushInfo_warpTitle div b{
+	 color: rgb(71,135,191);
 }
 .pushInfo_freeSection{
 	/*border: solid 1px red;*/
@@ -56,64 +54,92 @@ $_smarty_tpl->decodeProperties(array (
 	text-indent: 10px; 
 	line-height: 2em;
 	font-size: 1.2em; 
-	width: 10%;
+	width: 40%;
+	padding-left: 65px;
+	font-weight: bold;
+	margin-top: 10px;
 }
 
-.lookMore{
-	 text-align: right;
-	 padding-right: 3px; 
-	 cursor: pointer
+.table{
+	border:solid 1px rgb(221,221,221);
 }
-
+.table tr{
+	cursor: pointer;
+}
+.table tr:hover{
+	background-color: rgb(236,240,241);
+}
+.table tr td{
+	text-indent: 20px;
+}
 </style>
 
 <section>
 
 <div class="pushInfo_warpDiv">
 
-<div class="pushInfo_warpTitle">信息推送:</div>
+	<div style="font-size: 24px;
+font-weight: bold;
+padding-left: 7%;
+<!-- background-color: rgb(244,244,244); -->
+margin: 0 auto;
+margin-bottom: 20px;
+height: 70px;
+line-height: 100px;">你真的知道如何招聘吗?</div>
+<div class="pushInfo_warpTitle">
+	<div>经调查发现有近<b>60%</b>的HR不知道招聘职位的关键字会对招聘有重大影响</div>
+	<div>经调查发现有近<b>73.4%</b>的HR不知道如何发布有吸引力的招聘启事</div>
+	<div>身为HR的你,了解行业发展的趋势吗?知道近几年职位的薪资水平的分布吗?...</div>
+	<div><b>从Hirelib开始学习 开始了解 开始你的职业高级HR的旅程!</b></div>
 
+</div>
+
+<div style=" border-bottom: solid 1px rgb(221,221,221); width: 87%; margin: 0 auto;"></div>
 <div style=" height: 10px;"></div>
 
 <div class="pushInfo_freeSection">
 	<div class="pushInfo_freeTitle">免费专区:</div>
 	 <div style="width:87%; margin: 0 auto; ">
-		<ul class="list-group">
-		  <li class="list-group-item">
-		    <span class="badge">2</span>
-		    互联网行业招聘潜规则
-		  </li>
-		    <li class="list-group-item">
-		    <span class="badge"></span>
-		    制造业近几年发展趋势一般
-		  </li>
-		    <li class="list-group-item">
-		    <span class="badge">3</span>
-		    金融行业人才市场价格水涨船高
-		  </li>
-		</ul>
-		<div class="lookMore">查看更多>></div>
+		<table class="table">
+		    <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		    	<td>金融行业近几年发展趋势图标分析</td>
+		    	<td>2015-1-6</td>
+			</tr>
+		    <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		    	<td>茫茫人海中如何找到你的"Ta"</td>
+		    	<td>2015-1-6</td>
+		  	</tr>
+		  	<tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		  		<td>互联网行业招聘"潜规则" 行业趋势以及图标分析</td>
+		  		<td>2015-1-6</td>
+			</tr>
+		</table>
 	</div>
 </div>
 
 <div class="pushInfo_vipSection">
 	<div class="pushInfo_freeTitle">VIP专区:</div>
 	 <div style="width:87%; margin: 0 auto; ">
-		<ul class="list-group">
-		  <li class="list-group-item">
-		    <span class="badge">2</span>
-		    互联网行业招聘潜规则
-		  </li>
-		    <li class="list-group-item">
-		    <span class="badge"></span>
-		    制造业近几年发展趋势一般
-		  </li>
-		    <li class="list-group-item">
-		    <span class="badge">3</span>
-		    金融行业人才市场价格水涨船高
-		  </li>
-		</ul>
-		<div class="lookMore">查看更多>></div>
+		<table class="table">
+		    <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		    	<td>金融行业近几年发展趋势图标分析</td>
+		    	<td>2015-1-6</td>
+			</tr>
+		    <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		    	<td>茫茫人海中如何找到你的"Ta"</td>
+		    	<td>2015-1-6</td>
+		  	</tr>
+		  	<tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/pushInfoDetail"'>
+		  		<td>互联网行业招聘"潜规则" 行业趋势以及图标分析</td>
+		  		<td>2015-1-6</td>
+			</tr>
+		</table>
 	</div>
 </div>
 

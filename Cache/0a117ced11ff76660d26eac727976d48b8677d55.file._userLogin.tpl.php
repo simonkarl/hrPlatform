@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 16:15:08
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 11:47:25
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_userLogin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1836115591549bc78c99a515-60395253%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:203669654ab5acd2be4f1-71797846%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0a117ced11ff76660d26eac727976d48b8677d55' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_userLogin.tpl',
-      1 => 1419495230,
+      1 => 1420516043,
     ),
   ),
-  'nocache_hash' => '1836115591549bc78c99a515-60395253',
+  'nocache_hash' => '203669654ab5acd2be4f1-71797846',
   'function' => 
   array (
   ),
@@ -51,7 +51,7 @@ cursor: pointer;
 	 	</tr>
 	 	<tr>
 	 		<td>消息<br /><span class="glyphicon glyphicon-envelope"></span></td>
-	 		<td>退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
+	 		<td onclick="userlogout()">退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
 	 	</tr>
 	 </table>
 
@@ -64,11 +64,6 @@ cursor: pointer;
 <div style="font-size: 16px;font-weight: bold;color:rgb(44,62,81);">密码:</div>
 <div style=" margin-top: 12px; margin-bottom: 12px;">
     <input type="password" class="form-control" id="userLoginPassword" placeholder="请输入密码">
-</div>
-
-<div style=" margin-top: 10px;">
-    <b style=" margin-left: 5px; cursor: pointer">忘记密码？</b>
-    <b id="register" style=" margin-left: 65px; color: #333; cursor: pointer">免费注册</b>
 </div>
 
 <div style=" text-align: center;">

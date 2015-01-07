@@ -11,7 +11,7 @@ class CompanyAction extends Action {
 
 			$result = $companyApi->getCompanyDetail($_REQUEST['id']);
 
-			//print_r($result['list']);
+		    
 
          $company_detail_array = $result['company_detail'];
          $company_name = $company_detail_array['company_name'];
@@ -50,12 +50,6 @@ class CompanyAction extends Action {
          }
 
          $result = $companyApi->serachCompany($_REQUEST['keyword'],$page);
-
-
-         var_dump($result);
-
-         die;
-
      
          $page = new page('company/searchCompany',$_REQUEST['keyword'],$_REQUEST['type']);
 
@@ -65,7 +59,7 @@ class CompanyAction extends Action {
 
          $this->assign('fenye',$fenye);
 
-         $this->display('serach_company');
+         $this->display('searchCompany');
 	}
 
 }

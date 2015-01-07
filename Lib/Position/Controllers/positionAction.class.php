@@ -18,6 +18,8 @@ class PositionAction extends Action {
 
             $resultPosition = $resumeApi->getResumeDetail($_GET['id']);
             $result = $resultPosition['position_detail'];
+
+
             $resultCompanyInfo = $resultPosition['company_info'];
             $a = substr($resultCompanyInfo['company_industry'],12);
 
@@ -31,12 +33,13 @@ class PositionAction extends Action {
             $updated_at = $result['updated_at'];
             $job_description = $result['job_description'];
             //公司信息
+            $company_id = $resultCompanyInfo['id'];
             $company_name = $resultCompanyInfo['company_name'];
             $company_address = $resultCompanyInfo['company_address'];
             $company_industry = strip_tags($resultCompanyInfo['company_industry']);
             $company_scale = $resultCompanyInfo['company_scale'];
             $company_nature = $resultCompanyInfo['company_nature'];
-            // $company_website = $resultCompanyInfo['company_website'];
+            $company_website = $resultCompanyInfo['company_website'];
 
             $this->assign('position_label',$position_label);
             $this->assign('work_year',$work_year);
@@ -47,12 +50,16 @@ class PositionAction extends Action {
             // $this->assign('updated_at',$updated_at);
             $this->assign('job_description',$job_description);
 
+
+            $this->assign('job_name',$resultPosition['position']['name']);
+
+            $this->assign('company_id',$company_id);
             $this->assign('company_name',$company_name);
             $this->assign('company_address',$company_address);
             $this->assign('company_industry',$a);
             $this->assign('company_scale',$b);
             $this->assign('company_nature',$company_nature);
-            // $this->assign('company_website',$company_website);
+            $this->assign('company_website',$company_website);
 
 
              //  print_r($resultCompanyInfo);

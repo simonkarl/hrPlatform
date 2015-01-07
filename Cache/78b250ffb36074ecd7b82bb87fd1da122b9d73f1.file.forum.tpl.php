@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-24 17:44:25
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 11:29:48
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/forum.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1772037514549a8af9aca380-21507561%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:39627562154ab56aca1cc64-14419504%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '78b250ffb36074ecd7b82bb87fd1da122b9d73f1' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/forum.tpl',
-      1 => 1419414263,
+      1 => 1419472992,
     ),
   ),
-  'nocache_hash' => '1772037514549a8af9aca380-21507561',
+  'nocache_hash' => '39627562154ab56aca1cc64-14419504',
   'function' => 
   array (
   ),

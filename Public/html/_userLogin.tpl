@@ -32,7 +32,7 @@ cursor: pointer;
 	 	</tr>
 	 	<tr>
 	 		<td>消息<br /><span class="glyphicon glyphicon-envelope"></span></td>
-	 		<td>退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
+	 		<td onclick="userlogout()">退出<br /><span class="glyphicon glyphicon-exclamation-sign"></span></td>
 	 	</tr>
 	 </table>
 
@@ -45,11 +45,6 @@ cursor: pointer;
 <div style="font-size: 16px;font-weight: bold;color:rgb(44,62,81);">密码:</div>
 <div style=" margin-top: 12px; margin-bottom: 12px;">
     <input type="password" class="form-control" id="userLoginPassword" placeholder="请输入密码">
-</div>
-
-<div style=" margin-top: 10px;">
-    <b style=" margin-left: 5px; cursor: pointer">忘记密码？</b>
-    <b id="register" style=" margin-left: 65px; color: #333; cursor: pointer">免费注册</b>
 </div>
 
 <div style=" text-align: center;">

@@ -19,6 +19,11 @@ class HomeAction extends Action {
 
         $this->display();
     }
+    //推送信息
+    function pushInfoDetail() {
+
+        $this->display();
+    }
     //服务定制
     function servicesCustom(){
 
@@ -28,6 +33,54 @@ class HomeAction extends Action {
 
     //高级搜索
     function advancedSearch(){
+
+        $this->assign('request',json_encode($_REQUEST));
+
+        if(!empty($_REQUEST)){
+
+
+
+             if(!empty($_REQUEST['page'])){
+
+                    $page = $_REQUEST['page'];
+
+                 } else{
+
+                    $page = 1;
+
+                 }
+
+
+                if(!empty($_REQUEST['position']) || !empty($_REQUEST['work_experience']) || !empty($_REQUEST['salary'])){
+
+
+
+
+                $string = 'industry='.$_REQUEST['industry'].'&position='.$_REQUEST['position'].'&work_experience='.$_REQUEST['work_experience'].'&salary='.$_REQUEST['salary'];
+
+                $resumeApi = new resumeApi();
+
+                $result = $resumeApi->getResumeAdvanced($_REQUEST,$page);
+
+                //print_r($result);
+
+                //print_r($result);
+
+                 $page = new page('home/advancedSearch','','',$string);
+
+                 $fenye = $page->coutPage($result['current_page'],$result['fina_page']);
+
+                 // echo $fenye;
+
+                 $this->assign('result',$result['data']);
+
+                 $this->assign('fenye',$fenye);
+
+                }
+
+          
+
+        }
 
         $this->display();
     }

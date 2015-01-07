@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 17:29:11
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 19:36:54
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1677018076549bd8e799fda9-88192642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17944444549bf6d64ea042-20917262%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f9a278420fb239d15dc42280650a3c81cd54aca4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl',
-      1 => 1419499749,
+      1 => 1419507301,
     ),
   ),
-  'nocache_hash' => '1677018076549bd8e799fda9-88192642',
+  'nocache_hash' => '17944444549bf6d64ea042-20917262',
   'function' => 
   array (
   ),
@@ -70,6 +70,9 @@ line-height: 100px;
 .companyPosition{
     /*border: solid 1px red;*/
 }
+.companyPosition b{
+    border-bottom: solid 3px rgb(71,135,191);
+}
 .companyOtherPositionTable{
     margin-top: 15px;
    /* border: solid 1px red;*/
@@ -81,7 +84,6 @@ line-height: 100px;
 .companyOtherPositionTable tr:hover{
     cursor: pointer;
     color: rgb(71,135,191);
-
 }
 
 .companyOtherPositionTable tr td{
@@ -120,8 +122,8 @@ if (count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['otherPositionLists']->key => $_smarty_tpl->tpl_vars['otherPositionLists']->value){
 ?>
             <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/acurateSearch?keyword=<?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['name'];?>
-&type=0"'>
+/position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['id'];?>
+"'>
                 <td style="text-indent: 10px;width: 75%; font-weight: bold"><?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['name'];?>
 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['company_update_time'];?>
@@ -132,6 +134,8 @@ if (count($_from) > 0){
         </table>
 
     </div>
+
+    <div style=" height: 50px;"></div>
 
 
     </section>

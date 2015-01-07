@@ -57,6 +57,11 @@
     display:-moz-box;
     display:-webkit-box;
     display:box;
+  border-bottom: solid 1px rgb(216,216,216);
+  box-shadow: 0 0 3px rgb(216,216,216);
+  -webkit-box-shadow: 0 0 3px rgb(216,216,216);
+  -moz-box-shadow: 0 0 3px rgb(216,216,216);
+    /*background: rgba(236,240,241,1);*/
 }
 .sectionOne{
     -moz-box-flex:3;
@@ -119,28 +124,43 @@ border-bottom-color: transparent;
     text-decoration: none;
     color: rgb(231,76,60);
 }
+.location{
+    margin-left: 50px;
+/* padding-top: 30px; */
+height: 50px;
+line-height: 50px;
+color: rgb(44,62,80);
+}
+.loginOut{
+    margin-right: 66px;
+height: 50px;
+text-align: right;
+line-height: 51px;
+
+cursor: pointer;
+}
+.loginOut:hover{
+    margin-right: 66px;
+height: 50px;
+text-align: right;
+line-height: 51px;
+cursor: pointer;
+color: rgb(231,76,60);
+}
 </style>
 
-<script>
-    
-    $(function(){
 
-        var website = '{$websiteUrl}'
-        setPublic(website)
-    })
-
-</script>
 
 
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 
 
 <div style=" border: solid 2px rgb(231,76,70)"></div>
-<article class="wrapHeader">
+<article class="wrapHeader">   
     <section class="sectionOne">
-
+        <div class="location">当前城市:&nbsp;[上海]</div>
         <!-- Site Logo -->
-        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 160px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
+        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 36px;" class="icon-asterisk primary-color"></i> Hirelib
         </div>
 
     </section>
@@ -201,55 +221,34 @@ border-bottom-color: transparent;
     </section>
 
     <section class="sectionThree">
-
         <!-- Main Navigation-->
         <nav class="main-nav eleven columns" style="">
 
-            <ul style="width: 405px;padding-top: 70px;height: 135px;">
+            <ul style="width: 410px;padding-top: 72px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>信息推送</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>服务定制</a></li>
-                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/forum"'>招聘论坛</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>高级搜索</a></li>
+
+                {if $whether_login  == 1}
+
+                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/user/userCenter"'>个人中心</a></li>
+
+                {else}
+
+                <li>
+                    <a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/user/companyLogin"'>登陆</a>
+
+                    <a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/user/companyRegister"'>注册</a>
+                </li>
+
+                {/if}
 
             </ul>
         </nav>
     </section>
 </article>
 
-<style>
-
-.twoBanner{
-     /*border: solid 1px red;*/
-     height: 45px;
-     line-height: 45px;
-width: 1170px;
-     background-color: rgb(215,48,39);
-     color: #fff;
-     margin: 0 auto;
-}
-    
-.twoBanner span a{
-    color: #fff;
-    cursor: pointer;
-    margin-left: 8px;
-}
-</style>
-
-<div class="twoBanner">
-    <span style="font-size: 16px;font-weight: bold;margin-left: 8px;">热门搜索：</span>
-    <span>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=交互设计&type=0">交互设计</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=.NET&type=0">.NET</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=项目经理&type=0">项目经理</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=UI设计&type=0">UI设计</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=移动产品经理&type=0">移动产品经理</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=IOS&type=0">IOS</a>
-        <a href="{$websiteUrl}/home/acurateSearch?keyword=金融分析师&type=0">金融分析师</a>
-    </span>
-    <span><img style="width: 170px; float: right;" src="{$WebSiteUrlPublic}/images/ba2.png"></span>
-
-</div>
 
 
 <script>
@@ -258,6 +257,7 @@ $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+
 
 </script>
 <script type="text/javascript" src="{$WebSiteUrlPublic}/js/search.js"></script>

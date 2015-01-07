@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 19:30:04
-         compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:435408295549bf53c3623a6-06729819%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 18:33:53
+         compiled from "/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/searchCompany.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:463183374549be81187f912-09464548%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '660d24f6f2486925534020f45c712e8b6f82a6fd' => 
+    '4ad3c0742fa8b369a9eda96ae9120f404d563f5c' => 
     array (
-      0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl',
-      1 => 1419506581,
+      0 => '/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/searchCompany.tpl',
+      1 => 1419502638,
     ),
   ),
-  'nocache_hash' => '435408295549bf53c3623a6-06729819',
+  'nocache_hash' => '463183374549be81187f912-09464548',
   'function' => 
   array (
   ),
@@ -49,7 +49,7 @@ $_smarty_tpl->decodeProperties(array (
 ----------*/
 
 .tableContent{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -78,6 +78,7 @@ text-align: center;
 text-align: center;
 font-size: 1.6em;
 font-weight: bold;
+
 }
 
 </style>
@@ -95,15 +96,8 @@ font-weight: bold;
 
 <div style="">
 
-    <div class="contentTableHeader">职位名称搜索列表</div>
+    <div class="contentTableHeader">相关公司名称</div>
         <table class="tableContent">
-            <tr class="tableContentTrTag">
-                <td class="ContentNameTd">职位名称</td>
-                <td class="ContentNameTd">公司名称</td>
-                <td class="ContentNameTd">招聘人数</td>
-                <td class="ContentNameTd">主要招聘地区</td>
-                <td class="ContentNameTd">更新日期</td>
-            </tr>
 
             <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('result')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -113,25 +107,14 @@ if (count($_from) > 0){
 
              <tr class="tableContentTrTag">
                 <td class="ContentNameTd"><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
-'><?php echo $_smarty_tpl->tpl_vars['results']->value['position_name'];?>
-</a></td>
-                <td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['company_id'];?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
 '><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
 </a></td>
-                <td><?php echo $_smarty_tpl->tpl_vars['results']->value['hiring'];?>
-</td>
-                <td><?php echo $_smarty_tpl->tpl_vars['results']->value['working_place'];?>
-</td>
-                <td><?php echo $_smarty_tpl->tpl_vars['results']->value['update_time'];?>
-</td>
             </tr>
 
             <?php }} ?>
 
         </table>
-
 
 </div>
 

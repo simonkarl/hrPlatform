@@ -23,9 +23,16 @@ class page{
 	 * $model  commodity/list   page 1  
 	 */
  	
- 	public function page($model,$keyword,$type){
+ 	public function page($model,$keyword,$type,$strings = ''){
 
- 		$this->url = WebSiteUrl.'/'.$model.'?keyword='.$keyword.'&type='.$type;
+        if(!empty($strings) && $strings != ''){
+
+            $this->url = WebSiteUrl.'/'.$model.'?'.$strings;
+
+        } else{
+
+            $this->url = WebSiteUrl.'/'.$model.'?keyword='.$keyword.'&type='.$type;
+        }
 
  		#$this->page = $page;
 

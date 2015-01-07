@@ -3,23 +3,25 @@
 class UserAction extends Action {
 
 
-	//个人登陆
-	function personLogin(){
+	//企业登陆
+	function companyLogin(){
 
 
 		$this->display();
 	}
 
+	//企业退出
+	function userLogout(){
 
-	//个人注册
-	function personRegister(){
+		session_destroy();
 
-		$this->display();
+		echo '1';
+
+		die;
 	}
+
 	//企业注册
 	public function companyRegister(){
-
-	
 		
 		$this->display();
 

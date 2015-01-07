@@ -85,7 +85,7 @@ p a, p a:visited { line-height: inherit; }
 ================================================== */
 .primary-color{color:#e74c3c;}
 .secondary-color{color:#2c3e50;}
-.third-color{color: #7f8c8d;}
+.third-color{color: rgb(51,51,51)}
 
 
 /* #Lists

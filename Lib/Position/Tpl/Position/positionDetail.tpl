@@ -102,7 +102,7 @@
 <article class="wrapSearch">
     <section class="sectionLeft">
         <div style=" height: 45px;"></div>
-        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;{$position_label}</div>
+        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;{$job_name}</div>
 
             <table class="table">
                 <tr>
@@ -134,26 +134,65 @@
     <section class="sectionRight">
          <div style=" height: 50px;"></div>
         <div class="companyOtherDiv">
-            <b>公司名称:</b>&nbsp;&nbsp;&nbsp;{$company_name}
+            <b>公司名称:</b>
+            <a style="color: rgb(71,135,191); font-weight: bold;" href='{$websiteUrl}/company/companyDetail/?id={$company_id}'>&nbsp;&nbsp;&nbsp;{$company_name}</a>
         </div>
 
-        <div class="companyOtherDiv">
-            <b>所属领域:</b>&nbsp;&nbsp;&nbsp;{$company_industry}
-        </div>
-        <div class="companyOtherDiv">
-            <b>企业规模:</b>&nbsp;&nbsp;&nbsp;{$company_scale}
-        </div>
-        <div class="companyOtherDiv">
-            <b>企业性质:</b>&nbsp;&nbsp;&nbsp;{$company_nature}
-        </div>
+        {if {$company_industry}}
 
-<!--         <div class="companyOtherDiv">
-            <b>公司主页:</b><a href="javascript:window.location.href='{$company_website}'">&nbsp;&nbsp;&nbsp;{$company_website}</a>
-        </div> -->
+            <div class="companyOtherDiv">
+                <b>所属领域:</b>&nbsp;&nbsp;&nbsp;{$company_industry}
+            </div>
 
-        <div class="companyOtherDiv">
-            <b>公司地址:</b>&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal">{$company_address}</span>
-        </div>
+        {else}
+
+        {/if}
+
+        {if {$company_scale}}
+
+            <div class="companyOtherDiv">
+                <b>企业规模:</b>&nbsp;&nbsp;&nbsp;{$company_scale}
+            </div>
+
+        {else}
+
+        {/if}
+
+
+        {if {$company_website}}
+
+            <div class="companyOtherDiv">
+                <b>公司网址:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: rgb(71,135,191);" href='{$company_website}'>{$company_website}</a>
+
+            </div>
+
+        {else}
+
+        {/if}
+
+
+        {if {$company_nature}}
+
+            <div class="companyOtherDiv">
+                <b>企业性质:</b>&nbsp;&nbsp;&nbsp;{$company_nature}
+            </div>
+
+        {else}
+
+        {/if}
+
+
+
+        {if {$company_address}}
+
+            <div class="companyOtherDiv" style=" overflow: inherit">
+                <b>公司地址:</b>&nbsp;&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal">{$company_address}</span>
+            </div>
+
+        {else}
+
+        {/if}
 
     </section>
 
