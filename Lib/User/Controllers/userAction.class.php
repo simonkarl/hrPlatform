@@ -97,6 +97,21 @@ class UserAction extends Action {
 		$this->display();
 
 	}
+
+		//我的收藏
+	public function collect(){
+
+		$this->display();
+
+	}
+
+	// 基本信息
+	public function userInfo(){
+		$this->display();
+
+	}
+
+	
 }
 
 ?>

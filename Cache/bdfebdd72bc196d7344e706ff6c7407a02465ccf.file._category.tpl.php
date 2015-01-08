@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 11:46:26
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 10:54:03
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10296006754ab5a92e4f015-50773532%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:141832190354adf14b5906a5-52884537%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bdfebdd72bc196d7344e706ff6c7407a02465ccf' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_category.tpl',
-      1 => 1420515985,
+      1 => 1420685641,
     ),
   ),
-  'nocache_hash' => '10296006754ab5a92e4f015-50773532',
+  'nocache_hash' => '141832190354adf14b5906a5-52884537',
   'function' => 
   array (
   ),
@@ -425,7 +425,7 @@ $_smarty_tpl->decodeProperties(array (
         $(".menu_box").hover(function() {
 
             $(this).find('.dn').show();
-            $(this).css("background-color","rgb(236,240,241)");
+            $(this).css("background-color","rgb(244,244,244)");
 
 
         }, function() {
