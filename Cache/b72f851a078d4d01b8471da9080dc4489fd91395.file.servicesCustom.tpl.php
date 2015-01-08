@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 17:42:19
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 09:24:24
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29580509254acff7b509a45-31587642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:15975605554addc488f9a46-47839058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b72f851a078d4d01b8471da9080dc4489fd91395' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl',
-      1 => 1420623716,
+      1 => 1420680262,
     ),
   ),
-  'nocache_hash' => '29580509254acff7b509a45-31587642',
+  'nocache_hash' => '15975605554addc488f9a46-47839058',
   'function' => 
   array (
   ),
@@ -31,7 +31,7 @@ $_smarty_tpl->decodeProperties(array (
 	 margin-top: 10px;
 }
 .reportStyle{
-	padding-left: 60px;
+	padding-left: 95px;
 }
 .reportStyle dl dt{
 	font-size: 16px;
@@ -42,7 +42,8 @@ $_smarty_tpl->decodeProperties(array (
 	font-size: 14px;
 }
 .planTable{
-	 width: 100%
+	 width: 83%;
+	 margin: 0 auto;
 
 }
 .planTable tr td{
@@ -51,8 +52,8 @@ $_smarty_tpl->decodeProperties(array (
 }
 
 .planTable tr td img{
-	height: 50px;
-width: 100px;
+	height: 20px;
+width: 160px;
 }
 </style>
 
@@ -66,21 +67,21 @@ width: 100px;
         		<tr>
         			<td style="color: rgb(44,62,80);">服务介绍</td>
         			<td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right2.png"></td>
         			<td>确认信息</td>
         			<td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right2.png"></td>
         			<td>完成支付</td>
         			<td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right2.png"></td>
         			<td>订阅成功</td>
         		</tr>
         	</table>
         </div>
 
-        <div style="width: 540px;
+        <div style="width: 550px;
 line-height: 30px;
-padding-left: 60px;
+padding-left: 95px;
 margin-top: 12px;">根据大量数据分析和技术手段的加工我们为你提供行业信息的五大报表.进一步帮助你把握行业动态,凸显职业专业性.了解同行业公司的招聘方向和职位竞争,也许你所需要的人才就在他那里...
         </div>
     </div>

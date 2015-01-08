@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 17:40:04
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 09:31:40
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:101688525654acfef426fee7-04701936%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:98252769454adddfcaf4a47-68329404%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '19336a31dcdc95bc00d3555ce76c749f8eb3ec46' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
-      1 => 1420623421,
+      1 => 1420680698,
     ),
   ),
-  'nocache_hash' => '101688525654acfef426fee7-04701936',
+  'nocache_hash' => '98252769454adddfcaf4a47-68329404',
   'function' => 
   array (
   ),
@@ -37,7 +37,8 @@ $_smarty_tpl->decodeProperties(array (
 
 
 .planTable{
-   width: 100%
+   width: 83%;
+   margin: 0 auto;
 
 }
 .planTable tr td{
@@ -46,8 +47,8 @@ $_smarty_tpl->decodeProperties(array (
 }
 
 .planTable tr td img{
-  height: 50px;
-width: 100px;
+  height: 20px;
+width: 160px;
 }
 </style>
 
@@ -61,15 +62,15 @@ width: 100px;
   <div class="rssTitle">
               <table class="planTable">
             <tr>
-              <td>服务介绍</td>
+              <td style="color: rgb(44,62,80);">服务介绍</td>
               <td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right1.png"></td>
               <td style="color: rgb(44,62,80);">确认信息</td>
               <td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right2.png"></td>
               <td>完成支付</td>
               <td><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
-/images/right.jpg"></td>
+/images/right2.png"></td>
               <td>订阅成功</td>
             </tr>
           </table>
@@ -158,8 +159,13 @@ width: 100px;
       <div class="form-group form-group-lg">
         <label class="col-sm-2 control-label" for="formGroupInputLarge">支付方式</label>
 
-        <img style=" height: 35px;padding-left: 20px;margin-top: 7px;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+          <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
+            <input type="radio" name="payWay" id="payWay" checked="checked" value="option7">
+            <img style=" height: 35px;margin-top: -7px;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/alipay.jpg">
+
+          </label>
+
       </div>
 
       <div class="form-group form-group-lg">

@@ -18,7 +18,8 @@
 
 
 .planTable{
-   width: 100%
+   width: 83%;
+   margin: 0 auto;
 
 }
 .planTable tr td{
@@ -27,8 +28,8 @@
 }
 
 .planTable tr td img{
-  height: 50px;
-width: 100px;
+  height: 20px;
+width: 160px;
 }
 </style>
 
@@ -42,12 +43,12 @@ width: 100px;
   <div class="rssTitle">
               <table class="planTable">
             <tr>
-              <td>服务介绍</td>
-              <td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+              <td style="color: rgb(44,62,80);">服务介绍</td>
+              <td><img src="{$WebSiteUrlPublic}/images/right1.png"></td>
               <td style="color: rgb(44,62,80);">确认信息</td>
-              <td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+              <td><img src="{$WebSiteUrlPublic}/images/right2.png"></td>
               <td>完成支付</td>
-              <td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+              <td><img src="{$WebSiteUrlPublic}/images/right2.png"></td>
               <td>订阅成功</td>
             </tr>
           </table>
@@ -135,7 +136,12 @@ width: 100px;
       <div class="form-group form-group-lg">
         <label class="col-sm-2 control-label" for="formGroupInputLarge">支付方式</label>
 
-        <img style=" height: 35px;padding-left: 20px;margin-top: 7px;" src="{$WebSiteUrlPublic}/images/alipay.jpg">
+          <label class="radio-inline" style=" margin-top: 10px; margin-left: 18px;">
+            <input type="radio" name="payWay" id="payWay" checked="checked" value="option7">
+            <img style=" height: 35px;margin-top: -7px;" src="{$WebSiteUrlPublic}/images/alipay.jpg">
+
+          </label>
+
       </div>
 
       <div class="form-group form-group-lg">

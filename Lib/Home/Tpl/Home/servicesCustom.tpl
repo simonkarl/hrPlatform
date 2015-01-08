@@ -12,7 +12,7 @@
 	 margin-top: 10px;
 }
 .reportStyle{
-	padding-left: 60px;
+	padding-left: 95px;
 }
 .reportStyle dl dt{
 	font-size: 16px;
@@ -23,7 +23,8 @@
 	font-size: 14px;
 }
 .planTable{
-	 width: 100%
+	 width: 83%;
+	 margin: 0 auto;
 
 }
 .planTable tr td{
@@ -32,8 +33,8 @@
 }
 
 .planTable tr td img{
-	height: 50px;
-width: 100px;
+	height: 20px;
+width: 160px;
 }
 </style>
 
@@ -46,19 +47,19 @@ width: 100px;
         	<table class="planTable">
         		<tr>
         			<td style="color: rgb(44,62,80);">服务介绍</td>
-        			<td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+        			<td><img src="{$WebSiteUrlPublic}/images/right2.png"></td>
         			<td>确认信息</td>
-        			<td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+        			<td><img src="{$WebSiteUrlPublic}/images/right2.png"></td>
         			<td>完成支付</td>
-        			<td><img src="{$WebSiteUrlPublic}/images/right.jpg"></td>
+        			<td><img src="{$WebSiteUrlPublic}/images/right2.png"></td>
         			<td>订阅成功</td>
         		</tr>
         	</table>
         </div>
 
-        <div style="width: 540px;
+        <div style="width: 550px;
 line-height: 30px;
-padding-left: 60px;
+padding-left: 95px;
 margin-top: 12px;">根据大量数据分析和技术手段的加工我们为你提供行业信息的五大报表.进一步帮助你把握行业动态,凸显职业专业性.了解同行业公司的招聘方向和职位竞争,也许你所需要的人才就在他那里...
         </div>
     </div>
