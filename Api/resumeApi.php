@@ -37,6 +37,16 @@ class resumeApi extends Api {
        
     }
 
+    public function searchResumeByKeyWord($keyword,$page){
+
+          $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
+
+        $result = transferData($api_url, 'get');
+
+        return json_decode($result, true);
+
+    }
+
 
 }
 

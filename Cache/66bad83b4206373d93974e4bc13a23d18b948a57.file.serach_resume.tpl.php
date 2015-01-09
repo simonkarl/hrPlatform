@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:24:52
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 12:52:11
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:961150505549bbbc47f6fd3-63160776%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:27682928054ae0cfbecabd5-72908321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '66bad83b4206373d93974e4bc13a23d18b948a57' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/serach_resume.tpl',
-      1 => 1419492170,
+      1 => 1420689225,
     ),
   ),
-  'nocache_hash' => '961150505549bbbc47f6fd3-63160776',
+  'nocache_hash' => '27682928054ae0cfbecabd5-72908321',
   'function' => 
   array (
   ),
@@ -77,7 +77,7 @@ line-height: 2em;
 text-align: center;
 text-align: center;
 font-size: 1.6em;
-
+font-weight: bold;
 }
 
 </style>
@@ -95,7 +95,7 @@ font-size: 1.6em;
 
 <div style="">
 
-    <div class="contentTableHeader">职位名称数据分析</div>
+    <div class="contentTableHeader">职位名称搜索列表</div>
         <table class="tableContent">
             <tr class="tableContentTrTag">
                 <td class="ContentNameTd">职位名称</td>
