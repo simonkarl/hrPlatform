@@ -94,19 +94,24 @@ class UserAction extends Action {
 	//个人中心
 	public function userCenter(){
 
-		$this->display();
 
-	}
+		if(!empty($_REQUEST['action'])){
 
-		//我的收藏
-	public function collect(){
+			$action = $_REQUEST['action'];
 
-		$this->display();
+		} else{
 
-	}
+			$action = 'info';
 
-	// 基本信息
-	public function userInfo(){
+		}
+
+
+		$right = $this->fetch($action);
+
+
+
+		$this->assign('right',$right);
+
 		$this->display();
 
 	}

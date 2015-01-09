@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 11:35:49
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 13:00:56
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/userCenter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:160482856554adfb15403eb5-93371631%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:67272524554af608810e456-88661319%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f0395efe79b1a1af0709faf0f5239cda03710a47' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/userCenter.tpl',
-      1 => 1420688147,
+      1 => 1420779654,
     ),
   ),
-  'nocache_hash' => '160482856554adfb15403eb5-93371631',
+  'nocache_hash' => '67272524554af608810e456-88661319',
   'function' => 
   array (
   ),
@@ -41,34 +41,42 @@ $_smarty_tpl->decodeProperties(array (
     width: 24.5%;
 }
 .userCenterSectionRight{
-    background:purple;
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
     width: 75.5%;
+    min-height: 30em;
 }
 .userCenterTable{
-	width: 97%;
+	width: 100%;
 }
-.userCenterTable tr td{
-	height: 45px;
-	font-size: 16px;
-	letter-spacing: 2px;
-	line-height: 45px;
-	border: solid 1px rgb(221,221,221);
-	cursor: pointer;
-	padding-left: 40px;
-}
-.userCenterTable tr td:hover{
-	height: 45px;
-	font-size: 16px;
-	letter-spacing: 2px;
-	line-height: 45px;
-	border: solid 1px rgb(221,221,221);
-	cursor: pointer;
-	padding-left: 40px;
 
-	background-color: rgb(244,244,244);
+.userCenterTable tr td a{
+	width: 100%;
+	display: block;
+	padding-left: 40px;
+}
+.userCenterTable tr td a:hover{
+	text-decoration: none;
+}
+.userCenterTable tr{
+	height: 45px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: 45px;
+	border-bottom: solid 1px rgb(221,221,221);
+	cursor: pointer;
+}
+
+.userCenterTable tr:hover{
+	height: 45px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: 45px;
+	border-bottom: solid 1px rgb(221,221,221);
+	cursor: pointer;
+
+	background-color: rgb(241,241,241);
 }
 
 </style>
@@ -78,30 +86,49 @@ $_smarty_tpl->decodeProperties(array (
     	<div style=" width: 100%; height: 500px;">
 	    	<table class="userCenterTable">
 	    		<tr>
-	    			<td>基本信息</td>
+	    			<td ><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=info'>基本信息</a></td>
 	    		</tr>
 	    		<tr>
-	    			<td>我的订阅</td>
+	    			<td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=dingyue'>我的订阅</a></td>
 	    		</tr>
 	    		<tr>
-	    			<td ><a href='"<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/user/collect"'></a>我的收藏</td>
+	    			<td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=shouchang'>我的收藏</a></td>
 	    		</tr>
 	    		<tr>
-	    			<td>我的消息</td>
+	    			<td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=xiaoxi'>我的消息</a></td>
 	    		</tr>
 	    		<tr>
-	    			<td>我的服务</td>
+	    			<td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=fuwu'>我的服务</a></td>
 	    		</tr>
 	    		<tr>
-	    			<td>我的简历库</td>
+	    			<td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/user/userCenter?action=jianliku'>我的简历库</a></td>
 	    		</tr>
 
 	    	</table>
 	    </div>
     </section>
-    <section class="userCenterSectionRight">02</section>
+    <section class="userCenterSectionRight">
+
+    	<?php echo $_smarty_tpl->getVariable('right')->value;?>
+
+    </section>
 </article>
+<script>
+	$(function(){
+		$(".userCenterTable tr td").click(function(event) {
+			/* Act on the event */
+			$(this).css("background-color","red");
+		});
+
+	})
+
+</script>
 
 
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
