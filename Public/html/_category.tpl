@@ -296,7 +296,7 @@
         $(".menu_box").hover(function() {
 
             $(this).find('.dn').show();
-            $(this).css("background-color","rgb(236,240,241)");
+            $(this).css("background-color","rgb(244,244,244)");
 
 
         }, function() {

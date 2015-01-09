@@ -123,7 +123,7 @@ class HomeAction extends Action {
 
                  $this->assign('fenye',$fenye);
 
-                 $this->display('serach_resume');
+                 $this->display('serach_position');
 
                  break;
              
