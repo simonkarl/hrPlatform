@@ -37,9 +37,21 @@ class resumeApi extends Api {
        
     }
 
+    //根据关键字获取简历信息
+
     public function searchResumeByKeyWord($keyword,$page){
 
-          $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
+        $api_url = $this->api_url . '/search_resume?keyword=' . $keyword . '&page=' . $page;
+
+        $result = transferData($api_url, 'get');
+
+        return json_decode($result, true);
+
+    }
+
+      public function getResumeDetailByResume_id($resume_id){
+
+        $api_url = $this->api_url . '/resumeDetail?id=' . $resume_id ;
 
         $result = transferData($api_url, 'get');
 
