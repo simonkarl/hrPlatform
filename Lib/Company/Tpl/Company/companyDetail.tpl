@@ -9,6 +9,14 @@
     display:box;
 
     font-size: 1.1em;
+
+    width: 1170px; 
+     margin: 0 auto; 
+     border: solid 1px #ccc;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     margin-top: 10px;
 }
 .companyDetailSectionRight{
     -moz-box-flex:2;
@@ -24,7 +32,7 @@
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
-    background-color: rgb(250,250,250);
+    border-right: solid 1px #ccc;
     width: 65%;;
     padding-left: 30px;
 }
@@ -42,7 +50,7 @@ height: 100px;
 line-height: 100px;
 }
 .companyTitle b{
-    border-bottom: solid 5px rgb(71,135,191);
+    /*border-bottom: solid 5px rgb(71,135,191);*/
 }
 
 .companyInfo{
@@ -52,7 +60,7 @@ line-height: 100px;
     /*border: solid 1px red;*/
 }
 .companyPosition b{
-    border-bottom: solid 3px rgb(71,135,191);
+    /*border-bottom: solid 3px rgb(71,135,191);*/
 }
 .companyOtherPositionTable{
     margin-top: 15px;
@@ -61,10 +69,11 @@ line-height: 100px;
 }
 .companyOtherPositionTable tr{
     border: solid 1px #ccc;
+    border-right: none;
 }
 .companyOtherPositionTable tr:hover{
     cursor: pointer;
-    color: rgb(71,135,191);
+    background-color: rgb(246,246,246);
 }
 
 .companyOtherPositionTable tr td{
@@ -79,7 +88,6 @@ line-height: 100px;
 </style>
 
 <section>
-<div style=" min-height: 27em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
 
 <article class="companyDetailwrap">
     <section class="companyDetailSectionLeft">
@@ -128,6 +136,5 @@ line-height: 100px;
 
 </article>
 
-</div>
 </section>
 {include file="$path/_footer.tpl"}

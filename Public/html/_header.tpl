@@ -206,10 +206,10 @@ color: rgb(231,76,60);
 
       <div role="tabpanel" class="tab-pane fade" id="messages">
 
-        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form2' name='form2'>
+        <form action='{$websiteUrl}/resume/searchResume' method="post" id='form1' name='form1'>
         <input type="hidden" name='type' value='2'>
         <span><input type="text" class="inputSearch" id='keyword' name="keyword" placeholder="各种“高大上”的简历等着你..."   />
-        <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="resumeBtn" value="搜 索" />
+        <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="resumeBtn" value="搜 索" />
         </span>
         </form>
       </div>

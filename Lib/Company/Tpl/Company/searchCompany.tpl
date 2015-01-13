@@ -49,6 +49,12 @@
 .tableContent th{
     border: solid 1px #ccc;
 }
+.tableContent tr{
+    cursor: pointer;
+}
+.tableContent tr:hover{
+    background-color: rgb(246,246,246);
+}
 .contentTableHeader{
     width: 90%;
 margin: 0 auto;
@@ -82,8 +88,8 @@ font-weight: bold;
 
             {foreach from=$result item=results}
 
-             <tr class="tableContentTrTag">
-                <td class="ContentNameTd"><a href='{$websiteUrl}/company/companyDetail/?id={$results.id}'>{$results.company_name}</a></td>
+             <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/company/companyDetail/?id={$results.id}"'>
+                <td class="ContentNameTd">{$results.company_name}</td>
             </tr>
 
             {/foreach}

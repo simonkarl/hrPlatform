@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 17:01:27
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-12 11:17:22
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:31209933454aba467e6a604-59657596%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17181468654b33cc2ba3333-52255609%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1420534886,
+      1 => 1421032641,
     ),
   ),
-  'nocache_hash' => '31209933454aba467e6a604-59657596',
+  'nocache_hash' => '17181468654b33cc2ba3333-52255609',
   'function' => 
   array (
   ),
@@ -67,9 +67,9 @@ $_smarty_tpl->decodeProperties(array (
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
-
-    <b style="color: rgb(231,76,60);">1383</b>
-    家互联网公司在这里招聘、<b style="color: rgb(231,76,60);">86%</b>参加拍卖的程序员在两周内面试一家公司
+    新增HR用户
+    <b style="color: rgb(231,76,60);">138</b>人
+    、目前有<b style="color: rgb(231,76,60);">2276</b>个职位，今日新增职位<b style="color: rgb(231,76,60);">186</b>个
 
 </div>
 

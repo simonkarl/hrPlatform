@@ -172,6 +172,7 @@ color: rgb(120,120,120);
 
 			}else{
 				$("#acceptTakeEmail").removeClass('noBorder');
+				$(this).html('编辑');
 			}
 		});
 

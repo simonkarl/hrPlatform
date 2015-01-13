@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-13 13:40:10
-         compiled from "/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/searchCompany.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:120595409854b4afbac628e3-46854581%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 17:28:24
+         compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/searchResume.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:76083788254af9f38863783-55049728%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4ad3c0742fa8b369a9eda96ae9120f404d563f5c' => 
+    '872d73b754f8b7d51d25d5ba8583898310f69529' => 
     array (
-      0 => '/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/searchCompany.tpl',
-      1 => 1421127606,
+      0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/searchResume.tpl',
+      1 => 1420792607,
     ),
   ),
-  'nocache_hash' => '120595409854b4afbac628e3-46854581',
+  'nocache_hash' => '76083788254af9f38863783-55049728',
   'function' => 
   array (
   ),
@@ -49,15 +49,30 @@ $_smarty_tpl->decodeProperties(array (
 ----------*/
 
 .tableContent{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+}
+.tableContentTr{
+    text-indent: 20px;
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
 }
 .tableContentTrTag{
     height: 2.5em;
     line-height: 2.5em;
     border: solid 1px #ccc;
+    cursor: pointer;
 }
+.tableContentTrTag:hover{
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+    cursor: pointer;
+    background-color: rgb(241,241,241);
+}
+
 .tableContentTrTag td{
  /*   border: solid 1px #ccc;*/
     text-indent: 20px;
@@ -67,12 +82,6 @@ $_smarty_tpl->decodeProperties(array (
 }
 .tableContent th{
     border: solid 1px #ccc;
-}
-.tableContent tr{
-    cursor: pointer;
-}
-.tableContent tr:hover{
-    background-color: rgb(246,246,246);
 }
 .contentTableHeader{
     width: 90%;
@@ -84,13 +93,12 @@ text-align: center;
 text-align: center;
 font-size: 1.6em;
 font-weight: bold;
-
 }
 
 </style>
 
 <section>
-<div style=" min-height: 35em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
+<div style=" min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="wrapSearch">
    <!--  <section class="sectionLeft">01</section> -->
@@ -102,8 +110,17 @@ font-weight: bold;
 
 <div style="">
 
-    <div class="contentTableHeader">相关公司名称</div>
+    <div class="contentTableHeader">简历关键字搜索列表</div>
         <table class="tableContent">
+            <tr class="tableContentTr">
+                <td class="ContentNameTd">性别</td>
+                <td class="ContentNameTd">年龄</td>
+                <td class="ContentNameTd">专业</td>
+                <td class="ContentNameTd">学历</td>
+                <td class="ContentNameTd">工作经验</td>
+                <td class="ContentNameTd">居住地</td>
+                <td class="ContentNameTd">更新日期</td>
+            </tr>
 
             <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('result')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -112,15 +129,29 @@ if (count($_from) > 0){
 ?>
 
              <tr class="tableContentTrTag" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
+/resume/resumeDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['resume_id'];?>
 "'>
-                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['sex'];?>
+</td>  
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['age'];?>
 </td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['zhuanye'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['xueli'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['gongzuonianxian'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['juzhudi'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['gengxinshijian'];?>
+</td>
+               
             </tr>
 
             <?php }} ?>
 
         </table>
+
 
 </div>
 

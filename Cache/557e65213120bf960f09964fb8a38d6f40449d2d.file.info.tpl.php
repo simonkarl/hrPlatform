@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 15:13:07
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 17:46:45
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/info.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:154334925354af7f8389e2f4-03901120%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:31363732754afa385620553-02085843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '557e65213120bf960f09964fb8a38d6f40449d2d' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/info.tpl',
-      1 => 1420787585,
+      1 => 1420796803,
     ),
   ),
-  'nocache_hash' => '154334925354af7f8389e2f4-03901120',
+  'nocache_hash' => '31363732754afa385620553-02085843',
   'function' => 
   array (
   ),
@@ -190,6 +190,7 @@ color: rgb(120,120,120);
 
 			}else{
 				$("#acceptTakeEmail").removeClass('noBorder');
+				$(this).html('编辑');
 			}
 		});
 

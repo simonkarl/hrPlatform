@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 19:36:54
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-13 13:46:04
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17944444549bf6d64ea042-20917262%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:84838949254b4b11cd25eb7-51319889%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f9a278420fb239d15dc42280650a3c81cd54aca4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl',
-      1 => 1419507301,
+      1 => 1421127963,
     ),
   ),
-  'nocache_hash' => '17944444549bf6d64ea042-20917262',
+  'nocache_hash' => '84838949254b4b11cd25eb7-51319889',
   'function' => 
   array (
   ),
@@ -28,6 +28,14 @@ $_smarty_tpl->decodeProperties(array (
     display:box;
 
     font-size: 1.1em;
+
+    width: 1170px; 
+     margin: 0 auto; 
+     border: solid 1px #ccc;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     margin-top: 10px;
 }
 .companyDetailSectionRight{
     -moz-box-flex:2;
@@ -43,7 +51,7 @@ $_smarty_tpl->decodeProperties(array (
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
-    background-color: rgb(250,250,250);
+    border-right: solid 1px #ccc;
     width: 65%;;
     padding-left: 30px;
 }
@@ -61,7 +69,7 @@ height: 100px;
 line-height: 100px;
 }
 .companyTitle b{
-    border-bottom: solid 5px rgb(71,135,191);
+    /*border-bottom: solid 5px rgb(71,135,191);*/
 }
 
 .companyInfo{
@@ -71,7 +79,7 @@ line-height: 100px;
     /*border: solid 1px red;*/
 }
 .companyPosition b{
-    border-bottom: solid 3px rgb(71,135,191);
+    /*border-bottom: solid 3px rgb(71,135,191);*/
 }
 .companyOtherPositionTable{
     margin-top: 15px;
@@ -80,10 +88,11 @@ line-height: 100px;
 }
 .companyOtherPositionTable tr{
     border: solid 1px #ccc;
+    border-right: none;
 }
 .companyOtherPositionTable tr:hover{
     cursor: pointer;
-    color: rgb(71,135,191);
+    background-color: rgb(246,246,246);
 }
 
 .companyOtherPositionTable tr td{
@@ -98,7 +107,6 @@ line-height: 100px;
 </style>
 
 <section>
-<div style=" min-height: 27em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
 
 <article class="companyDetailwrap">
     <section class="companyDetailSectionLeft">
@@ -160,7 +168,6 @@ if (count($_from) > 0){
 
 </article>
 
-</div>
 </section>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

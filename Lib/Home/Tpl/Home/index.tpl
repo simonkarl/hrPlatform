@@ -45,9 +45,9 @@
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
-
-    <b style="color: rgb(231,76,60);">1383</b>
-    家互联网公司在这里招聘、<b style="color: rgb(231,76,60);">86%</b>参加拍卖的程序员在两周内面试一家公司
+    新增HR用户
+    <b style="color: rgb(231,76,60);">138</b>人
+    、目前有<b style="color: rgb(231,76,60);">2276</b>个职位，今日新增职位<b style="color: rgb(231,76,60);">186</b>个
 
 </div>
 
