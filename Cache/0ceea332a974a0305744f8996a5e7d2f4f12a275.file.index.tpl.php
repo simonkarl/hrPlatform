@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-12 11:17:22
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 10:34:09
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17181468654b33cc2ba3333-52255609%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130547242954bf1021275123-95957997%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1421032641,
+      1 => 1421807646,
     ),
   ),
-  'nocache_hash' => '17181468654b33cc2ba3333-52255609',
+  'nocache_hash' => '130547242954bf1021275123-95957997',
   'function' => 
   array (
   ),
@@ -38,7 +38,7 @@ $_smarty_tpl->decodeProperties(array (
     
 
   
-<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_headerIndex.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
@@ -68,8 +68,11 @@ $_smarty_tpl->decodeProperties(array (
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
     新增HR用户
-    <b style="color: rgb(231,76,60);">138</b>人
-    、目前有<b style="color: rgb(231,76,60);">2276</b>个职位，今日新增职位<b style="color: rgb(231,76,60);">186</b>个
+    <b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('user_count')->value;?>
+</b>人
+    、目前有<b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('allPosition')->value;?>
+</b>个职位、今日新增职位<b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('toDay')->value;?>
+</b>个
 
 </div>
 

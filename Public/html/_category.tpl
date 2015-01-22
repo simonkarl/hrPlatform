@@ -15,7 +15,7 @@
 
                     <div class="menu_sub dn" style="margin-top: -2px;">
                         <dl class="reset">
-                            <dt style=" "><a>技术类</a></dt>
+                            <dt style=" "><a>技术类热招</a></dt>
                             <span>
                                 <a href="{$websiteUrl}/home/acurateSearch?keyword=C#&type=0" class="curr">C#</a></span>
                             <span>
@@ -33,12 +33,12 @@
                             </span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>设计类</a></dt>
+                            <dt><a>设计类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=数据分析&type=0" class="curr">数据分析</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=硬件交互设计&type=0" class="curr">硬件交互设计</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>产品类</a></dt>
+                            <dt><a>产品类热招</a></dt>
 
                             <span>
                                 <a href="{$websiteUrl}/home/acurateSearch?keyword=产品助理&type=0" class="curr">产品助理</a>
@@ -70,7 +70,7 @@
 
                     <div class="menu_sub dn" style="margin-top: －1px">
                         <dl class="reset">
-                            <dt><a>技术类</a></dt>
+                            <dt><a>技术类热招</a></dt>
                             <span>
                                 <a href="{$websiteUrl}/home/acurateSearch?keyword=WEB前端&type=0" class="curr">WEB前端</a>
                             </span>
@@ -100,7 +100,7 @@
                             </span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>设计类</a></dt>
+                            <dt><a>设计类热招</a></dt>
                             <span>
                                 <a href="{$websiteUrl}/home/acurateSearch?keyword=网页设计&type=0" class="curr">网页设计</a>
                             </span>
@@ -118,7 +118,7 @@
                             </span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>产品类</a></dt>
+                            <dt><a>产品类热招</a></dt>
                             <span>
                                 <a href="{$websiteUrl}/home/acurateSearch?keyword=WEB产品经理&type=0" class="curr">WEB产品经理</a>
                             </span>
@@ -151,7 +151,7 @@
 
                     <div class="menu_sub dn" style="margin-top:167px">
                         <dl class="reset">
-                            <dt><a>移动类</a></dt>
+                            <dt><a>移动类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=移动端运营专员&type=0" class="curr">移动端运营专员</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=移动互联网市场推广&type=0" class="curr">移动互联网市场推广</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=移动客服&type=0" class="curr">移动客服</a></span>
@@ -159,7 +159,7 @@
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=产品经理（移动）&type=0" class="curr">产品经理（移动）</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>联通类</a></dt>
+                            <dt><a>联通类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=联通10010项目客服&type=0" class="curr">联通10010项目客服</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=联通营业厅营业员&type=0" class="curr">联通营业厅营业员</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=中国联通实习生包住宿&type=0" class="curr">中国联通实习生包住宿</a></span>
@@ -188,7 +188,7 @@
 
                     <div class="menu_sub dn" style="margin-top:147px">
                         <dl class="reset">
-                            <dt><a>技术类</a></dt>
+                            <dt><a>技术类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=专利工程师&type=0" class="curr">专利工程师</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=微电子工程师&type=0" class="curr">微电子工程师</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=电子电路/微电子研发工程师&type=0" class="curr">电子电路/微电子研发工程师</a></span>
@@ -202,12 +202,12 @@
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=嵌入式&type=0" class="curr">嵌入式</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>销售类</a></dt>
+                            <dt><a>销售类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=微电子销售经理&type=0" class="curr">微电子销售经理</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=微电子销售&type=0" class="curr">微电子销售</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>管理类</a></dt>
+                            <dt><a>管理类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=微电子技术总监&type=0" class="curr">微电子技术总监</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=行政总监&type=0" class="curr">行政总监</a></span>
                         </dl>
@@ -230,7 +230,7 @@
 
                     <div class="menu_sub dn" style="margin-top:-1px">
                         <dl class="reset">
-                            <dt><a>银行类</a></dt>
+                            <dt><a>银行类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=电话销售&type=0" class="curr">电话销售</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=信用卡电话催收员&type=0" class="curr">信用卡电话催收员</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=个人银行客户经理&type=0" class="curr">个人银行客户经理</a></span>
@@ -242,7 +242,7 @@
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=银行理财顾问&type=0" class="curr">银行理财顾问</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>保险类</a></dt>
+                            <dt><a>保险类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=保险聘销售代&type=0" class="curr">保险聘销售代</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=保险售后客服&type=0" class="curr">保险售后客服</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=保险经理&type=0" class="curr">保险经理</a></span>
@@ -252,7 +252,7 @@
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=保险业务员&type=0" class="curr">保险业务员</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>证券类</a></dt>
+                            <dt><a>证券类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=证券专员&type=0" class="curr">证券专员</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=投资经理(证券分析方向)&type=0" class="curr">投资经理(证券分析方向)</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=证券经纪人&type=0" class="curr">证券经纪人</a></span>
@@ -265,7 +265,7 @@
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=金融证券客户经理&type=0" class="curr">金融证券客户经理</a></span>
                         </dl>
                         <dl class="reset">
-                            <dt><a>信托类</a></dt>
+                            <dt><a>信托类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=信托综合理财专员&type=0" class="curr">信托综合理财专员</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=信托大客户经理&type=0" class="curr">信托大客户经理</a></span>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=金融理财信托专员&type=0" class="curr">金融理财信托专员</a></span>

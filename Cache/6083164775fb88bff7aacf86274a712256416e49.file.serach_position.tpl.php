@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 15:01:35
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-19 14:36:16
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:19657912654ae2b4fea3c07-41600729%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:138118584754bca5e0045648-96537293%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6083164775fb88bff7aacf86274a712256416e49' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl',
-      1 => 1420700493,
+      1 => 1421649355,
     ),
   ),
-  'nocache_hash' => '19657912654ae2b4fea3c07-41600729',
+  'nocache_hash' => '138118584754bca5e0045648-96537293',
   'function' => 
   array (
   ),
@@ -31,10 +31,7 @@ $_smarty_tpl->decodeProperties(array (
          border-radius: 5px;
      -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
-     margin-top: 10px;
-
 }
-
 
 .positionWrapContent{
     width:100%;
@@ -76,20 +73,15 @@ padding-left: 30px;
 .chartWarp{
     width: 100%;
     border: solid 1px rgb(221,221,221);
-    height: 200px;
     border-left: none;
     border-right: none;
 }
 .topResume{
     width: 100%;
-    border-bottom: solid 1px rgb(221,221,221);
-    height: 200px;
+    border-bottom: solid 1px rgb(221,221,221);  
 }
 .topCompany{
-        width: 100%;
-    height: 200px;
-
-
+    width: 100%;
 }
 .titleCenter{
         font-size: 18px;
@@ -98,12 +90,55 @@ height: 40px;
 text-align: center;
 line-height: 40px;
 }
+
+
+.tableContent{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tableContentTr{
+    text-indent: 20px;
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+}
+.tableContentTrTag{
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+.tableContentTrTag:hover{
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+    cursor: pointer;
+    background-color: rgb(241,241,241);
+}
+
+.tableContentTrTag td{
+ /*   border: solid 1px #ccc;*/
+    text-indent: 20px;
+}
+.ContentNameTd{
+    font-weight: bold;
+}
 </style>
+
 
 <section>
 
+    <div style="height: 50px;
+line-height: 50px;
+width: 1170px;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+text-align: center;">关于<?php echo $_smarty_tpl->getVariable('keyword')->value;?>
+职位</div>
 <div class="positionWarpDiv">
-
     <article class="positionWrapContent">
     <section class="positionSectionOne">
         <div class="contentTitle">资讯推送</div>
@@ -127,9 +162,12 @@ line-height: 40px;
     <section class="positionSectionTwo">
         <div class="contentTitle">基本参考</div>
         <div class="contentContent" style=" margin-top: 0px;">
-            <div>平均学历:<span>本科</span></div>
-            <div>平均薪资:<span>7000～9000</span></div>
-            <div>平均工作年限:<span>3~5年</span></div>
+            <div>平均学历:<span><?php echo $_smarty_tpl->getVariable('education')->value;?>
+</span></div>
+            <div>平均薪资:<span><?php echo $_smarty_tpl->getVariable('compensation')->value;?>
+</span></div>
+            <div>平均工作年限:<span><?php echo $_smarty_tpl->getVariable('work_experience')->value;?>
+</span></div>
             <div>
                 面试及智能评分:&nbsp;&nbsp;<a>精选面试题目及答案</a>
             </div>
@@ -138,21 +176,151 @@ line-height: 40px;
     </article>
 
     <div class="chartWarp">
-        <div class="titleCenter">基础图表分析</div>
+        <div class="titleCenter">最来<?php echo $_smarty_tpl->getVariable('keyword')->value;?>
+职位需求人数趋势</div>
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('xArray')->value;?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_tmp1==''){?>
+
+            <div style=" width: 70%; margin: 0 auto; margin-bottom: 20px;">
+            <canvas id="canvas" height="100" width="300"></canvas>
+            </div>
+
+        <?php }else{ ?>
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        <?php }?>
+
     </div>
 
 
     <div class="topResume">
-        <div class="titleCenter">TOP5简历</div>
+        <div class="titleCenter">精选<?php echo $_smarty_tpl->getVariable('keyword')->value;?>
+TOP5简历</div>
+
+        <?php if ($_smarty_tpl->getVariable('top_resumeArray')->value!=''){?>
+        <table class="tableContent">
+            <tr class="tableContentTr">
+                <td class="ContentNameTd">性别</td>
+                <td class="ContentNameTd">年龄</td>
+                <td class="ContentNameTd">专业</td>
+                <td class="ContentNameTd">学历</td>
+                <td class="ContentNameTd">工作经验</td>
+                <td class="ContentNameTd">居住地</td>
+                <td class="ContentNameTd">更新日期</td>
+            </tr>
+
+            <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->getVariable('top_resumeArray')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+if (count($_from) > 0){
+    foreach ($_from as $_smarty_tpl->tpl_vars['results']->key => $_smarty_tpl->tpl_vars['results']->value){
+?>
+
+             <tr class="tableContentTrTag" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/resume/resumeDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['resume_id'];?>
+"'>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['sex'];?>
+</td>  
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['age'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['zhuanye'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['xueli'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['gongzuonianxian'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['juzhudi'];?>
+</td>
+                    <td><?php echo $_smarty_tpl->tpl_vars['results']->value['gengxinshijian'];?>
+</td>
+               
+            </tr>
+            <?php }} ?>
+        </table>
+
+        <?php }else{ ?>
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        <?php }?>
+
     </div>
 
 
     <div class="topCompany">
-        <div class="titleCenter">TOP5公司</div>
+        <div class="titleCenter">热招<?php echo $_smarty_tpl->getVariable('keyword')->value;?>
+的TOP5公司</div>
+
+        <?php if ($_smarty_tpl->getVariable('top_companyArray')->value!=''){?>
+        <table class="tableContent">
+
+            <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->getVariable('top_companyArray')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+if (count($_from) > 0){
+    foreach ($_from as $_smarty_tpl->tpl_vars['results']->key => $_smarty_tpl->tpl_vars['results']->value){
+?>
+
+             <tr class="tableContentTrTag" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
+"'>
+                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+</td>
+            </tr>
+
+            <?php }} ?>
+
+        </table>
+
+        <?php }else{ ?>
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        <?php }?>
+
     </div>
-
-
 </div>
+
+<script>
+
+var  xArray = eval('<?php echo $_smarty_tpl->getVariable('xArray')->value;?>
+')
+
+var  yArray = eval('<?php echo $_smarty_tpl->getVariable('yArray')->value;?>
+')
+
+    $(function(){
+
+        var lineChartData = {
+            labels : xArray,
+            datasets : [
+                {
+                    label: "My First dataset",
+                    fillColor : "rgba(220,220,220,0.2)",
+                    strokeColor : "rgba(220,220,220,1)",
+                    pointColor : "rgba(220,220,220,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(151,187,205,1)",
+                    data :  yArray
+                }
+            ]
+
+        }
+
+    window.onload = function(){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive:  true
+        });
+    }
+
+
+
+    })
+
+    </script>
+
 </section>
 
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);

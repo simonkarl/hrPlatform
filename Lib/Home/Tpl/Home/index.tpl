@@ -19,7 +19,7 @@
     
 
   
-{include file="$path/_header.tpl"}
+{include file="$path/_headerIndex.tpl"}
 
 <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
 
@@ -46,8 +46,8 @@
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
     新增HR用户
-    <b style="color: rgb(231,76,60);">138</b>人
-    、目前有<b style="color: rgb(231,76,60);">2276</b>个职位，今日新增职位<b style="color: rgb(231,76,60);">186</b>个
+    <b style="color: rgb(231,76,60);">{$user_count}</b>人
+    、目前有<b style="color: rgb(231,76,60);">{$allPosition}</b>个职位、今日新增职位<b style="color: rgb(231,76,60);">{$toDay}</b>个
 
 </div>
 

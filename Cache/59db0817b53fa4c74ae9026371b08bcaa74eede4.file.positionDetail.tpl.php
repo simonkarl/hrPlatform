@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-26 12:25:27
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-15 11:00:33
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:71795623549ce3377e3401-36258708%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:125382569954b72d518f3c82-55674956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419567925,
+      1 => 1421290831,
     ),
   ),
-  'nocache_hash' => '71795623549ce3377e3401-36258708',
+  'nocache_hash' => '125382569954b72d518f3c82-55674956',
   'function' => 
   array (
   ),
@@ -43,9 +43,11 @@ $_smarty_tpl->decodeProperties(array (
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
-    background-color: rgb(250,250,250);
+    /*background-color: rgb(250,250,250);*/
     width: 65%;;
     padding-left: 30px;
+
+    border-right: solid 2px rgb(241,241,241);
 }
 .postionLabel{
     height: 50px;
@@ -55,7 +57,7 @@ $_smarty_tpl->decodeProperties(array (
     overflow: hidden;
 }
 .titleBorder{
-    border-bottom: solid 5px rgb(71,135,191);
+    /*border-bottom: solid 5px rgb(71,135,191);*/
 }
 .otherBorder{
     /*border-bottom: solid 2px rgb(71,135,191);*/
@@ -95,7 +97,7 @@ $_smarty_tpl->decodeProperties(array (
 }
 
 .companyBorder{
-    border-bottom: solid 3px rgb(71,135,191);
+    /*border-bottom: solid 3px rgb(71,135,191);*/
 }
 .companyDiv{
      height: 80px;
@@ -116,7 +118,7 @@ $_smarty_tpl->decodeProperties(array (
 </style>
 
 <section>
-<div style=" min-height: 35em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
+<div style="min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="wrapSearch">
     <section class="sectionLeft">
@@ -149,11 +151,11 @@ $_smarty_tpl->decodeProperties(array (
 
         </div>
 
-        <div class="onlineResume">可在线投递简历</div>
+<!--         <div class="onlineResume">可在线投递简历</div>
 
         <div style="text-align: right;">
             <button type="button" class="resumeBtn">投简历</button>
-        </div>
+        </div> -->
         <div style=" height: 40px;"></div>
     </section>
 

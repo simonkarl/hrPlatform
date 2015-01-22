@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 09:24:24
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 16:00:28
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15975605554addc488f9a46-47839058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:66595023054bf5c9c8320e9-70943041%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b72f851a078d4d01b8471da9080dc4489fd91395' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl',
-      1 => 1420680262,
+      1 => 1421827226,
     ),
   ),
-  'nocache_hash' => '15975605554addc488f9a46-47839058',
+  'nocache_hash' => '66595023054bf5c9c8320e9-70943041',
   'function' => 
   array (
   ),
@@ -23,7 +23,7 @@ $_smarty_tpl->decodeProperties(array (
 <style>
 .servicesCustomWarp{
 	 min-height: 30em;
-	 width:85%; 
+	 width:1170px; 
 	 margin: 0 auto; 
 	 border: solid 1px #ccc;
 	 	 -webkit-border-radius: 5px;

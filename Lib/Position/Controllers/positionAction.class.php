@@ -19,6 +19,7 @@ class PositionAction extends Action {
             $resultPosition = $resumeApi->getResumeDetail($_GET['id']);
             $result = $resultPosition['position_detail'];
 
+            //print_r($result['job_functions']);
 
             $resultCompanyInfo = $resultPosition['company_info'];
             $a = substr($resultCompanyInfo['company_industry'],12);
@@ -51,7 +52,7 @@ class PositionAction extends Action {
             $this->assign('job_description',$job_description);
 
 
-            $this->assign('job_name',$resultPosition['position']['name']);
+            $this->assign('job_name',$result['job_functions']);
 
             $this->assign('company_id',$company_id);
             $this->assign('company_name',$company_name);

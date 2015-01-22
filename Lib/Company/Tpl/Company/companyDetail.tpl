@@ -33,7 +33,7 @@
     -webkit-box-flex:1;
     box-flex:1;
     border-right: solid 1px #ccc;
-    width: 65%;;
+    width: 65%;
     padding-left: 30px;
 }
 
@@ -61,6 +61,7 @@ line-height: 100px;
 }
 .companyPosition b{
     /*border-bottom: solid 3px rgb(71,135,191);*/
+    font-size: 18px;
 }
 .companyOtherPositionTable{
     margin-top: 15px;
@@ -100,12 +101,12 @@ line-height: 100px;
         {$company_info}
     </div>
     <div class="companyPosition">
-        <b>本公司其他职位:</b>
+        <b>本公司热招职位:</b>
         <table class="companyOtherPositionTable">
 
             {foreach from=$otherPositionList item=otherPositionLists}
             <tr onclick='window.location.href="{$websiteUrl}/position/positionDetail/?id={$otherPositionLists.id}"'>
-                <td style="text-indent: 10px;width: 75%; font-weight: bold">{$otherPositionLists.name}</td>
+                <td style="text-indent: 10px;width: 75%;">{$otherPositionLists.name}</td>
                 <td>{$otherPositionLists.company_update_time}</td>
             </tr>
             {/foreach}

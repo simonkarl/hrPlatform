@@ -4,7 +4,7 @@
 <style>
 .servicesCustomWarp{
 	 min-height: 30em;
-	 width:85%; 
+	 width:1170px; 
 	 margin: 0 auto; 
 	 border: solid 1px #ccc;
 	 	 -webkit-border-radius: 5px;

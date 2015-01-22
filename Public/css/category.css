@@ -31,7 +31,7 @@ body {
 	background: #fff;
 }
 .dn{
-	display: none;
+	/*display: none;*/
 }
 #sidebar .mainNavs .menu_box{
 	border-bottom: solid 1px #ccc;
@@ -52,11 +52,13 @@ body {
 	width: 465px;
 }
 #sidebar .menu_sub dt {
-	width: 50px;
-	font-size: 14px;
-	margin: 0;
-	text-align: right;
-	position: absolute;
+width: 73px;
+font-size: 14px;
+margin: 0;
+margin-left: -20px;
+
+text-align: right;
+position: absolute;
 }
 #sidebar .menu_sub dt a {
 	padding: 0;

@@ -11,7 +11,17 @@ class HomeAction extends Action {
     //首页
     function index() {
 
-      
+        $indexApi = new indexApi();
+        
+        $result = $indexApi->getPositionCount();
+
+        // print_r($result);
+        $toDay = $result['today'];
+        $allPosition = $result['all'];
+        $user_count = $result['user_count'];
+        $this->assign('toDay',$toDay);
+        $this->assign('allPosition',$allPosition);
+        $this->assign('user_count',$user_count);
         $this->display();
     }
     //推送信息
@@ -38,8 +48,6 @@ class HomeAction extends Action {
 
         if(!empty($_REQUEST)){
 
-
-
              if(!empty($_REQUEST['page'])){
 
                     $page = $_REQUEST['page'];
@@ -50,21 +58,13 @@ class HomeAction extends Action {
 
                  }
 
-
                 if(!empty($_REQUEST['position']) || !empty($_REQUEST['work_experience']) || !empty($_REQUEST['salary'])){
-
-
-
 
                 $string = 'industry='.$_REQUEST['industry'].'&position='.$_REQUEST['position'].'&work_experience='.$_REQUEST['work_experience'].'&salary='.$_REQUEST['salary'];
 
                 $resumeApi = new resumeApi();
 
                 $result = $resumeApi->getResumeAdvanced($_REQUEST,$page);
-
-                //print_r($result);
-
-                //print_r($result);
 
                  $page = new page('home/advancedSearch','','',$string);
 
@@ -92,7 +92,7 @@ class HomeAction extends Action {
         
     }
 
-    //精准搜索
+    //搜索 职位
     function acurateSearch(){
 
          switch ($_REQUEST['type']) {
@@ -113,17 +113,29 @@ class HomeAction extends Action {
 
                  $result = $resumeApi->serachResume($_REQUEST['keyword'],$page);
 
-              
+                // print_r($result);
+                $compensation = $result['compensation'];
+                $work_experience = $result['work_experience'];
+                $education = $result['education'];
+                $statementArray = $result['statement'];
+                $top_resumeArray = $result['top_resume'];
+                $top_companyArray = $result['top_company'];
+                $xArray =array_reverse($statementArray['x']);
+                $yArray = $statementArray['y'];
 
-                 $page = new page('home/acurateSearch',$_REQUEST['keyword'],$_REQUEST['type']);
+                $this->assign('compensation',$compensation);
+                $this->assign('work_experience',$work_experience);
+                $this->assign('education',$education);
+                $this->assign('top_resumeArray',$top_resumeArray);
+                $this->assign('top_companyArray',$top_companyArray);
+                $this->assign('xArray',json_encode($xArray));
 
-                 $fenye = $page->coutPage($result['current_page'],$result['fina_page']);
+                $this->assign('yArray',json_encode($yArray));
 
-                 $this->assign('result',$result['data']);
 
-                 $this->assign('fenye',$fenye);
+                $this->assign('keyword',$_REQUEST['keyword']);
 
-                 $this->display('serach_position');
+                $this->display('serach_position');
 
                  break;
              

@@ -63,8 +63,6 @@
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);
     /*background: rgba(236,240,241,1);*/
-
-    margin-top: -30px;
 }
 .sectionOne{
     -moz-box-flex:3;
@@ -158,11 +156,19 @@ color: rgb(231,76,60);
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 
 
+<div style=" border: solid 2px rgb(231,76,70)"></div>
 <article class="wrapHeader">   
     <section class="sectionOne">
-        <div class="location"></div>
+        <div class="location">当前城市:
+            <select>  
+              <option value ="1">上海</option>  
+              <option value ="2">北京</option>  
+              <option value="3">广州</option>  
+            </select> 
+
+        </div>
         <!-- Site Logo -->
-        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 42px;" class="icon-asterisk primary-color"></i> Hirelib
+        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 40px;" class="icon-asterisk primary-color"></i> Hirelib
         </div>
 
     </section>
@@ -171,6 +177,54 @@ color: rgb(231,76,60);
 
         <div style=" height: 25px;"></div>
 
+    <!-- 搜索 -->
+<span style="width: 35%;">
+    <ul class="nav nav-tabs" role="tablist" style="width: 85%;">
+      <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">职位</a></li>
+      <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">公司</a></li>
+      <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">简历</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="home">
+
+        <form action='{$websiteUrl}/home/acurateSearch' method="post" id='form0' name='form0'>
+            <span>
+                <input type="hidden" name='type' value='0'>
+
+                <input type="text" class="inputSearch"  id='keyword' name="keyword" placeholder="快来“全民搜索”热门职位,试试手气"  />
+                <input type="button" class="searchBtn" onclick='searchBefore("form0")' name="positionBtn" value="搜 索"  />
+            </span>
+
+        </form>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="profile">
+
+        <form action='{$websiteUrl}/company/searchCompany' method="post" id='form2' name='form2'>
+
+            <input type="hidden" name='type' value='1'>
+
+            <span><input type="text" class="inputSearch" id='keyword' name="keyword"  placeholder="看看别的企业在干嘛..."  />
+            <input type="button" class="searchBtn" onclick='searchBefore("form2")' name="companyBtn" value="搜 索"  />
+            </span>
+
+        </form>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="messages">
+
+        <form action='{$websiteUrl}/resume/searchResume' method="post" id='form1' name='form1'>
+        <input type="hidden" name='type' value='2'>
+        <span><input type="text" class="inputSearch" id='keyword' name="keyword" placeholder="各种“高大上”的简历等着你..."   />
+        <input type="button" class="searchBtn" onclick='searchBefore("form1")' name="resumeBtn" value="搜 索" />
+        </span>
+        </form>
+      </div>
+    </div>
+</span>
+<!-- 搜索 -->
+
 
     </section>
 
@@ -178,7 +232,7 @@ color: rgb(231,76,60);
         <!-- Main Navigation-->
         <nav class="main-nav eleven columns" style="">
 
-            <ul style="width: 414px;padding-top: 72px;height: 135px;">
+            <ul style="width: 412px;padding-top: 72px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>筛选服务</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>行业咨询</a></li>

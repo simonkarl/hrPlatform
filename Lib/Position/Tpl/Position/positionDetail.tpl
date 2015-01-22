@@ -24,9 +24,11 @@
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
-    background-color: rgb(250,250,250);
+    /*background-color: rgb(250,250,250);*/
     width: 65%;;
     padding-left: 30px;
+
+    border-right: solid 2px rgb(241,241,241);
 }
 .postionLabel{
     height: 50px;
@@ -36,7 +38,7 @@
     overflow: hidden;
 }
 .titleBorder{
-    border-bottom: solid 5px rgb(71,135,191);
+    /*border-bottom: solid 5px rgb(71,135,191);*/
 }
 .otherBorder{
     /*border-bottom: solid 2px rgb(71,135,191);*/
@@ -76,7 +78,7 @@
 }
 
 .companyBorder{
-    border-bottom: solid 3px rgb(71,135,191);
+    /*border-bottom: solid 3px rgb(71,135,191);*/
 }
 .companyDiv{
      height: 80px;
@@ -97,7 +99,7 @@
 </style>
 
 <section>
-<div style=" min-height: 35em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
+<div style="min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="wrapSearch">
     <section class="sectionLeft">
@@ -123,11 +125,11 @@
             {$job_description}
         </div>
 
-        <div class="onlineResume">可在线投递简历</div>
+<!--         <div class="onlineResume">可在线投递简历</div>
 
         <div style="text-align: right;">
             <button type="button" class="resumeBtn">投简历</button>
-        </div>
+        </div> -->
         <div style=" height: 40px;"></div>
     </section>
 

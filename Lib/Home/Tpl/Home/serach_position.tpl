@@ -12,10 +12,7 @@
          border-radius: 5px;
      -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
-     margin-top: 10px;
-
 }
-
 
 .positionWrapContent{
     width:100%;
@@ -57,20 +54,15 @@ padding-left: 30px;
 .chartWarp{
     width: 100%;
     border: solid 1px rgb(221,221,221);
-    height: 200px;
     border-left: none;
     border-right: none;
 }
 .topResume{
     width: 100%;
-    border-bottom: solid 1px rgb(221,221,221);
-    height: 200px;
+    border-bottom: solid 1px rgb(221,221,221);  
 }
 .topCompany{
-        width: 100%;
-    height: 200px;
-
-
+    width: 100%;
 }
 .titleCenter{
         font-size: 18px;
@@ -79,12 +71,54 @@ height: 40px;
 text-align: center;
 line-height: 40px;
 }
+
+
+.tableContent{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tableContentTr{
+    text-indent: 20px;
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+}
+.tableContentTrTag{
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+.tableContentTrTag:hover{
+    height: 2.5em;
+    line-height: 2.5em;
+    border: solid 1px #ccc;
+    cursor: pointer;
+    background-color: rgb(241,241,241);
+}
+
+.tableContentTrTag td{
+ /*   border: solid 1px #ccc;*/
+    text-indent: 20px;
+}
+.ContentNameTd{
+    font-weight: bold;
+}
 </style>
+
 
 <section>
 
+    <div style="height: 50px;
+line-height: 50px;
+width: 1170px;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+text-align: center;">关于{$keyword}职位</div>
 <div class="positionWarpDiv">
-
     <article class="positionWrapContent">
     <section class="positionSectionOne">
         <div class="contentTitle">资讯推送</div>
@@ -105,9 +139,9 @@ line-height: 40px;
     <section class="positionSectionTwo">
         <div class="contentTitle">基本参考</div>
         <div class="contentContent" style=" margin-top: 0px;">
-            <div>平均学历:<span>本科</span></div>
-            <div>平均薪资:<span>7000～9000</span></div>
-            <div>平均工作年限:<span>3~5年</span></div>
+            <div>平均学历:<span>{$education}</span></div>
+            <div>平均薪资:<span>{$compensation}</span></div>
+            <div>平均工作年限:<span>{$work_experience}</span></div>
             <div>
                 面试及智能评分:&nbsp;&nbsp;<a>精选面试题目及答案</a>
             </div>
@@ -116,21 +150,125 @@ line-height: 40px;
     </article>
 
     <div class="chartWarp">
-        <div class="titleCenter">基础图表分析</div>
+        <div class="titleCenter">最来{$keyword}职位需求人数趋势</div>
+
+        {if {$xArray} == ""}
+
+            <div style=" width: 70%; margin: 0 auto; margin-bottom: 20px;">
+            <canvas id="canvas" height="100" width="300"></canvas>
+            </div>
+
+        {else}
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        {/if}
+
     </div>
 
 
     <div class="topResume">
-        <div class="titleCenter">TOP5简历</div>
+        <div class="titleCenter">精选{$keyword}TOP5简历</div>
+
+        {if $top_resumeArray != ""}
+        <table class="tableContent">
+            <tr class="tableContentTr">
+                <td class="ContentNameTd">性别</td>
+                <td class="ContentNameTd">年龄</td>
+                <td class="ContentNameTd">专业</td>
+                <td class="ContentNameTd">学历</td>
+                <td class="ContentNameTd">工作经验</td>
+                <td class="ContentNameTd">居住地</td>
+                <td class="ContentNameTd">更新日期</td>
+            </tr>
+
+            {foreach from=$top_resumeArray item=results}
+
+             <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/resume/resumeDetail/?id={$results.resume_id}"'>
+                    <td>{$results.sex}</td>  
+                    <td>{$results.age}</td>
+                    <td>{$results.zhuanye}</td>
+                    <td>{$results.xueli}</td>
+                    <td>{$results.gongzuonianxian}</td>
+                    <td>{$results.juzhudi}</td>
+                    <td>{$results.gengxinshijian}</td>
+               
+            </tr>
+            {/foreach}
+        </table>
+
+        {else}
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        {/if}
+
     </div>
 
 
     <div class="topCompany">
-        <div class="titleCenter">TOP5公司</div>
+        <div class="titleCenter">热招{$keyword}的TOP5公司</div>
+
+        {if $top_companyArray != ""}
+        <table class="tableContent">
+
+            {foreach from=$top_companyArray item=results}
+
+             <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/company/companyDetail/?id={$results.id}"'>
+                <td class="ContentNameTd">{$results.company_name}</td>
+            </tr>
+
+            {/foreach}
+
+        </table>
+
+        {else}
+
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+
+        {/if}
+
     </div>
-
-
 </div>
+
+<script>
+
+var  xArray = eval('{$xArray}')
+
+var  yArray = eval('{$yArray}')
+
+    $(function(){
+
+        var lineChartData = {
+            labels : xArray,
+            datasets : [
+                {
+                    label: "My First dataset",
+                    fillColor : "rgba(220,220,220,0.2)",
+                    strokeColor : "rgba(220,220,220,1)",
+                    pointColor : "rgba(220,220,220,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(151,187,205,1)",
+                    data :  yArray
+                }
+            ]
+
+        }
+
+    window.onload = function(){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive:  true
+        });
+    }
+
+
+
+    })
+
+    </script>
+
 </section>
 
 {include file="$path/_footer.tpl"}

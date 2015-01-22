@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-13 13:46:04
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 11:23:51
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:84838949254b4b11cd25eb7-51319889%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:185945318554c06d470cb2e1-15729820%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f9a278420fb239d15dc42280650a3c81cd54aca4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Company/Tpl/Company/companyDetail.tpl',
-      1 => 1421127963,
+      1 => 1421400732,
     ),
   ),
-  'nocache_hash' => '84838949254b4b11cd25eb7-51319889',
+  'nocache_hash' => '185945318554c06d470cb2e1-15729820',
   'function' => 
   array (
   ),
@@ -52,7 +52,7 @@ $_smarty_tpl->decodeProperties(array (
     -webkit-box-flex:1;
     box-flex:1;
     border-right: solid 1px #ccc;
-    width: 65%;;
+    width: 65%;
     padding-left: 30px;
 }
 
@@ -80,6 +80,7 @@ line-height: 100px;
 }
 .companyPosition b{
     /*border-bottom: solid 3px rgb(71,135,191);*/
+    font-size: 18px;
 }
 .companyOtherPositionTable{
     margin-top: 15px;
@@ -121,7 +122,7 @@ line-height: 100px;
 
     </div>
     <div class="companyPosition">
-        <b>本公司其他职位:</b>
+        <b>本公司热招职位:</b>
         <table class="companyOtherPositionTable">
 
             <?php  $_smarty_tpl->tpl_vars['otherPositionLists'] = new Smarty_Variable;
@@ -132,7 +133,7 @@ if (count($_from) > 0){
             <tr onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['id'];?>
 "'>
-                <td style="text-indent: 10px;width: 75%; font-weight: bold"><?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['name'];?>
+                <td style="text-indent: 10px;width: 75%;"><?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['name'];?>
 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['otherPositionLists']->value['company_update_time'];?>
 </td>
