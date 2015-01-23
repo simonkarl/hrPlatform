@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 15:43:21
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 16:06:05
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_sempleHeader.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:121473793554ab9219b16bf9-20630337%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:79020860154c0af6dabd002-59635623%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a5e3fff18a1676f394cc7b8f26e01e23c93f0938' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_sempleHeader.tpl',
-      1 => 1420530104,
+      1 => 1421913963,
     ),
   ),
-  'nocache_hash' => '121473793554ab9219b16bf9-20630337',
+  'nocache_hash' => '79020860154c0af6dabd002-59635623',
   'function' => 
   array (
   ),
@@ -42,13 +42,18 @@ $_smarty_tpl->decodeProperties(array (
 }
 
   </style>
+
+<div style='background-color: rgb(51,51,51);'>
+
   <!-- Site Logo -->
-  <div class="regHider logo secondary-color five columns"><i onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' style="text-indent: 36px; cursor: pointer" class="icon-asterisk primary-color"></i> 
+  <div class="regHider logo secondary-color five columns">
+<!--     <i onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/index"' style="text-indent: 36px; cursor: pointer;" class="icon-asterisk primary-color"></i>  -->
+  <img onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/index"' src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/logo.png" style="height: 45px; margin-top: 5px; cursor:pointer" />
 
-  <span onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' >Hirelib</span>
-
-  <span style=" float: right; font-size: 14px;line-height: 60px;margin-right: 150px;">语言: <b>简体中文</b></span>
+  <span style=" color:#fff; float: right; font-size: 14px;line-height: 60px;margin-right: 150px;">语言: <strong>简体中文</strong></span>
 
   </div>
+</div>

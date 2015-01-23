@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 17:46:45
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:24:39
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/info.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:31363732754afa385620553-02085843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:132494934654c0a5b78c9832-45022410%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '557e65213120bf960f09964fb8a38d6f40449d2d' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/info.tpl',
-      1 => 1420796803,
+      1 => 1421911477,
     ),
   ),
-  'nocache_hash' => '31363732754afa385620553-02085843',
+  'nocache_hash' => '132494934654c0a5b78c9832-45022410',
   'function' => 
   array (
   ),
@@ -86,7 +86,7 @@ background: rgb(241,241,241);
 border: solid 1px rgb(230,230,230);
 
 color: #fff;
-background-color: rgb(231,76,60);
+background-color: rgb(255,153,51);
 }
 
 .explainStyle{

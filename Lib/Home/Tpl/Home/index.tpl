@@ -14,7 +14,7 @@
    
 
 </head>
-<body class="third-color">
+<body class="third-color" style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 
     
 
@@ -41,13 +41,13 @@
     <!-- About Us Section
     ================================================== -->
 
-<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(86,103,109);  border-bottom: solid 1px rgb(216,216,216);
+<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(60,89,86);  border-bottom: solid 1px rgb(216,216,216);
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
     新增HR用户
-    <b style="color: rgb(231,76,60);">{$user_count}</b>人
-    、目前有<b style="color: rgb(231,76,60);">{$allPosition}</b>个职位、今日新增职位<b style="color: rgb(231,76,60);">{$toDay}</b>个
+    <b style="color: rgb(255,119,51);">{$user_count}</b>人
+    、目前有<b style="color: rgb(255,119,51);">{$allPosition}</b>个职位、今日新增职位<b style="color: rgb(255,119,51);">{$toDay}</b>个
 
 </div>
 
@@ -59,7 +59,7 @@
         <div class="subtitle">We are a <span class="highlight">creative agency</span> located in San Francisco, California. We’ve won a <span class="highlight">ton of awards</span> and have been featured in all of the magazines.</div>
     </div><!-- close services header -->
 
-    <div class="fullwidth">
+    <div class="fullwidth" style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
         <div class="container sub-page">
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="{$WebSiteUrlPublic}/images/icons/icon-megaphone.png" alt="Creativity" /></div>

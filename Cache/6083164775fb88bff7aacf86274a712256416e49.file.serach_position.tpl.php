@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-19 14:36:16
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 10:50:09
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:138118584754bca5e0045648-96537293%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:98969840454c1b6e1da8749-54785210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6083164775fb88bff7aacf86274a712256416e49' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl',
-      1 => 1421649355,
+      1 => 1421981407,
     ),
   ),
-  'nocache_hash' => '138118584754bca5e0045648-96537293',
+  'nocache_hash' => '98969840454c1b6e1da8749-54785210',
   'function' => 
   array (
   ),
@@ -127,7 +127,8 @@ line-height: 40px;
 }
 </style>
 
-
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 
     <div style="height: 50px;
@@ -182,13 +183,12 @@ text-align: center;">关于<?php echo $_smarty_tpl->getVariable('keyword')->valu
         <?php ob_start();?><?php echo $_smarty_tpl->getVariable('xArray')->value;?>
 <?php $_tmp1=ob_get_clean();?><?php if ($_tmp1==''){?>
 
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+        <?php }else{ ?>
+
             <div style=" width: 70%; margin: 0 auto; margin-bottom: 20px;">
             <canvas id="canvas" height="100" width="300"></canvas>
             </div>
-
-        <?php }else{ ?>
-
-            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
 
         <?php }?>
 
@@ -255,17 +255,27 @@ if (count($_from) > 0){
         <?php if ($_smarty_tpl->getVariable('top_companyArray')->value!=''){?>
         <table class="tableContent">
 
+            <tr class="tableContentTr">
+                <td class="ContentNameTd">公司名称</td>
+                <td class="ContentNameTd">学历要求</td>
+                <td class="ContentNameTd">薪资待遇</td>
+            </tr>
+
+
             <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('top_companyArray')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 if (count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['results']->key => $_smarty_tpl->tpl_vars['results']->value){
 ?>
 
+
              <tr class="tableContentTrTag" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
 "'>
                 <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
 </td>
+                <td class="ContentNameTd">本科</td>
+                <td class="ContentNameTd">面议</td>
             </tr>
 
             <?php }} ?>
@@ -315,14 +325,12 @@ var  yArray = eval('<?php echo $_smarty_tpl->getVariable('yArray')->value;?>
         });
     }
 
-
-
     })
 
     </script>
 
 </section>
-
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 

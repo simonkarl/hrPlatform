@@ -68,7 +68,7 @@ background: rgb(241,241,241);
 border: solid 1px rgb(230,230,230);
 
 color: #fff;
-background-color: rgb(231,76,60);
+background-color: rgb(255,153,51);
 }
 
 .explainStyle{

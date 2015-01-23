@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 10:47:17
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:44:44
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:75201496854bf1335e15783-62513851%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:176393374254c0aa6c79d9e7-65941626%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1421808436,
+      1 => 1421912540,
     ),
   ),
-  'nocache_hash' => '75201496854bf1335e15783-62513851',
+  'nocache_hash' => '176393374254c0aa6c79d9e7-65941626',
   'function' => 
   array (
   ),
@@ -94,7 +94,7 @@ $_smarty_tpl->decodeProperties(array (
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);
-    /*background: rgba(236,240,241,1);*/
+    background: rgba(51,51,51,1);
 
     margin-top: -30px;
 }
@@ -154,10 +154,13 @@ border-bottom-color: transparent;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
 }
 .main-nav ul li a:hover{
     text-decoration: none;
-    color: rgb(231,76,60);
+    color: rgb(255,153,51);
+    font-family: Arial,Helvetica,sans-serif;
 }
 .location{
     margin-left: 56px;
@@ -195,7 +198,11 @@ color: rgb(231,76,60);
         <div class="location"></div>
         <!-- Site Logo -->
         <div class="logo secondary-color five columns" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 42px;" class="icon-asterisk primary-color"></i> Hirelib
+/home/index"' style="text-indent: 14px; line-height: 70px;">
+        <img style="height: 55px;
+margin-left: 42px;
+margin-top: -6px;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/logo.png" />
         </div>
 
     </section>
@@ -217,7 +224,7 @@ color: rgb(231,76,60);
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/advancedSearch"'>筛选服务</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/pushInfo"'>行业咨询</a></li>
+/home/pushInfo"'>行业资讯</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/servicesCustom"'>订阅产品</a></li>
 

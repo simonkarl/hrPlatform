@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-13 13:36:12
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:00:28
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:12209631754b4aeccdac144-27147082%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:202278784654c1b94c3f6181-10141841%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fdbef5d30c83dd24c527d67ac2d28281049b5cae' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl',
-      1 => 1421127371,
+      1 => 1421982025,
     ),
   ),
-  'nocache_hash' => '12209631754b4aeccdac144-27147082',
+  'nocache_hash' => '202278784654c1b94c3f6181-10141841',
   'function' => 
   array (
   ),
@@ -209,6 +209,8 @@ color: rgb(56,117,185);
 
 </style>
 
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 <div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
@@ -223,7 +225,7 @@ color: rgb(56,117,185);
                 <b><?php echo $_smarty_tpl->getVariable('gongzuojingyan')->value;?>
 </b><b><?php echo $_smarty_tpl->getVariable('xingbei')->value;?>
 </b><b><?php echo $_smarty_tpl->getVariable('birth')->value;?>
-岁(1983年10月16日)</b>
+</b>
             </div>
 <!--             <table class="personInfoTable">
                 <tr><td>居住地：</td><td>上海浦东</td><td>户口：</td><td>湖南</td></tr>
@@ -398,5 +400,7 @@ if (count($_from) > 0){
 
 </div>
 </section>
+
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

@@ -62,7 +62,7 @@
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);
-    /*background: rgba(236,240,241,1);*/
+    background: rgba(51,51,51,1);
 
     margin-top: -30px;
 }
@@ -122,10 +122,13 @@ border-bottom-color: transparent;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
 }
 .main-nav ul li a:hover{
     text-decoration: none;
-    color: rgb(231,76,60);
+    color: rgb(255,153,51);
+    font-family: Arial,Helvetica,sans-serif;
 }
 .location{
     margin-left: 56px;
@@ -162,7 +165,10 @@ color: rgb(231,76,60);
     <section class="sectionOne">
         <div class="location"></div>
         <!-- Site Logo -->
-        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 42px;" class="icon-asterisk primary-color"></i> Hirelib
+        <div class="logo secondary-color five columns" onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 14px; line-height: 70px;">
+        <img style="height: 55px;
+margin-left: 42px;
+margin-top: -6px;" src="{$WebSiteUrlPublic}/images/logo.png" />
         </div>
 
     </section>
@@ -181,7 +187,7 @@ color: rgb(231,76,60);
             <ul style="width: 414px;padding-top: 72px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>筛选服务</a></li>
-                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>行业咨询</a></li>
+                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>行业资讯</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>订阅产品</a></li>
 
                 {if $whether_login  == 1}

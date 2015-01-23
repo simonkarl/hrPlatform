@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 17:07:12
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:51:28
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:140741114054aba5c070df31-40418738%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:85197276454c0ac0095ed68-27774455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '20dfe9405e457f93bb77415fd966eab7866ca26a' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl',
-      1 => 1420535230,
+      1 => 1421913086,
     ),
   ),
-  'nocache_hash' => '140741114054aba5c070df31-40418738',
+  'nocache_hash' => '85197276454c0ac0095ed68-27774455',
   'function' => 
   array (
   ),
@@ -19,11 +19,11 @@ $_smarty_tpl->decodeProperties(array (
 
 <style>
 .sliderStyle{
-width: 950px;
+width: 955px;
 height: 420px;
 position: relative;
 /* z-index: -1; */
-margin-left: 220px;
+margin-left: 215px;
 }
  #slides  li {
             list-style: none;
@@ -53,7 +53,7 @@ z-index: 800;
 
 position: absolute;
 top: 175px;
-left: 887px;
+left: 894px;
 width: 60px;
 height: 59px;
 display: block;
@@ -70,12 +70,12 @@ z-index: 800;
 <!--             <li style=" cursor: pointer; background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/slide/s2.jpg'); z-index: 0; display:none; background-repeat: no-repeat;" > </li> -->
 
-          <li style=" cursor: pointer; background-color: rgb(240,240,240); z-index: 0; background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(186,210,214); z-index: 0; background-repeat: no-repeat;" > </li>
 
 
-          <li style=" cursor: pointer; background-color: rgb(180,180,180); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(200,194,196); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
 
-          <li style=" cursor: pointer; background-color: rgb(120,120,120); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(223,194,125); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
 
         </ul>
 

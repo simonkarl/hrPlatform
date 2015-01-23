@@ -61,11 +61,11 @@
 }
 
 </style>
+
+{include file="$path/_sempleHeader.tpl"}
+
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
-
-  {include file="$path/_sempleHeader.tpl"}
-
-
   <div style=" height: 52px; width: 40%; margin: 0 auto">
       <div style=" margin-top: 12px; height: 40px;line-height: 8px;" class="alert alert-danger" role="alert"></div>
 
@@ -112,6 +112,7 @@
 
     </div>
 </section>
+</body>
 
  <script src="{$WebSiteUrlPublic}/js/public.js"></script>
 

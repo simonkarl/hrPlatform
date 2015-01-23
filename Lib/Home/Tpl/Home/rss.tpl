@@ -10,6 +10,7 @@
   font-size: 24px;
   font-weight: bold;
   border-bottom: solid 1px rgb(221,221,221);  
+  background: #fff;
 }
 
 .control-label{
@@ -33,7 +34,7 @@ width: 160px;
 }
 </style>
 
-
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;     -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
@@ -172,7 +173,7 @@ width: 160px;
 	<div style=" height: 20px;"></div>
 
 </section>
-
+</body>
 <script>
   $(function(){
     $("input[type=radio]").click(function(){

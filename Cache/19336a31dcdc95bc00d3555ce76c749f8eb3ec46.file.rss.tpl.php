@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 16:00:01
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:22:13
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:206226289954bf5c8140ddd9-43774870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:107181824554c0a52546eff5-61816385%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '19336a31dcdc95bc00d3555ce76c749f8eb3ec46' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/rss.tpl',
-      1 => 1421827199,
+      1 => 1421911331,
     ),
   ),
-  'nocache_hash' => '206226289954bf5c8140ddd9-43774870',
+  'nocache_hash' => '107181824554c0a52546eff5-61816385',
   'function' => 
   array (
   ),
@@ -29,6 +29,7 @@ $_smarty_tpl->decodeProperties(array (
   font-size: 24px;
   font-weight: bold;
   border-bottom: solid 1px rgb(221,221,221);  
+  background: #fff;
 }
 
 .control-label{
@@ -52,7 +53,8 @@ width: 160px;
 }
 </style>
 
-
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;     -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
@@ -196,7 +198,7 @@ width: 160px;
 	<div style=" height: 20px;"></div>
 
 </section>
-
+</body>
 <script>
   $(function(){
     $("input[type=radio]").click(function(){

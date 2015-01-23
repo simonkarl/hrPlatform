@@ -190,6 +190,7 @@ color: rgb(56,117,185);
 
 </style>
 
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 <div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
@@ -200,7 +201,7 @@ color: rgb(56,117,185);
         <div class="personInfo">
             <div class="name">ID:{$resume_id}</div>
             <div class="ageExperience">
-                <b>{$gongzuojingyan}</b><b>{$xingbei}</b><b>{$birth}岁(1983年10月16日)</b>
+                <b>{$gongzuojingyan}</b><b>{$xingbei}</b><b>{$birth}</b>
             </div>
 <!--             <table class="personInfoTable">
                 <tr><td>居住地：</td><td>上海浦东</td><td>户口：</td><td>湖南</td></tr>
@@ -344,4 +345,6 @@ color: rgb(56,117,185);
 
 </div>
 </section>
+
+</body>
 {include file="$path/_footer.tpl"}

@@ -1,11 +1,11 @@
 
 <style>
 .sliderStyle{
-width: 950px;
+width: 955px;
 height: 420px;
 position: relative;
 /* z-index: -1; */
-margin-left: 220px;
+margin-left: 215px;
 }
  #slides  li {
             list-style: none;
@@ -35,7 +35,7 @@ z-index: 800;
 
 position: absolute;
 top: 175px;
-left: 887px;
+left: 894px;
 width: 60px;
 height: 59px;
 display: block;
@@ -51,12 +51,12 @@ z-index: 800;
 
 <!--             <li style=" cursor: pointer; background-image: url('{$WebSiteUrlPublic}/images/slide/s2.jpg'); z-index: 0; display:none; background-repeat: no-repeat;" > </li> -->
 
-          <li style=" cursor: pointer; background-color: rgb(240,240,240); z-index: 0; background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(186,210,214); z-index: 0; background-repeat: no-repeat;" > </li>
 
 
-          <li style=" cursor: pointer; background-color: rgb(180,180,180); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(200,194,196); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
 
-          <li style=" cursor: pointer; background-color: rgb(120,120,120); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
+          <li style=" cursor: pointer; background-color: rgb(223,194,125); z-index: 0; display:none;background-repeat: no-repeat;" > </li>
 
         </ul>
 

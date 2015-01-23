@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 13:00:56
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:27:02
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/userCenter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:67272524554af608810e456-88661319%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130376260254c0a6464af3d7-18120592%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f0395efe79b1a1af0709faf0f5239cda03710a47' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/userCenter.tpl',
-      1 => 1420779654,
+      1 => 1421911620,
     ),
   ),
-  'nocache_hash' => '67272524554af608810e456-88661319',
+  'nocache_hash' => '130376260254c0a6464af3d7-18120592',
   'function' => 
   array (
   ),
@@ -55,9 +55,11 @@ $_smarty_tpl->decodeProperties(array (
 	width: 100%;
 	display: block;
 	padding-left: 40px;
+	font-weight: bold;
 }
 .userCenterTable tr td a:hover{
 	text-decoration: none;
+	color: rgb(255,153,51);
 }
 .userCenterTable tr{
 	height: 45px;
@@ -81,6 +83,8 @@ $_smarty_tpl->decodeProperties(array (
 
 </style>
 
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <article class="userCenterWrap">
     <section class="userCenterSectionLfet">
     	<div style=" width: 100%; height: 500px;">
@@ -119,11 +123,12 @@ $_smarty_tpl->decodeProperties(array (
 
     </section>
 </article>
+</body>
 <script>
 	$(function(){
 		$(".userCenterTable tr td").click(function(event) {
 			/* Act on the event */
-			$(this).css("background-color","red");
+			$(this).css("background-color","rgb(255,153,51)");
 		});
 
 	})

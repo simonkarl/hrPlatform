@@ -36,9 +36,11 @@
 	width: 100%;
 	display: block;
 	padding-left: 40px;
+	font-weight: bold;
 }
 .userCenterTable tr td a:hover{
 	text-decoration: none;
+	color: rgb(255,153,51);
 }
 .userCenterTable tr{
 	height: 45px;
@@ -62,6 +64,7 @@
 
 </style>
 
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <article class="userCenterWrap">
     <section class="userCenterSectionLfet">
     	<div style=" width: 100%; height: 500px;">
@@ -93,11 +96,12 @@
     	{$right}
     </section>
 </article>
+</body>
 <script>
 	$(function(){
 		$(".userCenterTable tr td").click(function(event) {
 			/* Act on the event */
-			$(this).css("background-color","red");
+			$(this).css("background-color","rgb(255,153,51)");
 		});
 
 	})

@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-06 15:44:36
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 16:03:04
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:176356735554ab92640a50f7-39720432%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:144704878654c0aeb8ce81e3-34937572%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c13cc7d5ab005f95da410be5849b9493ad3f74eb' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyRegister.tpl',
-      1 => 1420530236,
+      1 => 1421910194,
     ),
   ),
-  'nocache_hash' => '176356735554ab92640a50f7-39720432',
+  'nocache_hash' => '144704878654c0aeb8ce81e3-34937572',
   'function' => 
   array (
   ),
@@ -76,6 +76,9 @@ margin-top: 12px;
 }
 </style>
 
+
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_sempleHeader.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
@@ -131,6 +134,8 @@ margin-top: 12px;
 
     </div>
 </section>
+
+</body>
 <script>
   $(function(){
     $("#btnRegister").click(function(event) {

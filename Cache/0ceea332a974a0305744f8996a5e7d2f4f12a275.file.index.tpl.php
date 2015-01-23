@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 10:34:09
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:43:58
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:130547242954bf1021275123-95957997%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:183052416954c0aa3ea29e71-71322900%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1421807646,
+      1 => 1421912636,
     ),
   ),
-  'nocache_hash' => '130547242954bf1021275123-95957997',
+  'nocache_hash' => '183052416954c0aa3ea29e71-71322900',
   'function' => 
   array (
   ),
@@ -33,7 +33,8 @@ $_smarty_tpl->decodeProperties(array (
    
 
 </head>
-<body class="third-color">
+<body class="third-color" style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 
     
 
@@ -63,15 +64,15 @@ $_smarty_tpl->decodeProperties(array (
     <!-- About Us Section
     ================================================== -->
 
-<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(86,103,109);  border-bottom: solid 1px rgb(216,216,216);
+<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(60,89,86);  border-bottom: solid 1px rgb(216,216,216);
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
     新增HR用户
-    <b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('user_count')->value;?>
+    <b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('user_count')->value;?>
 </b>人
-    、目前有<b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('allPosition')->value;?>
-</b>个职位、今日新增职位<b style="color: rgb(231,76,60);"><?php echo $_smarty_tpl->getVariable('toDay')->value;?>
+    、目前有<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('allPosition')->value;?>
+</b>个职位、今日新增职位<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('toDay')->value;?>
 </b>个
 
 </div>
@@ -84,7 +85,8 @@ $_smarty_tpl->decodeProperties(array (
         <div class="subtitle">We are a <span class="highlight">creative agency</span> located in San Francisco, California. We’ve won a <span class="highlight">ton of awards</span> and have been featured in all of the magazines.</div>
     </div><!-- close services header -->
 
-    <div class="fullwidth">
+    <div class="fullwidth" style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
         <div class="container sub-page">
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>

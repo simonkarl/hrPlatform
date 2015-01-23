@@ -24,7 +24,7 @@
 
 </style>
 
-
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc;">
 
@@ -124,6 +124,7 @@ background-color: rgb(236,240,241); font-size: 1.2em; font-weight: bold;">服务
 	<div style=" height: 20px;"></div>
 </div>
 </section>
+</body>
 <script>
 	$(function(){
 		$(".checkboxStyle").click(function() {

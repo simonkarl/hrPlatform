@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-15 11:00:33
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 17:29:18
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:125382569954b72d518f3c82-55674956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:184558348254c0c2ee9917d1-26409944%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '59db0817b53fa4c74ae9026371b08bcaa74eede4' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1421290831,
+      1 => 1421910132,
     ),
   ),
-  'nocache_hash' => '125382569954b72d518f3c82-55674956',
+  'nocache_hash' => '184558348254c0c2ee9917d1-26409944',
   'function' => 
   array (
   ),
@@ -117,6 +117,8 @@ $_smarty_tpl->decodeProperties(array (
 
 </style>
 
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 <div style="min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
@@ -242,5 +244,7 @@ $_smarty_tpl->decodeProperties(array (
 
 </div>
 </section>
+
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

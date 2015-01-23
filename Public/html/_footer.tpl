@@ -4,9 +4,9 @@
     ================================================== -->
     <div style=" height: 30px;"></div>
 
-    <div class="container contact fullwidth sub-page" id="contact" style=" background-color: #ecf0f1; width: 100%;">
-        <strong>Connect with us:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Behance</a> <br />
-        <div class="copyright">Copyright &copy; 2014 Hirelib. All rights reserved.</div>
+    <div class="container contact fullwidth sub-page" id="contact" style=" background-image: url('{$WebSiteUrlPublic}/images/bottom-bg.png'); width: 100%;">
+        <strong style="color:rgb(116,119,127);">Connect with us:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Behance</a> <br />
+        <div class="copyright" style="color: #fff ">Copyright &copy; 2014 Hirelib. All rights reserved.</div>
     </div><!-- close work section -->
 
     <!-- Javascript Plugins

@@ -48,6 +48,8 @@ padding-right: 20px;
 }
 </style>
 
+
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 
 <div class="pushInfoDetail_warpDiv">
@@ -78,4 +80,6 @@ padding-right: 20px;
 	<div style=" height: 20px;"></div>
 </div>
 </section>
+</body>
+
 {include file="$path/_footer.tpl"}

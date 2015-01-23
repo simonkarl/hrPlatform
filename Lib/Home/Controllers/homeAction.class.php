@@ -111,9 +111,9 @@ class HomeAction extends Action {
 
                  }
 
+
                  $result = $resumeApi->serachResume($_REQUEST['keyword'],$page);
 
-                // print_r($result);
                 $compensation = $result['compensation'];
                 $work_experience = $result['work_experience'];
                 $education = $result['education'];

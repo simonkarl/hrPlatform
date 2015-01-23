@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 15:10:48
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:04:05
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:155022022554acdbf8038163-73027239%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:97459679854c0a0e5bfe3f9-73469788%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3f7f4e5e6e718c214d1c2101848f57fe9e24223c' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfo.tpl',
-      1 => 1420614639,
+      1 => 1421910027,
     ),
   ),
-  'nocache_hash' => '155022022554acdbf8038163-73027239',
+  'nocache_hash' => '97459679854c0a0e5bfe3f9-73469788',
   'function' => 
   array (
   ),
@@ -73,6 +73,9 @@ line-height: 28px;
 	text-indent: 20px;
 }
 </style>
+
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 
 <section>
 
@@ -146,5 +149,6 @@ line-height: 100px;">你真的知道如何招聘吗?</div>
 	<div style=" height: 20px;"></div>
 </div>
 </section>
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 14:25:51
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:20:32
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfoDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:66491708854acd16f7722d3-13217226%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:163430773554c0a4c0039179-88500247%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '169b217079e4369a5aee77e5b58a651321675aed' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/pushInfoDetail.tpl',
-      1 => 1420611949,
+      1 => 1421910046,
     ),
   ),
-  'nocache_hash' => '66491708854acd16f7722d3-13217226',
+  'nocache_hash' => '163430773554c0a4c0039179-88500247',
   'function' => 
   array (
   ),
@@ -67,6 +67,9 @@ padding-right: 20px;
 }
 </style>
 
+
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 
 <div class="pushInfoDetail_warpDiv">
@@ -98,5 +101,7 @@ padding-right: 20px;
 	<div style=" height: 20px;"></div>
 </div>
 </section>
+</body>
+
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

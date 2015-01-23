@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-09 17:28:24
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 17:21:52
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/searchResume.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:76083788254af9f38863783-55049728%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:92568912854c0c130f0f3e1-77158057%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '872d73b754f8b7d51d25d5ba8583898310f69529' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/searchResume.tpl',
-      1 => 1420792607,
+      1 => 1421910160,
     ),
   ),
-  'nocache_hash' => '76083788254af9f38863783-55049728',
+  'nocache_hash' => '92568912854c0c130f0f3e1-77158057',
   'function' => 
   array (
   ),
@@ -97,6 +97,8 @@ font-weight: bold;
 
 </style>
 
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 <div style=" min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
@@ -163,5 +165,6 @@ if (count($_from) > 0){
 
 </div>
 </section>
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

@@ -55,6 +55,8 @@ line-height: 28px;
 }
 </style>
 
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
+
 <section>
 
 <div class="pushInfo_warpDiv">
@@ -121,4 +123,5 @@ line-height: 100px;">你真的知道如何招聘吗?</div>
 	<div style=" height: 20px;"></div>
 </div>
 </section>
+</body>
 {include file="$path/_footer.tpl"}

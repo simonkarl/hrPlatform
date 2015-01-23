@@ -24,11 +24,15 @@
 }
 
   </style>
+
+<div style='background-color: rgb(51,51,51);'>
+
   <!-- Site Logo -->
-  <div class="regHider logo secondary-color five columns"><i onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 36px; cursor: pointer" class="icon-asterisk primary-color"></i> 
+  <div class="regHider logo secondary-color five columns">
+<!--     <i onclick='window.location.href="{$websiteUrl}/home/index"' style="text-indent: 36px; cursor: pointer;" class="icon-asterisk primary-color"></i>  -->
+  <img onclick='window.location.href="{$websiteUrl}/home/index"' src="{$WebSiteUrlPublic}/images/logo.png" style="height: 45px; margin-top: 5px; cursor:pointer" />
 
-  <span onclick='window.location.href="{$websiteUrl}/home/index"' >Hirelib</span>
-
-  <span style=" float: right; font-size: 14px;line-height: 60px;margin-right: 150px;">语言: <b>简体中文</b></span>
+  <span style=" color:#fff; float: right; font-size: 14px;line-height: 60px;margin-right: 150px;">语言: <strong>简体中文</strong></span>
 
   </div>
+</div>

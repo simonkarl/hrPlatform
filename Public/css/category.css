@@ -31,7 +31,7 @@ body {
 	background: #fff;
 }
 .dn{
-	/*display: none;*/
+	display: none;
 }
 #sidebar .mainNavs .menu_box{
 	border-bottom: solid 1px #ccc;
@@ -43,7 +43,7 @@ body {
 }
 #sidebar .mainNavs .menu_box .menu_main a:hover{
 	cursor: pointer;
-	color: rgb(215,48,39);
+	color: rgb(255,153,51);
 }
 
 #sidebar .menu_sub dl {
@@ -87,7 +87,7 @@ position: absolute;
 	color: #019875;
 	cursor: pointer;
 	background-position: -29px center !important;
-	color: rgb(215,48,39);
+	color: rgb(255,153,51);
 }
 
 #sidebar .menu_sub span a {

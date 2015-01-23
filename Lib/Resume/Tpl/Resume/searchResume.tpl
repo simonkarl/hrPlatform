@@ -78,6 +78,7 @@ font-weight: bold;
 
 </style>
 
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 <div style=" min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
@@ -130,4 +131,5 @@ font-weight: bold;
 
 </div>
 </section>
+</body>
 {include file="$path/_footer.tpl"}

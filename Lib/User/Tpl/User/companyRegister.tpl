@@ -57,6 +57,8 @@ margin-top: 12px;
 }
 </style>
 
+
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 
 {include file="$path/_sempleHeader.tpl"}
@@ -110,6 +112,8 @@ margin-top: 12px;
 
     </div>
 </section>
+
+</body>
 <script>
   $(function(){
     $("#btnRegister").click(function(event) {

@@ -38,12 +38,12 @@ width: 160px;
 }
 </style>
 
-
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 <div class="servicesCustomWarp">
 
 	<div style=" border-bottom: solid 1px rgb(221,221,221);  height: 195px;">
-        <div style="height: 70px;line-height: 70px;font-size: 24px; font-weight: bold;border-bottom: solid 1px rgb(221,221,221);  ">
+        <div style="height: 70px;line-height: 70px;font-size: 24px; font-weight: bold;border-bottom: solid 1px rgb(221,221,221); background: #fff; ">
         	<table class="planTable">
         		<tr>
         			<td style="color: rgb(44,62,80);">服务介绍</td>
@@ -102,6 +102,7 @@ margin-top: 12px;">根据大量数据分析和技术手段的加工我们为你�
 	<div style=" height: 30px;"></div>
 </div>
 </section>
+</body>
 <script>
 	$(function(){
 

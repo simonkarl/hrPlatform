@@ -15,7 +15,7 @@
     -webkit-box-flex:2;
     box-flex:2;
 
-    width: 263%;
+    width: 100%;
     
 }
 .advSectionLeft{
@@ -87,10 +87,43 @@ font-weight: bold;
 color: rgb(71,135,191);
 display: none;
 }
+
+.filter{
+    /*border: solid 1px red;*/
+    margin-top: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+.filter span{
+    margin-left: 10px;
+}
+
+.form-control {
+display: inline;
+width: 12%;
+height: 28px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
 </style>
 
 <section>
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">    
 <div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc; border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;margin-top: 10px;">
+
+
 
 <article class="advSearchWarp">
 
@@ -99,6 +132,71 @@ display: none;
 
    <!--  <section class="sectionLeft">01</section> -->
     <section class="advSectionRight">
+
+        <div class="filter">
+        <span class="">学历:
+            <select>  
+              <option value ="1">--请选择--</option>
+              <option value ="2">中专专</option>    
+              <option value ="2">大专</option>  
+              <option value="3">本科</option>  
+              <option value ="4">研究生</option>  
+              <option value="5">博士</option>  
+               <option value="5">不限</option>  
+            </select> 
+        </span>
+
+        <span class="">工作经验:
+            <select>  
+              <option value ="1">--请选择--</option>  
+              <option value ="2">应届毕业生</option>  
+              <option value="3">1年</option>  
+              <option value="3">2年</option>  
+              <option value="3">3-4年</option>  
+              <option value="3">5-7年</option>  
+              <option value="3">8-9年</option>  
+              <option value="3">不限</option>   
+            </select> 
+        </span>
+
+        <span class="">目标地:
+        <select>  
+              <option value ="1">--请选择--</option>
+                <option value ="2">上海</option> 
+              <option value ="2">北京</option>  
+              <option value="3">广州</option>  
+            </select> 
+        </span>
+        <select>  
+              <option value ="1">--请选择--</option>  
+              <option value ="2">黄浦区</option>  
+              <option value="3">闸北区</option>  
+              <option value="3">浦东新区</option>  
+              <option value="3">闵行区</option>  
+              <option value="3">嘉定区</option>  
+              <option value="3">松江区</option>  
+              <option value="3">宝山区</option>  
+              <option value="3">长宁区</option>  
+              <option value="3">杨浦区</option>  
+              <option value="3">奉贤区</option>  
+        </select> 
+
+        <span>
+            关键字1:
+        <input type="text" class="form-control" placeholder="关键字1">
+        </span>
+
+        <span>
+            关键字2:
+        <input type="text" class="form-control" placeholder="关键字2">
+        </span>
+
+        <span>
+            <button type="button" style="margin-top: 2px;float: right;"
+             class="btn btn-primary">搜&nbsp;&nbsp;索</button>
+        </span>
+
+        </div>
 
         <div style=" margin-top: 20px;">
 
@@ -150,6 +248,7 @@ display: none;
 
 </section>
 
+</body>
 <script>
 
 

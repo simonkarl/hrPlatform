@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 15:50:12
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 17:17:49
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_headerIndex.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:25673242754bf5a343e2207-04178680%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:109480045354c0c03dbaaf00-72116774%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5aa0fd4c024d7ff9a483f8da10989c2a27a8a620' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_headerIndex.tpl',
-      1 => 1421819707,
+      1 => 1421914717,
     ),
   ),
-  'nocache_hash' => '25673242754bf5a343e2207-04178680',
+  'nocache_hash' => '109480045354c0c03dbaaf00-72116774',
   'function' => 
   array (
   ),
@@ -95,6 +95,7 @@ $_smarty_tpl->decodeProperties(array (
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);
     /*background: rgba(236,240,241,1);*/
+    background-color: rgb(51,51,51);
 }
 .sectionOne{
     -moz-box-flex:3;
@@ -117,28 +118,34 @@ $_smarty_tpl->decodeProperties(array (
 color: #fff;
 font-weight: bold;
 cursor: default;
-background-color: rgb(231,76,60);
-border: 1px solid #ddd;
+background-color: rgb(255,153,51);
+border: 1px solid rgb(255,153,51);
 border-bottom-color: transparent;
 
 }
 
+.nav-tabs>li>a:hover {
+
+border: 1px solid rgb(144,109,109);
+
+}
+
 .nav-tabs li a{
-    color: rgb(82,82,82);
+    color: rgb(201,201,201);
 }
 
 .inputSearch{
     width: 340px;
     height: 35px;
-    border: solid 3px rgb(231,76,60);
+    border: solid 3px rgb(255,153,51);
     text-indent: 5px;
 }
 
 .searchBtn{
     height: 35px;
     width: 70px;
-    border: solid 3px rgb(231,76,60);
-    background-color: rgb(231,76,60);
+    border: solid 3px rgb(255,153,51);
+    background-color: rgb(255,153,51);
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -148,21 +155,28 @@ border-bottom-color: transparent;
     border-bottom: none;
 }
 
+
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: rgb(144,109,109);;
+}
+
 .main-nav ul li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
 }
 .main-nav ul li a:hover{
     text-decoration: none;
-    color: rgb(231,76,60);
+    color: rgb(255,153,51);
 }
 .location{
     margin-left: 56px;
 /* padding-top: 30px; */
 height: 50px;
 line-height: 50px;
-color: rgb(44,62,80);
+color: #fff;
 }
 .loginOut{
     margin-right: 66px;
@@ -188,7 +202,7 @@ color: rgb(231,76,60);
 
 <!--     <div class="container main-header" style="width: 100%;"><!-- header container--> 
 
-<div style=" border: solid 2px rgb(231,76,70)"></div>
+<div style=" border: solid 2px rgb(255,153,51)"></div>
 <article class="wrapHeader">   
     <section class="sectionOne">
         <div class="location">当前城市:
@@ -197,11 +211,14 @@ color: rgb(231,76,60);
               <option value ="2">北京</option>  
               <option value="3">广州</option>  
             </select> 
-
         </div>
         <!-- Site Logo -->
         <div class="logo secondary-color five columns" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/index"' style="text-indent: 14px; line-height: 70px;"><i style="text-indent: 40px;" class="icon-asterisk primary-color"></i> Hirelib
+/home/index"' style="text-indent: 14px; line-height: 70px;">
+        <img style="height: 55px;
+margin-left: 42px;
+margin-top: -24px;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/logo.png" />
         </div>
 
     </section>
@@ -274,7 +291,7 @@ color: rgb(231,76,60);
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/advancedSearch"'>筛选服务</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/pushInfo"'>行业咨询</a></li>
+/home/pushInfo"'>行业资讯</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/servicesCustom"'>订阅产品</a></li>
 

@@ -108,7 +108,7 @@ line-height: 40px;
 }
 </style>
 
-
+<body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
 
     <div style="height: 50px;
@@ -154,13 +154,12 @@ text-align: center;">关于{$keyword}职位</div>
 
         {if {$xArray} == ""}
 
+            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
+        {else}
+
             <div style=" width: 70%; margin: 0 auto; margin-bottom: 20px;">
             <canvas id="canvas" height="100" width="300"></canvas>
             </div>
-
-        {else}
-
-            <div style=" font-size: 18px; text-align: center; margin-top: 30px;margin-bottom: 30px; height:45px;line-height: 45px; background-color: rgb(241,241,241); ">暂无数据</div>
 
         {/if}
 
@@ -212,10 +211,20 @@ text-align: center;">关于{$keyword}职位</div>
         {if $top_companyArray != ""}
         <table class="tableContent">
 
+            <tr class="tableContentTr">
+                <td class="ContentNameTd">公司名称</td>
+                <td class="ContentNameTd">学历要求</td>
+                <td class="ContentNameTd">薪资待遇</td>
+            </tr>
+
+
             {foreach from=$top_companyArray item=results}
+
 
              <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/company/companyDetail/?id={$results.id}"'>
                 <td class="ContentNameTd">{$results.company_name}</td>
+                <td class="ContentNameTd">本科</td>
+                <td class="ContentNameTd">面议</td>
             </tr>
 
             {/foreach}
@@ -263,13 +272,11 @@ var  yArray = eval('{$yArray}')
         });
     }
 
-
-
     })
 
     </script>
 
 </section>
-
+</body>
 {include file="$path/_footer.tpl"}
 

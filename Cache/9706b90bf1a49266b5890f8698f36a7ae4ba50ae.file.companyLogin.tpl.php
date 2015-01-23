@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-07 15:29:00
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 16:00:09
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyLogin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:147933272854ace03c04c4e2-96483770%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:32230119854c0ae09b16da4-92219201%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '9706b90bf1a49266b5890f8698f36a7ae4ba50ae' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/User/Tpl/User/companyLogin.tpl',
-      1 => 1420615738,
+      1 => 1421913590,
     ),
   ),
-  'nocache_hash' => '147933272854ace03c04c4e2-96483770',
+  'nocache_hash' => '32230119854c0ae09b16da4-92219201',
   'function' => 
   array (
   ),
@@ -80,12 +80,13 @@ $_smarty_tpl->decodeProperties(array (
 }
 
 </style>
-<section>
 
-  <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_sempleHeader.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_sempleHeader.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
-
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
+<section>
   <div style=" height: 52px; width: 40%; margin: 0 auto">
       <div style=" margin-top: 12px; height: 40px;line-height: 8px;" class="alert alert-danger" role="alert"></div>
 
@@ -133,6 +134,7 @@ $_smarty_tpl->decodeProperties(array (
 
     </div>
 </section>
+</body>
 
  <script src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /js/public.js"></script>

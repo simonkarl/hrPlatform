@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-21 16:00:28
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:21:30
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:66595023054bf5c9c8320e9-70943041%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:32205750954c0a4faca10f7-54226360%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b72f851a078d4d01b8471da9080dc4489fd91395' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/servicesCustom.tpl',
-      1 => 1421827226,
+      1 => 1421911289,
     ),
   ),
-  'nocache_hash' => '66595023054bf5c9c8320e9-70943041',
+  'nocache_hash' => '32205750954c0a4faca10f7-54226360',
   'function' => 
   array (
   ),
@@ -57,12 +57,13 @@ width: 160px;
 }
 </style>
 
-
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
 <div class="servicesCustomWarp">
 
 	<div style=" border-bottom: solid 1px rgb(221,221,221);  height: 195px;">
-        <div style="height: 70px;line-height: 70px;font-size: 24px; font-weight: bold;border-bottom: solid 1px rgb(221,221,221);  ">
+        <div style="height: 70px;line-height: 70px;font-size: 24px; font-weight: bold;border-bottom: solid 1px rgb(221,221,221); background: #fff; ">
         	<table class="planTable">
         		<tr>
         			<td style="color: rgb(44,62,80);">服务介绍</td>
@@ -124,6 +125,7 @@ margin-top: 12px;">根据大量数据分析和技术手段的加工我们为你�
 	<div style=" height: 30px;"></div>
 </div>
 </section>
+</body>
 <script>
 	$(function(){
 
