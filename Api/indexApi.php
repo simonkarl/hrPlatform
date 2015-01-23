@@ -6,7 +6,7 @@ class indexApi extends Api {
 
         $api_url = $this->api_url . '/position_count';
 
-        $result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url, 'get');
 
         return json_decode($result, true);
     }

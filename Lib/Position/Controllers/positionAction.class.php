@@ -51,8 +51,9 @@ class PositionAction extends Action {
             // $this->assign('updated_at',$updated_at);
             $this->assign('job_description',$job_description);
 
+          
 
-            $this->assign('job_name',$result['job_functions']);
+            $this->assign('job_name',$resultPosition['job']['name']);
 
             $this->assign('company_id',$company_id);
             $this->assign('company_name',$company_name);

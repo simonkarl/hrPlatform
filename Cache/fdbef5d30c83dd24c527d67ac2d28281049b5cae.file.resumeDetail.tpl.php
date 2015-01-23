@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:00:28
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:25:26
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:202278784654c1b94c3f6181-10141841%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:47987131854c1bf26ae2311-85423995%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fdbef5d30c83dd24c527d67ac2d28281049b5cae' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl',
-      1 => 1421982025,
+      1 => 1421983524,
     ),
   ),
-  'nocache_hash' => '202278784654c1b94c3f6181-10141841',
+  'nocache_hash' => '47987131854c1bf26ae2311-85423995',
   'function' => 
   array (
   ),
@@ -212,10 +212,25 @@ color: rgb(56,117,185);
 <body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/body-bg.jpg');">
 <section>
-<div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
+<div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #bbb;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="companyDetailwrap">
     <section class="companyDetailSectionLeft">
+    <div class="toolStyle">
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-print"></span>  打印
+            </button>
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-star"></span> 收藏
+            </button>
+            <button type="button" class="btn btn-info btn-lg">
+              HireLib评测报告
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              购买此简历
+            </button>
+
+    </div>
 
     <div class="resumeWarp">
         <div class="personInfo">
@@ -384,6 +399,9 @@ if (count($_from) > 0){
             </button>
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
+            </button>
+            <button type="button" class="btn btn-info btn-lg">
+              HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">
               购买此简历

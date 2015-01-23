@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 10:50:09
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 16:55:41
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:98969840454c1b6e1da8749-54785210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:192065403454c20c8d3d3e41-35598251%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6083164775fb88bff7aacf86274a712256416e49' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/serach_position.tpl',
-      1 => 1421981407,
+      1 => 1422003334,
     ),
   ),
-  'nocache_hash' => '98969840454c1b6e1da8749-54785210',
+  'nocache_hash' => '192065403454c20c8d3d3e41-35598251',
   'function' => 
   array (
   ),
@@ -268,14 +268,21 @@ if (count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['results']->key => $_smarty_tpl->tpl_vars['results']->value){
 ?>
 
-
              <tr class="tableContentTrTag" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
+/position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['position'][0]['positions_id'];?>
 "'>
-                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['company']['company_name'];?>
 </td>
-                <td class="ContentNameTd">本科</td>
-                <td class="ContentNameTd">面议</td>
+
+                <?php if ($_smarty_tpl->tpl_vars['results']->value['position'][0]['formal_schooling']!=''){?>
+                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['position'][0]['formal_schooling'];?>
+</td>
+                <?php }else{ ?>
+                <td class="ContentNameTd">不限</td>
+                <?php }?>
+
+                <td class="ContentNameTd"><?php echo $_smarty_tpl->tpl_vars['results']->value['position'][0]['salary_range'];?>
+</td>
             </tr>
 
             <?php }} ?>
