@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-08 12:14:11
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:14:58
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:52054164754ae04138d7a46-85459513%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1203560354c1bcb2980735-64013482%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ec5bd22b0b7ad49255e44e2486612e6da46cf590' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1420689225,
+      1 => 1421982796,
     ),
   ),
-  'nocache_hash' => '52054164754ae04138d7a46-85459513',
+  'nocache_hash' => '1203560354c1bcb2980735-64013482',
   'function' => 
   array (
   ),
@@ -33,12 +33,13 @@ $_smarty_tpl->decodeProperties(array (
    
 
 </head>
-<body class="third-color">
+<body class="third-color" style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 
     
 
   
-<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_headerIndex.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
 
 <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
@@ -63,13 +64,16 @@ $_smarty_tpl->decodeProperties(array (
     <!-- About Us Section
     ================================================== -->
 
-<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(86,103,109);  border-bottom: solid 1px rgb(216,216,216);
+<div style="height: 80px;width: 100%;margin-top: 20px; line-height: 80px; font-size: 24px; text-align: center; color: rgb(60,89,86);  border-bottom: solid 1px rgb(216,216,216);
   box-shadow: 0 0 3px rgb(216,216,216);
   -webkit-box-shadow: 0 0 3px rgb(216,216,216);
   -moz-box-shadow: 0 0 3px rgb(216,216,216);">
-
-    <b style="color: rgb(231,76,60);">1383</b>
-    家互联网公司在这里招聘、<b style="color: rgb(231,76,60);">86%</b>参加拍卖的程序员在两周内面试一家公司
+    新增HR用户
+    <b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('user_count')->value;?>
+</b>人
+    、目前有<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('allPosition')->value;?>
+</b>个职位、今日新增职位<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('toDay')->value;?>
+</b>个
 
 </div>
 
@@ -81,7 +85,8 @@ $_smarty_tpl->decodeProperties(array (
         <div class="subtitle">We are a <span class="highlight">creative agency</span> located in San Francisco, California. We’ve won a <span class="highlight">ton of awards</span> and have been featured in all of the magazines.</div>
     </div><!-- close services header -->
 
-    <div class="fullwidth">
+    <div class="fullwidth" style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
         <div class="container sub-page">
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>

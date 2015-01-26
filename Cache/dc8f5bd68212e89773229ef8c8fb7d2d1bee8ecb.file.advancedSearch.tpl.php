@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 16:45:27
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:15:34
          compiled from "/web/www/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1363561110549bcea71e4081-91014108%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:70742092354c1bcd6b11e18-39466798%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'dc8f5bd68212e89773229ef8c8fb7d2d1bee8ecb' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl',
-      1 => 1419497105,
+      1 => 1421982796,
     ),
   ),
-  'nocache_hash' => '1363561110549bcea71e4081-91014108',
+  'nocache_hash' => '70742092354c1bcd6b11e18-39466798',
   'function' => 
   array (
   ),
@@ -46,42 +46,6 @@ $_smarty_tpl->decodeProperties(array (
     width: 25.5%;
 }
 
-.tableTag{
-/*  border: solid 1px #ccc;*/
-    /*width: 100%;*/
-    width: 1168px;
-}
-
-.tableTag tr{
-    height: 2.5em;
-    line-height: 2.5em;
-}
-.trTag{
-    border: dashed 1px #ccc;
-}
-.trTag td{
-    padding-left: 30px;
-    cursor: pointer;
-}
-.trTag td a{
-    color: rgb(0,90,160);
-    font-size: 0.8em;
-}
-.trTag td a:hover{
-    color: red;
-    font-size: 0.8em;
-    text-decoration: none;
-}
-.tagNameTd{
-    font-weight: bold;
-}
-.titleDiv{
-background-color: rgb(240,240,240);
-font-weight: bold;
-text-indent: 10px;
-height: 46px;
-line-height: 4;
-}
 /*
 ----------*/
 
@@ -142,148 +106,186 @@ font-weight: bold;
 color: rgb(71,135,191);
 display: none;
 }
+
+.filter{
+    /*border: solid 1px red;*/
+    margin-top: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+.filter span{
+    margin-left: 10px;
+}
+
+.form-control {
+display: inline;
+width: 12%;
+height: 28px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
 </style>
 
 <section>
-<div style=" min-height: 35em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">    
+<div style=" min-height: 30em;width: 1170px; margin: 0 auto; border: solid 1px #ccc; border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;margin-top: 10px;">
+
+
 
 <article class="advSearchWarp">
+
+    <form action='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/advancedSearch' method="get" id='formAdvanced' name='formAdvanced'>
+
+
    <!--  <section class="sectionLeft">01</section> -->
     <section class="advSectionRight">
-        <table class="tableTag">
-        <div style=" height: 140px;background-color: rgb(240,240,240);">
-            <div class="titleDiv">
-                信息筛器: <span class="cancel">[撤销]</span>
-            </div>
-            <div class="filter">尚未选择相关分类...</div>
-            <div class="confim">[确定]</div>
-            <div>
-                <span class="chooseCat" style='display:none'>
-                    
-                    <span class='type_1 types' style='color:red'></span>
 
-                    <span class='type_2 types' style='color:red'></span>
+        <div class="filter">
+        <span class="">学历:
+            <select>  
+              <option value ="1">--请选择--</option>
+              <option value ="2">中专专</option>    
+              <option value ="2">大专</option>  
+              <option value="3">本科</option>  
+              <option value ="4">研究生</option>  
+              <option value="5">博士</option>  
+               <option value="5">不限</option>  
+            </select> 
+        </span>
 
-                    <span class='type_3 types' style='color:red'></span>
+        <span class="">工作经验:
+            <select>  
+              <option value ="1">--请选择--</option>  
+              <option value ="2">应届毕业生</option>  
+              <option value="3">1年</option>  
+              <option value="3">2年</option>  
+              <option value="3">3-4年</option>  
+              <option value="3">5-7年</option>  
+              <option value="3">8-9年</option>  
+              <option value="3">不限</option>   
+            </select> 
+        </span>
 
-                    <span class='type_4 types' style='color:red'></span>
+        <span class="">目标地:
+        <select>  
+              <option value ="1">--请选择--</option>
+                <option value ="2">上海</option> 
+              <option value ="2">北京</option>  
+              <option value="3">广州</option>  
+            </select> 
+        </span>
+        <select>  
+              <option value ="1">--请选择--</option>  
+              <option value ="2">黄浦区</option>  
+              <option value="3">闸北区</option>  
+              <option value="3">浦东新区</option>  
+              <option value="3">闵行区</option>  
+              <option value="3">嘉定区</option>  
+              <option value="3">松江区</option>  
+              <option value="3">宝山区</option>  
+              <option value="3">长宁区</option>  
+              <option value="3">杨浦区</option>  
+              <option value="3">奉贤区</option>  
+        </select> 
 
-                </span>
-            </div>
+        <span>
+            关键字1:
+        <input type="text" class="form-control" placeholder="关键字1">
+        </span>
+
+        <span>
+            关键字2:
+        <input type="text" class="form-control" placeholder="关键字2">
+        </span>
+
+        <span>
+            <button type="button" style="margin-top: 2px;float: right;"
+             class="btn btn-primary">搜&nbsp;&nbsp;索</button>
+        </span>
+
         </div>
-            <tr class="trTag">
-                <td class="tagNameTd">行业:</td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>IT</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>互联网</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>通信</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>电子</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>金融</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'>制造业</a></td>
-                <td><a class="subFilter" onclick='selectType("1",this);'></a></td>
-            </tr>
-            <tr class="trTag">
-                <td class="tagNameTd">职位:</td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>UI设计师</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>IOS工程师</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>微电子工程师</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>交互设计</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>投资顾问</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>UE设计</a></td>
-                <td><a class="subFilter" onclick='selectType("2",this);'>产品经理</a></td>
-            </tr>
-            <tr class="trTag">
-                <td class="tagNameTd">工作经验:</td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>实习生</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>0～1年</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>1～3年</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>3～5年</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>5～8年</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>8～10年</a></td>
-                <td><a class="subFilter" onclick='selectType("3",this);'>10年以上</a></td>
-            </tr>
-            <tr class="trTag">
-                <td class="tagNameTd">薪资范围:</td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>2～3K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>3～5K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>5～8K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>8～10K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>10～15K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>15～25K</a></td>
-                <td><a class="subFilter" onclick='selectType("4",this);'>25K以上</a></td>
-            </tr>
 
-        </table>
+        <div style=" margin-top: 20px;">
+
+
+            <div class="panel panel-info" style=" width: 1170px;">
+              <div class="panel-heading">
+                <h3 class="panel-title" style=" text-align: center">高级搜索数据列表</h3>
+              </div>
+              <div class="panel-body">
+
+                    <table class="tableContent" style=" margin-top: 20px;">
+                    <tr class="tableContentTrTag">
+                        <td class="ContentNameTd">职位名称</td>
+                        <td class="ContentNameTd">公司名称</td>
+                        <td class="ContentNameTd">招聘人数</td>
+                        <td class="ContentNameTd">主要招聘地区</td>
+                        <td class="ContentNameTd">更新日期</td>
+                    </tr>
+
+                    <?php  $_smarty_tpl->tpl_vars['results'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->getVariable('result')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+if (count($_from) > 0){
+    foreach ($_from as $_smarty_tpl->tpl_vars['results']->key => $_smarty_tpl->tpl_vars['results']->value){
+?>
+
+                     <tr class="tableContentTrTag">
+                        <td class="ContentNameTd"><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/position/positionDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['id'];?>
+'><?php echo $_smarty_tpl->tpl_vars['results']->value['position_name'];?>
+</a></td>
+                        <td><a href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->tpl_vars['results']->value['company_id'];?>
+'><?php echo $_smarty_tpl->tpl_vars['results']->value['company_name'];?>
+</a></td>
+                        <td><?php echo $_smarty_tpl->tpl_vars['results']->value['hiring'];?>
+</td>
+                        <td><?php echo $_smarty_tpl->tpl_vars['results']->value['working_place'];?>
+</td>
+                        <td><?php echo $_smarty_tpl->tpl_vars['results']->value['update_time'];?>
+</td>
+                    </tr>
+
+                    <?php }} ?>
+                </table>
+
+            <div style=" text-align: center; margin-top: 20px;"><?php echo $_smarty_tpl->getVariable('fenye')->value;?>
+</div>
+
+          </div>
+        </div>
+
+        </div>
+
+    </div>
 
     </section>
+
+</form>
 
 </article>
 
 <div style=" height: 30px;"></div>
 
-</div>
 </section>
 
+</body>
 <script>
-    $(document).ready(function() {
 
-
-        $(".cancel").click(function(event) {
-            /* Act on the event */
-
-            $(".types").html('');
-
-             $('.chooseCat').css('display','none')
-            $(".filter").html('尚未选择相关分类...');
-        });
-
-    });
-
-
-    function selectType(type,obj){
-
-        divhtml = '';
-
-        htmls = $(obj).html();
-
-        $(".cancel").show();
-        $(".confim").show();
-        $(".filter").html('已选择:');
-
-        $('.chooseCat').css('display','block')
-
-        switch(type){
-
-            case '1':
-
-            $('.type_1').html(htmls)
-
-        
-            break;
-
-            case '2':
-
-             $('.type_2').html(htmls)
-
-            break;
-
-            case '3':
-
-            $('.type_3').html(htmls)
-
-
-            break;
-
-            case '4':
-
-            $('.type_4').html(htmls)
-
-            
-
-            break;
-
-        }
-
-    }
 
 </script>
 

@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2014-12-25 15:09:50
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 13:45:55
          compiled from "/web/www/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2033907158549bb83e42d7a2-22721403%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:96295748654c1e01388bef3-83723026%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '27da6dc09ea40522662a588be86c78fcf30eda4a' => 
     array (
       0 => '/web/www/hrPlatform/Lib/Position/Tpl/Position/positionDetail.tpl',
-      1 => 1419476119,
+      1 => 1421982796,
     ),
   ),
-  'nocache_hash' => '2033907158549bb83e42d7a2-22721403',
+  'nocache_hash' => '96295748654c1e01388bef3-83723026',
   'function' => 
   array (
   ),
@@ -43,9 +43,11 @@ $_smarty_tpl->decodeProperties(array (
     -moz-box-flex:1;
     -webkit-box-flex:1;
     box-flex:1;
-    background-color: rgb(250,250,250);
-    width:700px;
+    /*background-color: rgb(250,250,250);*/
+    width: 65%;;
     padding-left: 30px;
+
+    border-right: solid 2px rgb(241,241,241);
 }
 .postionLabel{
     height: 50px;
@@ -55,7 +57,7 @@ $_smarty_tpl->decodeProperties(array (
     overflow: hidden;
 }
 .titleBorder{
-    border-bottom: solid 5px rgb(71,135,191);
+    /*border-bottom: solid 5px rgb(71,135,191);*/
 }
 .otherBorder{
     /*border-bottom: solid 2px rgb(71,135,191);*/
@@ -95,7 +97,7 @@ $_smarty_tpl->decodeProperties(array (
 }
 
 .companyBorder{
-    border-bottom: solid 3px rgb(71,135,191);
+    /*border-bottom: solid 3px rgb(71,135,191);*/
 }
 .companyDiv{
      height: 80px;
@@ -106,6 +108,7 @@ $_smarty_tpl->decodeProperties(array (
 .companyOtherDiv{
     height: 45px;
     line-height: 45px;
+    overflow: hidden;
 }
 .companyOtherDiv a{
     font-weight: normal;
@@ -114,13 +117,15 @@ $_smarty_tpl->decodeProperties(array (
 
 </style>
 
+<body style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
+/images/body-bg.jpg');">
 <section>
-<div style=" min-height: 35em; border: solid 1px #ccc;width: 1170px; margin: 0 auto;">
+<div style="min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="wrapSearch">
     <section class="sectionLeft">
         <div style=" height: 45px;"></div>
-        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('position_label')->value;?>
+        <div class="postionLabel"><b class="titleBorder">职位名称:</b>&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('job_name')->value;?>
 </div>
 
             <table class="table">
@@ -139,8 +144,7 @@ $_smarty_tpl->decodeProperties(array (
                 <tr>
                     <td><b class="otherBorder">发布时间:</b><?php echo $_smarty_tpl->getVariable('created_at')->value;?>
 </td>
-                    <td><b class="otherBorder">更新时间:</b><?php echo $_smarty_tpl->getVariable('updated_at')->value;?>
-</td>
+                    <td><b class="otherBorder"></b></td>
                 </tr>
             </table>
 
@@ -149,44 +153,90 @@ $_smarty_tpl->decodeProperties(array (
 
         </div>
 
-        <div class="onlineResume">可在线投递简历</div>
+<!--         <div class="onlineResume">可在线投递简历</div>
 
         <div style="text-align: right;">
             <button type="button" class="resumeBtn">投简历</button>
-        </div>
+        </div> -->
         <div style=" height: 40px;"></div>
     </section>
 
     <section class="sectionRight">
          <div style=" height: 50px;"></div>
         <div class="companyOtherDiv">
-            <b>公司名称:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_name')->value;?>
-
-        </div>
-
-        <div class="companyOtherDiv">
-            <b>所属领域:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_industry')->value;?>
-
-        </div>
-        <div class="companyOtherDiv">
-            <b>企业规模:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_scale')->value;?>
-
-        </div>
-        <div class="companyOtherDiv">
-            <b>企业性质:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_nature')->value;?>
-
-        </div>
-
-<!--         <div class="companyOtherDiv">
-            <b>公司主页:</b><a href="javascript:window.location.href='<?php echo $_smarty_tpl->getVariable('company_website')->value;?>
-'">&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+            <b>公司名称:</b>
+            <a style="color: rgb(71,135,191); font-weight: bold;" href='<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/company/companyDetail/?id=<?php echo $_smarty_tpl->getVariable('company_id')->value;?>
+'>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_name')->value;?>
 </a>
-        </div> -->
-
-        <div class="companyOtherDiv">
-            <b>公司地址:</b>&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal"><?php echo $_smarty_tpl->getVariable('company_address')->value;?>
-</span>
         </div>
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('company_industry')->value;?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_tmp1){?>
+
+            <div class="companyOtherDiv">
+                <b>所属领域:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_industry')->value;?>
+
+            </div>
+
+        <?php }else{ ?>
+
+        <?php }?>
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('company_scale')->value;?>
+<?php $_tmp2=ob_get_clean();?><?php if ($_tmp2){?>
+
+            <div class="companyOtherDiv">
+                <b>企业规模:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_scale')->value;?>
+
+            </div>
+
+        <?php }else{ ?>
+
+        <?php }?>
+
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+<?php $_tmp3=ob_get_clean();?><?php if ($_tmp3){?>
+
+            <div class="companyOtherDiv">
+                <b>公司网址:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: rgb(71,135,191);" href='<?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+'><?php echo $_smarty_tpl->getVariable('company_website')->value;?>
+</a>
+
+            </div>
+
+        <?php }else{ ?>
+
+        <?php }?>
+
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('company_nature')->value;?>
+<?php $_tmp4=ob_get_clean();?><?php if ($_tmp4){?>
+
+            <div class="companyOtherDiv">
+                <b>企业性质:</b>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('company_nature')->value;?>
+
+            </div>
+
+        <?php }else{ ?>
+
+        <?php }?>
+
+
+
+        <?php ob_start();?><?php echo $_smarty_tpl->getVariable('company_address')->value;?>
+<?php $_tmp5=ob_get_clean();?><?php if ($_tmp5){?>
+
+            <div class="companyOtherDiv" style=" overflow: inherit">
+                <b>公司地址:</b>&nbsp;&nbsp;&nbsp;&nbsp;<span style=" font-weight: normal"><?php echo $_smarty_tpl->getVariable('company_address')->value;?>
+</span>
+            </div>
+
+        <?php }else{ ?>
+
+        <?php }?>
 
     </section>
 
@@ -194,5 +244,7 @@ $_smarty_tpl->decodeProperties(array (
 
 </div>
 </section>
+
+</body>
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>

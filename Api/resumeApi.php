@@ -6,8 +6,10 @@ class resumeApi extends Api {
 
         $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
 
-        $result = transferData($api_url, 'get');
+        //$result = transferData($api_url, 'get');
 
+        $result =  file_get_contents($api_url);
+        
         return json_decode($result, true);
     }
 
