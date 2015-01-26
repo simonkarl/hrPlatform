@@ -6,7 +6,6 @@ class resumeApi extends Api {
 
         $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
 
-        //$result = transferData($api_url, 'get');
 
         $result =  file_get_contents($api_url);
         
@@ -18,9 +17,8 @@ class resumeApi extends Api {
         if (!empty($id) && $id > 0) {
             
             $api_url = $this->api_url . '/positionDetail?id=' . $id;
-
-
-            $result = transferData($api_url, 'get');
+            //$result = transferData($api_url, 'get');
+            $result = file_get_contents($api_url);
 
             return json_decode($result, true);
         }
@@ -33,7 +31,8 @@ class resumeApi extends Api {
 
         $api_url = $this->api_url . '/advanced?' . $string;
 
-        $result = transferData($api_url, 'get');
+        //$result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url);
 
         return json_decode($result, true);
        
@@ -44,8 +43,9 @@ class resumeApi extends Api {
     public function searchResumeByKeyWord($keyword,$page){
 
         $api_url = $this->api_url . '/search_resume?keyword=' . $keyword . '&page=' . $page;
-
-        $result = transferData($api_url, 'get');
+        
+        //$result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url);
 
         return json_decode($result, true);
 
@@ -55,7 +55,8 @@ class resumeApi extends Api {
 
         $api_url = $this->api_url . '/resumeDetail?id=' . $resume_id ;
 
-        $result = transferData($api_url, 'get');
+        //$result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url);
 
         return json_decode($result, true);
 

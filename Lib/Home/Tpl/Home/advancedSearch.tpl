@@ -64,8 +64,8 @@ font-size: 1.6em;
 font-size: 14px;
 font-weight: bold;
 text-indent: 10px;
-height: 40px;
-line-height: 40px;
+min-height: 50px;
+line-height: 50px;
 }
 .chooseCat{
     font-weight: normal;
@@ -117,6 +117,18 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+
+.keywordTwo{
+  display: none;
+}
+
+.moreCondition{
+  height: 60px;
+border-top: solid 1px #ccc;
+line-height: 60px;
+display: none;
+}
+
 </style>
 
 <section>
@@ -133,7 +145,7 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
    <!--  <section class="sectionLeft">01</section> -->
     <section class="advSectionRight">
 
-        <div class="filter">
+    <div class="filter">
         <span class="">学历:
             <select>  
               <option value ="1">--请选择--</option>
@@ -185,21 +197,52 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
             关键字1:
         <input type="text" class="form-control" placeholder="关键字1">
         </span>
-
-        <span>
+        <span class="keywordTwo">
             关键字2:
         <input type="text" class="form-control" placeholder="关键字2">
         </span>
 
-        <span>
-            <button type="button" style="margin-top: 2px;float: right;"
-             class="btn btn-primary">搜&nbsp;&nbsp;索</button>
-        </span>
+          <span class="addKeyword">
+          <span style="margin-left: -15px; cursor:pointer; font-size: 16px;" class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+          </span>
+
+
+          <span style=" float: right;">
+            <button type="button" style="margin-top: -2px;font-size: 12px;height: 28px;" class="showMoreCondition btn btn-info">更多条件</button>
+              <button type="button" style="margin-top: -2px; margin-right: 10px; "
+               class="btn btn-primary">搜&nbsp;&nbsp;索</button>
+
+          </span>
+
+        <div class="moreCondition">
+
+          <span class="">性别:
+          <select>  
+                <option value ="1">--请选择--</option>
+                  <option value ="2">男</option> 
+                <option value ="2">女</option>  
+                <option value="3">不限</option>  
+              </select> 
+          </span>
+
+          <span class="">英语水平:
+          <select>  
+                <option value ="1">--请选择--</option>
+                  <option value ="2">CET-4</option> 
+                <option value ="2">CET-6</option>  
+                <option value="3">不限</option>  
+              </select> 
+          </span>
+
 
         </div>
 
-        <div style=" margin-top: 20px;">
 
+    </div>
+
+
+
+        <div style=" margin-top: 20px;">
 
             <div class="panel panel-info" style=" width: 1170px;">
               <div class="panel-heading">
@@ -251,7 +294,27 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 </body>
 <script>
 
+  $(function(){
 
+    $(".addKeyword").mouseover(function(){
+      $(this).css('color','rgb(255,153,51)');
+    })
+    $(".addKeyword").mouseout(function(){
+      $(this).css('color','rgb(51,51,51)');
+    })
+
+    $(".addKeyword").click(function(){
+      $(".keywordTwo").show();
+      $(".addKeyword").hide();
+
+    })
+
+    $(".showMoreCondition").click(function(){
+      $(".moreCondition").toggle();
+
+    })
+
+  })
 </script>
 
 {include file="$path/_footer.tpl"}

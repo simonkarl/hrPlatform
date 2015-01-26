@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 10:50:56
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 18:14:52
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:67819238154c1b710d10548-26192712%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:55587733454c21f1cb18243-18318949%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4f35604e109598d51b16b66c9f9b6eb4a0d9b79e' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl',
-      1 => 1421919149,
+      1 => 1422008090,
     ),
   ),
-  'nocache_hash' => '67819238154c1b710d10548-26192712',
+  'nocache_hash' => '55587733454c21f1cb18243-18318949',
   'function' => 
   array (
   ),
@@ -83,8 +83,8 @@ font-size: 1.6em;
 font-size: 14px;
 font-weight: bold;
 text-indent: 10px;
-height: 40px;
-line-height: 40px;
+min-height: 50px;
+line-height: 50px;
 }
 .chooseCat{
     font-weight: normal;
@@ -136,6 +136,18 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+
+.keywordTwo{
+  display: none;
+}
+
+.moreCondition{
+  height: 60px;
+border-top: solid 1px #ccc;
+line-height: 60px;
+display: none;
+}
+
 </style>
 
 <section>
@@ -154,7 +166,7 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
    <!--  <section class="sectionLeft">01</section> -->
     <section class="advSectionRight">
 
-        <div class="filter">
+    <div class="filter">
         <span class="">学历:
             <select>  
               <option value ="1">--请选择--</option>
@@ -206,21 +218,52 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
             关键字1:
         <input type="text" class="form-control" placeholder="关键字1">
         </span>
-
-        <span>
+        <span class="keywordTwo">
             关键字2:
         <input type="text" class="form-control" placeholder="关键字2">
         </span>
 
-        <span>
-            <button type="button" style="margin-top: 2px;float: right;"
-             class="btn btn-primary">搜&nbsp;&nbsp;索</button>
-        </span>
+          <span class="addKeyword">
+          <span style="margin-left: -15px; cursor:pointer; font-size: 16px;" class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+          </span>
+
+
+          <span style=" float: right;">
+            <button type="button" style="margin-top: -2px;font-size: 12px;height: 28px;" class="showMoreCondition btn btn-info">更多条件</button>
+              <button type="button" style="margin-top: -2px; margin-right: 10px; "
+               class="btn btn-primary">搜&nbsp;&nbsp;索</button>
+
+          </span>
+
+        <div class="moreCondition">
+
+          <span class="">性别:
+          <select>  
+                <option value ="1">--请选择--</option>
+                  <option value ="2">男</option> 
+                <option value ="2">女</option>  
+                <option value="3">不限</option>  
+              </select> 
+          </span>
+
+          <span class="">英语水平:
+          <select>  
+                <option value ="1">--请选择--</option>
+                  <option value ="2">CET-4</option> 
+                <option value ="2">CET-6</option>  
+                <option value="3">不限</option>  
+              </select> 
+          </span>
+
 
         </div>
 
-        <div style=" margin-top: 20px;">
 
+    </div>
+
+
+
+        <div style=" margin-top: 20px;">
 
             <div class="panel panel-info" style=" width: 1170px;">
               <div class="panel-heading">
@@ -286,7 +329,27 @@ if (count($_from) > 0){
 </body>
 <script>
 
+  $(function(){
 
+    $(".addKeyword").mouseover(function(){
+      $(this).css('color','rgb(255,153,51)');
+    })
+    $(".addKeyword").mouseout(function(){
+      $(this).css('color','rgb(51,51,51)');
+    })
+
+    $(".addKeyword").click(function(){
+      $(".keywordTwo").show();
+      $(".addKeyword").hide();
+
+    })
+
+    $(".showMoreCondition").click(function(){
+      $(".moreCondition").toggle();
+
+    })
+
+  })
 </script>
 
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);

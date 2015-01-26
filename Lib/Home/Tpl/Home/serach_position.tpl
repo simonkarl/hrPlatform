@@ -220,11 +220,16 @@ text-align: center;">关于{$keyword}职位</div>
 
             {foreach from=$top_companyArray item=results}
 
+             <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/position/positionDetail/?id={$results.position[0].positions_id}"'>
+                <td class="ContentNameTd">{$results.company.company_name}</td>
 
-             <tr class="tableContentTrTag" onclick='window.location.href="{$websiteUrl}/company/companyDetail/?id={$results.id}"'>
-                <td class="ContentNameTd">{$results.company_name}</td>
-                <td class="ContentNameTd">本科</td>
-                <td class="ContentNameTd">面议</td>
+                {if $results.position[0].formal_schooling != ""}
+                <td class="ContentNameTd">{$results.position[0].formal_schooling}</td>
+                {else}
+                <td class="ContentNameTd">不限</td>
+                {/if}
+
+                <td class="ContentNameTd">{$results.position[0].salary_range}</td>
             </tr>
 
             {/foreach}

@@ -192,10 +192,25 @@ color: rgb(56,117,185);
 
 <body style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
 <section>
-<div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #ccc;width: 1170px; margin: 0 auto; margin-top: 10px;">
+<div style="  min-height: 35em; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: solid 1px #bbb;width: 1170px; margin: 0 auto; margin-top: 10px;">
 
 <article class="companyDetailwrap">
     <section class="companyDetailSectionLeft">
+    <div class="toolStyle">
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-print"></span>  打印
+            </button>
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-star"></span> 收藏
+            </button>
+            <button type="button" class="btn btn-info btn-lg">
+              HireLib评测报告
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              购买此简历
+            </button>
+
+    </div>
 
     <div class="resumeWarp">
         <div class="personInfo">
@@ -329,6 +344,9 @@ color: rgb(56,117,185);
             </button>
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
+            </button>
+            <button type="button" class="btn btn-info btn-lg">
+              HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">
               购买此简历
