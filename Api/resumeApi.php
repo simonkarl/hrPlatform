@@ -7,15 +7,15 @@ class resumeApi extends Api {
         $api_url = $this->api_url . '/position?keyword=' . $keyword . '&page=' . $page;
 
 
-        $result =  file_get_contents($api_url);
-        
+        $result = file_get_contents($api_url);
+
         return json_decode($result, true);
     }
 
     public function getResumeDetail($id) {
 
         if (!empty($id) && $id > 0) {
-            
+
             $api_url = $this->api_url . '/positionDetail?id=' . $id;
             //$result = transferData($api_url, 'get');
             $result = file_get_contents($api_url);
@@ -24,10 +24,10 @@ class resumeApi extends Api {
         }
     }
 
-     public function getResumeAdvanced($info,$page) {
+    public function getResumeAdvanced($info, $page) {
 
 
-        $string = 'name='.$info['position'].'&work_experience='.$info['work_experience'].'&salary='.$info['salary'].'&page='.$page;
+        $string = 'name=' . $info['position'] . '&work_experience=' . $info['work_experience'] . '&salary=' . $info['salary'] . '&page=' . $page;
 
         $api_url = $this->api_url . '/advanced?' . $string;
 
@@ -35,33 +35,47 @@ class resumeApi extends Api {
         $result = file_get_contents($api_url);
 
         return json_decode($result, true);
-       
     }
 
     //根据关键字获取简历信息
 
-    public function searchResumeByKeyWord($keyword,$page){
+    public function searchResumeByKeyWord($keyword, $page) {
 
         $api_url = $this->api_url . '/search_resume?keyword=' . $keyword . '&page=' . $page;
+
+        //$result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url);
+
+        return json_decode($result, true);
+    }
+
+    public function getResumeDetailByResume_id($resume_id) {
+
+        $api_url = $this->api_url . '/resumeDetail?id=' . $resume_id;
+
+        //$result = transferData($api_url, 'get');
+        $result = file_get_contents($api_url);
+
+        return json_decode($result, true);
+    }
+    
+    
+    /**
+     * 搜索简历 高级搜索
+     * @param type $array
+     * @return type
+     */
+    
+ 
+    public function searchResumeByAdvanced($array){
+            
+        $api_url = $this->api_url . '/resume_advanced';
         
-        //$result = transferData($api_url, 'get');
-        $result = file_get_contents($api_url);
-
+        $result = transferData($api_url, 'post',$array);
+        
         return json_decode($result, true);
-
+        
     }
-
-      public function getResumeDetailByResume_id($resume_id){
-
-        $api_url = $this->api_url . '/resumeDetail?id=' . $resume_id ;
-
-        //$result = transferData($api_url, 'get');
-        $result = file_get_contents($api_url);
-
-        return json_decode($result, true);
-
-    }
-
 
 }
 

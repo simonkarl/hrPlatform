@@ -219,6 +219,9 @@ $('#myTab a').click(function (e) {
 })
 
 
+setPublic('{$websiteUrl}')
+
+
 </script>
 <script type="text/javascript" src="{$WebSiteUrlPublic}/js/search.js"></script>
 
