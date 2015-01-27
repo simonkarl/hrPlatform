@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 18:14:52
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-27 10:20:49
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:55587733454c21f1cb18243-18318949%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:45160192454c6f601918438-18721984%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4f35604e109598d51b16b66c9f9b6eb4a0d9b79e' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/advancedSearch.tpl',
-      1 => 1422008090,
+      1 => 1422324236,
     ),
   ),
-  'nocache_hash' => '55587733454c21f1cb18243-18318949',
+  'nocache_hash' => '45160192454c6f601918438-18721984',
   'function' => 
   array (
   ),
@@ -168,9 +168,9 @@ display: none;
 
     <div class="filter">
         <span class="">学历:
-            <select>  
+            <select class="select1">  
               <option value ="1">--请选择--</option>
-              <option value ="2">中专专</option>    
+              <option value ="2">中专</option>    
               <option value ="2">大专</option>  
               <option value="3">本科</option>  
               <option value ="4">研究生</option>  
@@ -180,7 +180,7 @@ display: none;
         </span>
 
         <span class="">工作经验:
-            <select>  
+            <select class="select2">  
               <option value ="1">--请选择--</option>  
               <option value ="2">应届毕业生</option>  
               <option value="3">1年</option>  
@@ -193,14 +193,14 @@ display: none;
         </span>
 
         <span class="">目标地:
-        <select>  
+        <select class="select3">  
               <option value ="1">--请选择--</option>
                 <option value ="2">上海</option> 
               <option value ="2">北京</option>  
               <option value="3">广州</option>  
             </select> 
         </span>
-        <select>  
+        <select class="select4">  
               <option value ="1">--请选择--</option>  
               <option value ="2">黄浦区</option>  
               <option value="3">闸北区</option>  
@@ -216,11 +216,11 @@ display: none;
 
         <span>
             关键字1:
-        <input type="text" class="form-control" placeholder="关键字1">
+        <input type="text" id="key1" class="form-control" placeholder="关键字1">
         </span>
         <span class="keywordTwo">
             关键字2:
-        <input type="text" class="form-control" placeholder="关键字2">
+        <input type="text" id="key2" class="form-control" placeholder="关键字2">
         </span>
 
           <span class="addKeyword">
@@ -230,7 +230,7 @@ display: none;
 
           <span style=" float: right;">
             <button type="button" style="margin-top: -2px;font-size: 12px;height: 28px;" class="showMoreCondition btn btn-info">更多条件</button>
-              <button type="button" style="margin-top: -2px; margin-right: 10px; "
+              <button type="button" id="searchStar" style="margin-top: -2px; margin-right: 10px; "
                class="btn btn-primary">搜&nbsp;&nbsp;索</button>
 
           </span>
@@ -238,7 +238,7 @@ display: none;
         <div class="moreCondition">
 
           <span class="">性别:
-          <select>  
+          <select class="select5">  
                 <option value ="1">--请选择--</option>
                   <option value ="2">男</option> 
                 <option value ="2">女</option>  
@@ -247,10 +247,11 @@ display: none;
           </span>
 
           <span class="">英语水平:
-          <select>  
+          <select class="select6">  
                 <option value ="1">--请选择--</option>
-                  <option value ="2">CET-4</option> 
-                <option value ="2">CET-6</option>  
+                  <option value ="2">四级</option> 
+                <option value ="2">六级</option> 
+                <option value ="2">八级</option>  
                 <option value="3">不限</option>  
               </select> 
           </span>
@@ -331,6 +332,49 @@ if (count($_from) > 0){
 
   $(function(){
 
+    $("#searchStar").click(function(){
+
+      var xueli = $(".select1  option:selected").text();
+      var xueliR = filter(xueli);
+
+      var gongzuojingyan = $(".select2  option:selected").text();
+      var gongzuojingyanR = filter(gongzuojingyan);
+
+      var chengshi = $(".select3  option:selected").text();
+      var chengshiR = filter(chengshi);
+
+      var qu = $(".select4  option:selected").text();
+      var quR = filter(qu);
+
+      var xingbie = $(".select5  option:selected").text();
+      var xingbieR = filter(xingbie);
+
+      var yingyushuiping = $(".select6  option:selected").text();
+      var yingyushuipingR = filter(yingyushuiping);
+
+      var key1 = $("#key1").val();
+      var key2 = $("#key2").val();
+
+
+      if(key1 == ''){
+
+        alert(关键字不能为空);
+
+      }else if(key2!=''){
+
+        var key=key1 + ","+ key2;
+
+      }else{
+
+        var key=key1;
+
+      }
+
+
+    })
+
+
+    //隐藏  显示效果
     $(".addKeyword").mouseover(function(){
       $(this).css('color','rgb(255,153,51)');
     })
@@ -350,6 +394,16 @@ if (count($_from) > 0){
     })
 
   })
+
+  function filter(key){
+    if(key = "--请选择--"){
+      key = '';
+      return key;
+    }
+
+
+  }
+
 </script>
 
 <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);

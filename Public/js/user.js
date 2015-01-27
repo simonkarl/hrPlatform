@@ -1,6 +1,5 @@
 
 
-
 function userLogin(){
 
    var email = $('#userLoginEmail').val();

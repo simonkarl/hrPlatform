@@ -44,6 +44,8 @@ class HomeAction extends Action {
     //高级搜索
     function advancedSearch(){
 
+        
+
         $this->assign('request',json_encode($_REQUEST));
 
         if(!empty($_REQUEST)){
