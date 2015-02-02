@@ -56,7 +56,7 @@
     ================================================== -->
     <div class="container page services" id="services">
         <div class="title-borders"><h1 style=" line-height: 0.6em;">产品介绍</h1></div>
-        <div class="subtitle">We are a <span class="highlight">creative agency</span> located in San Francisco, California. We’ve won a <span class="highlight">ton of awards</span> and have been featured in all of the magazines.</div>
+        <div class="subtitle">帮助HR通过合适的方法找到合适的人才.精选三类服务方式, 全方位满足HR查阅方式.通过精准的数据筛选和分析得出报表数据, 帮助HR实时掌握所关注行业资讯动态发展趋势.</div>
     </div><!-- close services header -->
 
     <div class="fullwidth" style=" background-image: url('{$WebSiteUrlPublic}/images/body-bg.jpg');">
@@ -64,18 +64,18 @@
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="{$WebSiteUrlPublic}/images/icons/icon-megaphone.png" alt="Creativity" /></div>
                 <h3 style=" cursor: pointer" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>信息推送</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero molestie ipsum dignissim condimentum. Donec at ligula elit. Nunc nec ipsum lectus. Quisque facilisis dolor et elit semper mattis. Vivamus molestie consectetur sem eu luctus. Duis placerat molestie tellus, venenatis blandit eros.</p>
+                <p>通过邮件的形式向HR发送其订阅的行业资讯, 职位信息, 公司信息和报表数据, 进一步满足HR线下使用的基本需求.</p>
             </div>
 
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="{$WebSiteUrlPublic}/images/icons/icon-cog.png" alt="Creativity" /></div>
                 <h3 style=" cursor: pointer" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>服务定制</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero molestie ipsum dignissim condimentum. Donec at ligula elit. Nunc nec ipsum lectus. Quisque facilisis dolor et elit semper mattis. Vivamus molestie consectetur sem eu luctus. Duis placerat molestie tellus, venenatis blandit eros.</p>
+                <p></p>
             </div>
 
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="{$WebSiteUrlPublic}/images/icons/icon-bulb.png" alt="Creativity" /></div>
-                <h3 style=" cursor: pointer" onclick='window.location.href="{$websiteUrl}/home/acurateSearch"'>精准搜索</h3>
+                <h3 style=" cursor: pointer" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>精准搜索</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero molestie ipsum dignissim condimentum. Donec at ligula elit. Nunc nec ipsum lectus. Quisque facilisis dolor et elit semper mattis. Vivamus molestie consectetur sem eu luctus. Duis placerat molestie tellus, venenatis blandit eros.</p>
             </div>
         </div><!-- close container -->

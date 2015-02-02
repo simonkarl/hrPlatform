@@ -14,6 +14,8 @@ class ResumeAction extends Action {
 
 
             $basicInfoArray = $result['info']['0'];
+
+            //print_r($basicInfoArray);
             $educationsArray = $result['educations']['0'];
             $skillsArray = $result['skills'];
             $work_experiencesArray = $result['work_experiences'];
@@ -21,27 +23,27 @@ class ResumeAction extends Action {
             $resume_id = $basicInfoArray['resume_id'];
             $user_name = $basicInfoArray['user_name'];
             $keyword = $basicInfoArray['keyword'];
-            $gongzuojingyan = $basicInfoArray['gongzuojingyan'];
-            $xingbei = $basicInfoArray['xingbei'];
+            $gongzuojingyan = $basicInfoArray['work_year'];
+            $xingbei = $basicInfoArray['sex'];
             $birth = $basicInfoArray['birth'];
             $hunyinzhuangkuang = $basicInfoArray['hunyinzhuangkuang'];
             $zhengzhimianmo = $basicInfoArray['zhengzhimianmo'];
-            $juzhudi = $basicInfoArray['juzhudi'];
-            $hukou = $basicInfoArray['hukou'];
+            $juzhudi = $basicInfoArray['home_address'];
+            $hukou = $basicInfoArray['account'];
             $phone = $basicInfoArray['phone'];
             $email = $basicInfoArray['email'];
             $company = $basicInfoArray['company'];
-            $hangye = $basicInfoArray['hangye'];
-            $zhiwei = $basicInfoArray['zhiwei'];
-            $xueli = $basicInfoArray['xueli'];
-            $zhuanye = $basicInfoArray['zhuanye'];
+            $hangye = $basicInfoArray['industry'];
+            $zhiwei = $basicInfoArray['position'];
+            $xueli = $basicInfoArray['education'];
+            $zhuanye = $basicInfoArray['major'];
             $school = $basicInfoArray['school'];
-            $annual = $basicInfoArray['annual'];
-            $ziwopingjia = $basicInfoArray['ziwopingjia'];
-            $daogangshijian = $basicInfoArray['daogangshijian'];
-            $qiwangyuexin = $basicInfoArray['qiwangyuexin'];
-            $xiwanghangye = $basicInfoArray['xiwanghangye'];
-            $mubiaodidian = $basicInfoArray['mubiaodidian'];
+            $annual = $basicInfoArray['year_money'];
+            $ziwopingjia = $basicInfoArray['self_evaluate'];
+            $daogangshijian = $basicInfoArray['work_time'];
+            $qiwangyuexin = $basicInfoArray['hope_money'];
+            $xiwanghangye = $basicInfoArray['objective_functional'];
+            $mubiaodidian = $basicInfoArray['work_address'];
 
             $studyTime = $educationsArray ['studyTime'];
 
@@ -115,7 +117,6 @@ class ResumeAction extends Action {
 
             $result = $resumeApi->searchResumeByAdvanced($array);
 
-
             $page = new page('resume/searchResume', $_REQUEST['keyword'], $_REQUEST['type']);
 
             $fenye = $page->getPages($result['current_page'], $result['fina_page'],'resume');
@@ -129,6 +130,12 @@ class ResumeAction extends Action {
 
            
         }
+    }
+
+    // 简历评测报告
+    public function report(){
+
+        $this->display();
     }
 
 }

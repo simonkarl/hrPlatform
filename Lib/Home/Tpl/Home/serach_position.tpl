@@ -150,7 +150,7 @@
             </article>
 
             <div class="chartWarp">
-                <div class="titleCenter">最来{$keyword}职位需求人数趋势</div>
+                <div class="titleCenter">近来{$keyword}职位需求人数趋势</div>
 
                 {if {$xArray} == ""}
 

@@ -239,13 +239,14 @@
 
                         <div style=" margin-top: 20px;">
 
-                            <div class="panel panel-info" style=" width: 1170px;">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title" style=" text-align: center">高级搜索数据列表</h3>
-                                </div>
-                                <div class="panel-body">
-
-
+                            <div style=" width: 1170px;">
+ 
+                                <div class="panel-body" style="">
+<div style="text-align: center;
+min-height: 150px;
+line-height: 150px;">
+根据不同条件来筛选您所需要的信息,注意 关键字不能为空哦～
+</div>
 
                                 </div>
                             </div>
@@ -365,7 +366,7 @@
                 success: function (res) {
 
 
-                    alert(res)
+                    // alert(res)
 
                     $('.panel-body').html(res)
                 },

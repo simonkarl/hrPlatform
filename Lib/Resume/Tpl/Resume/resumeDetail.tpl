@@ -203,7 +203,7 @@ color: rgb(56,117,185);
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
             </button>
-            <button type="button" class="btn btn-info btn-lg">
+            <button type="button" class="btn btn-info btn-lg" onclick='window.location.href="{$websiteUrl}/resume/report"'>
               HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">
@@ -214,7 +214,7 @@ color: rgb(56,117,185);
 
     <div class="resumeWarp">
         <div class="personInfo">
-            <div class="name">ID:{$resume_id}</div>
+            <div class="name">关键字:&nbsp;&nbsp;{$keyword}</div>
             <div class="ageExperience">
                 <b>{$gongzuojingyan}</b><b>{$xingbei}</b><b>{$birth}</b>
             </div>
@@ -345,7 +345,7 @@ color: rgb(56,117,185);
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
             </button>
-            <button type="button" class="btn btn-info btn-lg">
+            <button type="button" class="btn btn-info btn-lg" onclick='window.location.href="{$websiteUrl}/resume/report"'>
               HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">

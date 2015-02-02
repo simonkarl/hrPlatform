@@ -66,6 +66,7 @@ class UserAction extends Action {
 
 			$result = $userApi->companyLogin($_GET['email'],$_GET['password']);
 
+
 			if(!empty($result['code']) && $result['code'] > 0){
 
 				echo '1001';
@@ -77,9 +78,7 @@ class UserAction extends Action {
 				if(!empty($result['user_id']) && $result['user_id'] > 0){
 
 					set_user_session($result);
-
 					
-
 					echo '0';
 
 					die;

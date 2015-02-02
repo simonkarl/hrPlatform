@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:44:44
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-27 13:45:15
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:176393374254c0aa6c79d9e7-65941626%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:211646726254c725eb04cd55-96665359%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1421912540,
+      1 => 1422337503,
     ),
   ),
-  'nocache_hash' => '176393374254c0aa6c79d9e7-65941626',
+  'nocache_hash' => '211646726254c725eb04cd55-96665359',
   'function' => 
   array (
   ),
@@ -258,6 +258,10 @@ $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+
+
+setPublic('<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+')
 
 
 </script>

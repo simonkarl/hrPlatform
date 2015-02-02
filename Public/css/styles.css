@@ -204,7 +204,7 @@ li.home-slide {
 .page {text-align: center; padding: 42px 0px;}
 
 .page h1{
-	background: #e74c3c;
+	background: rgb(255,153,51);
 	padding: 17px 35px 0 35px;
 	margin:0;
 	display: inline-block;
@@ -214,8 +214,8 @@ li.home-slide {
 }
 .sub-page{padding: 42px 0;}
 .title-borders{
-	border-left: 7px solid #e74c3c;
-	border-right: 7px solid #e74c3c;
+	border-left: 7px solid rgb(255,153,51);
+	border-right: 7px solid rgb(255,153,51);
 	padding: 0 10px;
 	margin:0 0 35px 0;
 	display: inline-block;
@@ -285,7 +285,7 @@ li.home-slide {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px; 
-	background: #e74c3c;
+	background: rgb(255,153,51);
 	display: inline-block !important;
 	padding:42px; 
 	position: relative;

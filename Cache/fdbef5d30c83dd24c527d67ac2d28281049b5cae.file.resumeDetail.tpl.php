@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-23 11:25:26
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-29 14:24:34
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:47987131854c1bf26ae2311-85423995%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:101600056154c9d222792cb3-49040679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fdbef5d30c83dd24c527d67ac2d28281049b5cae' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl',
-      1 => 1421983524,
+      1 => 1422512657,
     ),
   ),
-  'nocache_hash' => '47987131854c1bf26ae2311-85423995',
+  'nocache_hash' => '101600056154c9d222792cb3-49040679',
   'function' => 
   array (
   ),
@@ -223,7 +223,8 @@ color: rgb(56,117,185);
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
             </button>
-            <button type="button" class="btn btn-info btn-lg">
+            <button type="button" class="btn btn-info btn-lg" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/resume/report"'>
               HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">
@@ -234,7 +235,7 @@ color: rgb(56,117,185);
 
     <div class="resumeWarp">
         <div class="personInfo">
-            <div class="name">ID:<?php echo $_smarty_tpl->getVariable('resume_id')->value;?>
+            <div class="name">关键字:&nbsp;&nbsp;<?php echo $_smarty_tpl->getVariable('keyword')->value;?>
 </div>
             <div class="ageExperience">
                 <b><?php echo $_smarty_tpl->getVariable('gongzuojingyan')->value;?>
@@ -400,7 +401,8 @@ if (count($_from) > 0){
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-star"></span> 收藏
             </button>
-            <button type="button" class="btn btn-info btn-lg">
+            <button type="button" class="btn btn-info btn-lg" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/resume/report"'>
               HireLib评测报告
             </button>
             <button type="button" class="btn btn-primary btn-lg">

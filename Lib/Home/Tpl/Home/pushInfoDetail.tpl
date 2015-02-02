@@ -53,7 +53,7 @@ padding-right: 20px;
 <section>
 
 <div class="pushInfoDetail_warpDiv">
-	<div class="titleStyle">互联网行业招聘"潜规则" 行业趋势以及图标分析</div>
+	<div class="titleStyle">互联网行业招聘"潜规则" 行业趋势以及图表分析</div>
 	<div class="timeStyle">
 				<span>发布者:&nbsp;Hirelib</span>
 		<span>发布日期:&nbsp;2015-1-6</span>
