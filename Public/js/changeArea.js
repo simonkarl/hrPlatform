@@ -13,7 +13,6 @@ function changeArray(type) {
 
     shanghaiArray = new Array('黄浦区', '浦东新区', '徐汇区', '长宁区', '静安区', '普陀区', '闸北区', '虹口区', '杨浦区', '闵行区', '宝山区', '嘉定区', '金山区', '松江区', '青浦区', '奉贤区', '崇明县')
 
-
     gouzhouArrary = new Array('越秀区', '荔湾区', '海珠区', '天河区', '白云区', '黄埔区', '番禺区', '花都区', '南沙区', '增城区', '从化区')
 
 
@@ -44,7 +43,7 @@ function changeArray(type) {
 
     if (areaArray != '') {
         
-        
+        $('.select4').show();
         $('.select4').html('')
 
         for (var i = 0; i < areaArray.length; i++) {

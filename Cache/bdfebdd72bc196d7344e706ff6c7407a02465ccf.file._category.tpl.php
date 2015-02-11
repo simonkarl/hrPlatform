@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 12:26:49
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-11 17:54:10
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:108469226454c07c09e66559-57966184%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:105507827754db26c2b48e44-09052893%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bdfebdd72bc196d7344e706ff6c7407a02465ccf' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_category.tpl',
-      1 => 1421900807,
+      1 => 1423648448,
     ),
   ),
-  'nocache_hash' => '108469226454c07c09e66559-57966184',
+  'nocache_hash' => '105507827754db26c2b48e44-09052893',
   'function' => 
   array (
   ),
@@ -24,7 +24,7 @@ $_smarty_tpl->decodeProperties(array (
                 <!-- IT行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>IT行业</h2> 
+                        <h2>计算机与网络</h2> 
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=C/C++&type=0">C/C++</a>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -93,7 +93,7 @@ $_smarty_tpl->decodeProperties(array (
 
 
                 <!-- 互联网行业 开始 -->
-                <div class="menu_box">
+<!--                 <div class="menu_box">
                     <div class="menu_main">
                         <h2>互联网行业</h2>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -193,14 +193,14 @@ $_smarty_tpl->decodeProperties(array (
                             </span>
                         </dl>
                     </div>
-                </div>
+                </div> -->
                 <!-- 互联网行业 结束 -->
 
 
                 <!-- 通信行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>通信行业</h2>
+                        <h2>通信</h2>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=市场推广&type=0">市场推广</a>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -209,7 +209,7 @@ $_smarty_tpl->decodeProperties(array (
 /home/acurateSearch?keyword=客服代表&type=0">客服代表</a>
                     </div>
 
-                    <div class="menu_sub dn" style="margin-top:167px">
+                    <div class="menu_sub dn" style="margin-top:-1px">
                         <dl class="reset">
                             <dt><a>移动类热招</a></dt>
                             <span><a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -254,14 +254,14 @@ $_smarty_tpl->decodeProperties(array (
                 <!-- 电子行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>电子行业</h2>
+                        <h2>电子</h2>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=电子销售&type=0">电子销售</a>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=微电子技术&type=0">微电子技术</a>
                     </div>
 
-                    <div class="menu_sub dn" style="margin-top:147px">
+                    <div class="menu_sub dn" style="margin-top:167px">
                         <dl class="reset">
                             <dt><a>技术类热招</a></dt>
                             <span><a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
@@ -310,7 +310,7 @@ $_smarty_tpl->decodeProperties(array (
                 <!-- 金融行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>金融行业</h2>
+                        <h2>金融</h2>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/acurateSearch?keyword=银行&type=0">银行</a>
                         <a href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>

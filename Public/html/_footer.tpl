@@ -8,6 +8,7 @@
         <strong style="color:rgb(116,119,127);">Connect with us:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Behance</a> <br />
         <div class="copyright" style="color: #fff ">Copyright &copy; 2014 Hirelib. All rights reserved.</div>
     </div><!-- close work section -->
+    
 
     <!-- Javascript Plugins
     ================================================== -->

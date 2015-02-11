@@ -6,7 +6,7 @@
                 <!-- IT行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>IT行业</h2> 
+                        <h2>计算机与网络</h2> 
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=C/C++&type=0">C/C++</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=.NET&type=0">.NET</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=Java&type=0">Java</a>
@@ -59,7 +59,7 @@
 
 
                 <!-- 互联网行业 开始 -->
-                <div class="menu_box">
+<!--                 <div class="menu_box">
                     <div class="menu_main">
                         <h2>互联网行业</h2>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=PHP&type=0">PHP</a>
@@ -136,20 +136,20 @@
                             </span>
                         </dl>
                     </div>
-                </div>
+                </div> -->
                 <!-- 互联网行业 结束 -->
 
 
                 <!-- 通信行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>通信行业</h2>
+                        <h2>通信</h2>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=市场推广&type=0">市场推广</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=运营专员&type=0">运营专员</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=客服代表&type=0">客服代表</a>
                     </div>
 
-                    <div class="menu_sub dn" style="margin-top:167px">
+                    <div class="menu_sub dn" style="margin-top:-1px">
                         <dl class="reset">
                             <dt><a>移动类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=移动端运营专员&type=0" class="curr">移动端运营专员</a></span>
@@ -181,12 +181,12 @@
                 <!-- 电子行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>电子行业</h2>
+                        <h2>电子</h2>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=电子销售&type=0">电子销售</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=微电子技术&type=0">微电子技术</a>
                     </div>
 
-                    <div class="menu_sub dn" style="margin-top:147px">
+                    <div class="menu_sub dn" style="margin-top:167px">
                         <dl class="reset">
                             <dt><a>技术类热招</a></dt>
                             <span><a href="{$websiteUrl}/home/acurateSearch?keyword=专利工程师&type=0" class="curr">专利工程师</a></span>
@@ -220,7 +220,7 @@
                 <!-- 金融行业 开始 -->
                 <div class="menu_box">
                     <div class="menu_main">
-                        <h2>金融行业</h2>
+                        <h2>金融</h2>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=银行&type=0">银行</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=保险&type=0">保险</a>
                         <a href="{$websiteUrl}/home/acurateSearch?keyword=证券&type=0">证券</a>

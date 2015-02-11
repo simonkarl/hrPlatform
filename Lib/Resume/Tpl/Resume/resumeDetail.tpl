@@ -71,28 +71,28 @@
     margin-top: 10px;
     width: 820px;
     min-height: 30em;
-    border:solid 2px rgb(56,117,185);
+    border:solid 2px rgb(255,153,51);
     margin: 0 auto;
     margin-top: 30px;
 }
 .personInfo{
 
     width: 98%;
-    border: solid 1px rgb(56,117,185);
+    border: solid 1px rgb(255,153,51);
     margin: 0 auto;
     margin-top: 10px;
     padding: 10px;
 }
 .personInfo .name{
-font-size: 24px;
+font-size: 20px;
 font-weight: bold;
-border-bottom: dashed 1px rgb(56,117,185);
+border-bottom: dashed 1px rgb(255,153,51);
 height: 50px;
 line-height: 50px;
 padding-left: 10px;
 }
 .ageExperience b{
-    color: rgb(56,117,185);
+    color: rgb(255,153,51);
     margin-left: 15px;
     height: 40px;
     line-height: 40px;
@@ -144,7 +144,7 @@ padding: 10px;
 }
 
 .catroyTitle{
-    color: rgb(56,117,185);
+    color: rgb(255,153,51);
     margin-left: 15px;
     height: 40px;
     line-height: 40px;
@@ -158,7 +158,7 @@ padding: 10px;
 }
 
 .resumeTitle{
-    border-bottom: solid 1px rgb(56,117,185);;
+    border-bottom: solid 1px rgb(77,77,77);
 width: 98%;
 margin: 0 auto;
 font-size: 16px;
@@ -166,7 +166,7 @@ font-weight: bold;
 padding-left: 25px;
 height: 40px;
 line-height: 40px;
-color: rgb(56,117,185);
+color: rgb(255,153,51);
 
 }
 .ziwopingjia{

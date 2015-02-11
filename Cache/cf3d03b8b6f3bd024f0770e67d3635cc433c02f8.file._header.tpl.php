@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-27 13:45:15
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-11 14:13:07
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:211646726254c725eb04cd55-96665359%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:174249868454daf2f3b067c4-04862787%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf3d03b8b6f3bd024f0770e67d3635cc433c02f8' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_header.tpl',
-      1 => 1422337503,
+      1 => 1423635184,
     ),
   ),
-  'nocache_hash' => '211646726254c725eb04cd55-96665359',
+  'nocache_hash' => '174249868454daf2f3b067c4-04862787',
   'function' => 
   array (
   ),
@@ -222,16 +222,16 @@ margin-top: -6px;" src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/index"'>首页</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/advancedSearch"'>筛选服务</a></li>
+/home/servicesCustom"'>产品订阅</a></li>
+                <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
+/home/advancedSearch"'>简历筛选</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/pushInfo"'>行业资讯</a></li>
-                <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/servicesCustom"'>订阅产品</a></li>
 
                 <?php if ($_smarty_tpl->getVariable('whether_login')->value==1){?>
 
                 <li><a href="#" class="third-color" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/user/userCenter"'>个人中心</a></li>
+/user/userCenter"'>用户中心</a></li>
 
                 <?php }else{ ?>
 

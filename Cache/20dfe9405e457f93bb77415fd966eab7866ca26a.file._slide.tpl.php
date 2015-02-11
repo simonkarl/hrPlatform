@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 15:51:28
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-11 17:53:12
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:85197276454c0ac0095ed68-27774455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130934179854db268867bb22-47237529%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '20dfe9405e457f93bb77415fd966eab7866ca26a' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_slide.tpl',
-      1 => 1421913086,
+      1 => 1423648390,
     ),
   ),
-  'nocache_hash' => '85197276454c0ac0095ed68-27774455',
+  'nocache_hash' => '130934179854db268867bb22-47237529',
   'function' => 
   array (
   ),
@@ -20,7 +20,7 @@ $_smarty_tpl->decodeProperties(array (
 <style>
 .sliderStyle{
 width: 955px;
-height: 420px;
+height: 336px;
 position: relative;
 /* z-index: -1; */
 margin-left: 215px;
@@ -41,7 +41,7 @@ margin-left: 215px;
 .prev{
 
     position: absolute;
-top: 175px;
+top: 145px;
 left:5px;
 width: 60px;
 height: 59px;
@@ -52,7 +52,7 @@ z-index: 800;
 .next{
 
 position: absolute;
-top: 175px;
+top: 145px;
 left: 894px;
 width: 60px;
 height: 59px;

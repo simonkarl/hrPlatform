@@ -148,7 +148,44 @@
                     <section class="advSectionRight">
 
                         <div class="filter">
-                            <span class="">学历:
+                            <div style=" border-bottom: solid 1px rgb(204,204,204);">
+
+                            <span class="">职位职级:
+                                <select class="select1">  
+                                    <option value ="">--请选择--</option>
+                                    <option value ="总裁">总裁</option>    
+                                    <option value ="执行副总裁">执行副总裁</option>  
+                                    <option value="高级副总裁">高级副总裁</option>  
+                                    <option value ="副总裁">副总裁</option>  
+                                    <option value="执行总监">执行总监</option>  
+                                    <option value="高级总监">高级总监</option>  
+                                    <option value="总监">总监</option>  
+                                    <option value="高级经理">高级经理</option>  
+                                    <option value="经理">经理</option>  
+                                    <option value="高级主管">高级主管</option>  
+                                    <option value="主管">主管</option> 
+                                    <option value="高级职员/专员/工程师/分析师">高级职员/专员/工程师/分析师</option>  
+                                    <option value="职员/专员/工程师/分析师">职员/专员/工程师/分析师</option> 
+                                    <option value="助理职员/专员/工程师/分析师">助理职员/专员/工程师/分析师</option>  
+                                </select> 
+                            </span>
+
+
+                            <span class="">职能描述:
+                                <select class="select1">  
+                                    <option value ="">--请选择--</option>
+                                    <option value ="计算机与网络">计算机与网络</option>
+                                    <option value ="通信">通信</option>  
+                                    <option value="电子">电子</option>  
+                                    <option value ="金融">金融</option>  
+                                </select> 
+                            </span>
+
+
+
+                            </div>
+                              
+                            <span class="" style="margin-left: 24px;">学历:
                                 <select class="select1">  
                                     <option value ="">--请选择--</option>
                                     <option value ="中专">中专</option>    
@@ -160,7 +197,7 @@
                                 </select> 
                             </span>
 
-                            <span class="">工作经验:
+                            <span class="">经验年资:
                                 <select class="select2">  
                                     <option value ="">--请选择--</option>  
                                     <option value ="应届毕业生">应届毕业生</option>  
@@ -181,10 +218,8 @@
                                     <option value="广州" >广州</option>  
                                 </select> 
                             </span>
-                            <select class="select4">  
-
+                            <select class="select4" style="display:none">  
                                 <option value ="">--请选择--</option>
-
                             </select> 
 
                             <span>
@@ -219,12 +254,60 @@
                                     </select> 
                                 </span>
 
-                                <span class="">英语水平:
+                                <span class="">年龄:
+                                    <select class="select5">  
+                                        <option value ="">--请选择--</option>
+                                        <option value ="">18-24岁</option> 
+                                        <option value ="">25-29岁</option>  
+                                        <option value ="">30-34岁</option>  
+                                        <option value ="">35-39岁</option>  
+                                        <option value ="">40-44岁</option> 
+                                        <option value ="">45+</option>  
+                                        <option value="">不限</option>  
+                                    </select> 
+                                </span>
+
+                                <span class="">婚育:
+                                    <select class="select5">  
+                                        <option value ="">--请选择--</option>
+                                        <option value ="">未婚/单身</option> 
+                                        <option value ="">已婚未育</option>  
+                                        <option value ="">已婚已育</option>   
+                                    </select> 
+                                </span>
+
+                                <span class="">工作性质:
+                                    <select class="select5">  
+                                        <option value ="">--请选择--</option>
+                                        <option value ="">全职</option> 
+                                        <option value ="">兼职</option>  
+                                        <option value ="">实习</option>   
+                                    </select> 
+                                </span>
+
+                                <span class="">是否出差:
+                                    <select class="select5">  
+                                        <option value ="">--请选择--</option>
+                                        <option value ="">是</option> 
+                                        <option value ="">否</option>    
+                                    </select> 
+                                </span>
+
+
+                                <span class="">语言要求:
                                     <select class="select6">  
                                         <option value ="">--请选择--</option>
-                                        <option value ="四级">四级</option> 
-                                        <option value ="六级">六级</option> 
-                                        <option value ="八级">八级</option>  
+                                        <option value ="">英语</option> 
+                                        <option value ="">德语</option> 
+                                        <option value ="">法语</option>  
+                                        <option value ="">日语</option>  
+                                        <option value ="">韩语</option>  
+                                        <option value ="">俄语</option>  
+                                        <option value ="">西班牙语</option>  
+                                        <option value ="">葡萄牙语</option>  
+                                        <option value ="">粤语</option>
+                                        <option value ="">闽南语</option> 
+                                        <option value ="">其他</option>  
                                         <option value="">不限</option>  
                                     </select> 
                                 </span>

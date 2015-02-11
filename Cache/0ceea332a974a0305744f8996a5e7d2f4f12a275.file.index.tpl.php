@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-27 13:11:47
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-11 14:39:47
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:173768845454c71e137353a0-64348865%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:207055706254daf933913df0-93008745%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ceea332a974a0305744f8996a5e7d2f4f12a275' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Home/Tpl/Home/index.tpl',
-      1 => 1422335397,
+      1 => 1423636783,
     ),
   ),
-  'nocache_hash' => '173768845454c71e137353a0-64348865',
+  'nocache_hash' => '207055706254daf933913df0-93008745',
   'function' => 
   array (
   ),
@@ -37,10 +37,10 @@ $_smarty_tpl->decodeProperties(array (
 /images/body-bg.jpg');">
 
     
-
-  
-<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_headerIndex.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+<?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('path')->value)."/_header.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate();?><?php $_template->updateParentVariables(0);?><?php unset($_template);?>
+  
+
 
 <div class="container header-banner" style="margin-top: 5px;"><!-- main header banner -->
 
@@ -73,7 +73,7 @@ $_smarty_tpl->decodeProperties(array (
 </b>人
     、目前有<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('allPosition')->value;?>
 </b>个职位、今日新增职位<b style="color: rgb(255,119,51);"><?php echo $_smarty_tpl->getVariable('toDay')->value;?>
-</b>个
+</b>个、今日下载简历<b style="color: rgb(255,119,51);">217</b>份
 
 </div>
 
@@ -82,7 +82,7 @@ $_smarty_tpl->decodeProperties(array (
     ================================================== -->
     <div class="container page services" id="services">
         <div class="title-borders"><h1 style=" line-height: 0.6em;">产品介绍</h1></div>
-        <div class="subtitle">帮助HR通过合适的方法找到合适的人才.精选三类服务方式, 全方位满足HR查阅方式.通过精准的数据筛选和分析得出报表数据, 帮助HR实时掌握所关注行业资讯动态发展趋势.</div>
+        <div class="subtitle">帮助HR通过合适的方法找到合适的人才，精选三类服务方式,全方位满足HR查阅方式、通过精准的数据筛选和分析得出报表数据，帮助HR实时掌握所关注行业资讯动态发展趋势。</div>
     </div><!-- close services header -->
 
     <div class="fullwidth" style=" background-image: url('<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
@@ -92,16 +92,16 @@ $_smarty_tpl->decodeProperties(array (
                 <div class="icon-services-circle"><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/icons/icon-megaphone.png" alt="Creativity" /></div>
                 <h3 style=" cursor: pointer" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/pushInfo"'>信息推送</h3>
-                <p>通过邮件的形式向HR发送其订阅的行业资讯, 职位信息, 公司信息和报表数据, 进一步满足HR线下使用的基本需求.</p>
+/home/pushInfo"'>资讯推送</h3>
+                <p>注册后HR即可定时收到通过邮件形式发送的行业招聘资讯，公司动态，职位发布等数据，帮助HR时时了解招聘动态，调整招聘需求和招聘策略。</p>
             </div>
 
             <div class="one-third column about-text">
                 <div class="icon-services-circle"><img src="<?php echo $_smarty_tpl->getVariable('WebSiteUrlPublic')->value;?>
 /images/icons/icon-cog.png" alt="Creativity" /></div>
                 <h3 style=" cursor: pointer" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
-/home/servicesCustom"'>服务定制</h3>
-                <p></p>
+/home/servicesCustom"'>产品订阅</h3>
+                <p>通过设置更细化的自定义资讯推送条件，订阅关键职位、目标公司等信息，帮助HR锁定人才，提高招聘效率。</p>
             </div>
 
             <div class="one-third column about-text">
@@ -109,7 +109,8 @@ $_smarty_tpl->decodeProperties(array (
 /images/icons/icon-bulb.png" alt="Creativity" /></div>
                 <h3 style=" cursor: pointer" onclick='window.location.href="<?php echo $_smarty_tpl->getVariable('websiteUrl')->value;?>
 /home/advancedSearch"'>精准搜索</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero molestie ipsum dignissim condimentum. Donec at ligula elit. Nunc nec ipsum lectus. Quisque facilisis dolor et elit semper mattis. Vivamus molestie consectetur sem eu luctus. Duis placerat molestie tellus, venenatis blandit eros.</p>
+                <p>通过设置简历筛选器条件，用全方位的简历测评报告帮助HR快速找到符合岗位需求的简历。
+</p>
             </div>
         </div><!-- close container -->
     </div><!-- close services fullwidth -->

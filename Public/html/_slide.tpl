@@ -2,7 +2,7 @@
 <style>
 .sliderStyle{
 width: 955px;
-height: 420px;
+height: 336px;
 position: relative;
 /* z-index: -1; */
 margin-left: 215px;
@@ -23,7 +23,7 @@ margin-left: 215px;
 .prev{
 
     position: absolute;
-top: 175px;
+top: 145px;
 left:5px;
 width: 60px;
 height: 59px;
@@ -34,7 +34,7 @@ z-index: 800;
 .next{
 
 position: absolute;
-top: 175px;
+top: 145px;
 left: 894px;
 width: 60px;
 height: 59px;

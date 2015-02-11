@@ -186,13 +186,13 @@ margin-top: -6px;" src="{$WebSiteUrlPublic}/images/logo.png" />
 
             <ul style="width: 414px;padding-top: 72px;height: 135px;">
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/index"'>首页</a></li>
-                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>筛选服务</a></li>
+                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>产品订阅</a></li>
+                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/advancedSearch"'>简历筛选</a></li>
                 <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/pushInfo"'>行业资讯</a></li>
-                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/home/servicesCustom"'>订阅产品</a></li>
 
                 {if $whether_login  == 1}
 
-                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/user/userCenter"'>个人中心</a></li>
+                <li><a href="#" class="third-color" onclick='window.location.href="{$websiteUrl}/user/userCenter"'>用户中心</a></li>
 
                 {else}
 

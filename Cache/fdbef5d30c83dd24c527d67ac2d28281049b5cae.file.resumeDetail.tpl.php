@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-29 14:24:34
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-11 17:51:10
          compiled from "/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:101600056154c9d222792cb3-49040679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:35033362354db260e800af7-62936114%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fdbef5d30c83dd24c527d67ac2d28281049b5cae' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Lib/Resume/Tpl/Resume/resumeDetail.tpl',
-      1 => 1422512657,
+      1 => 1423648268,
     ),
   ),
-  'nocache_hash' => '101600056154c9d222792cb3-49040679',
+  'nocache_hash' => '35033362354db260e800af7-62936114',
   'function' => 
   array (
   ),
@@ -90,28 +90,28 @@ $_smarty_tpl->decodeProperties(array (
     margin-top: 10px;
     width: 820px;
     min-height: 30em;
-    border:solid 2px rgb(56,117,185);
+    border:solid 2px rgb(255,153,51);
     margin: 0 auto;
     margin-top: 30px;
 }
 .personInfo{
 
     width: 98%;
-    border: solid 1px rgb(56,117,185);
+    border: solid 1px rgb(255,153,51);
     margin: 0 auto;
     margin-top: 10px;
     padding: 10px;
 }
 .personInfo .name{
-font-size: 24px;
+font-size: 20px;
 font-weight: bold;
-border-bottom: dashed 1px rgb(56,117,185);
+border-bottom: dashed 1px rgb(255,153,51);
 height: 50px;
 line-height: 50px;
 padding-left: 10px;
 }
 .ageExperience b{
-    color: rgb(56,117,185);
+    color: rgb(255,153,51);
     margin-left: 15px;
     height: 40px;
     line-height: 40px;
@@ -163,7 +163,7 @@ padding: 10px;
 }
 
 .catroyTitle{
-    color: rgb(56,117,185);
+    color: rgb(255,153,51);
     margin-left: 15px;
     height: 40px;
     line-height: 40px;
@@ -177,7 +177,7 @@ padding: 10px;
 }
 
 .resumeTitle{
-    border-bottom: solid 1px rgb(56,117,185);;
+    border-bottom: solid 1px rgb(77,77,77);
 width: 98%;
 margin: 0 auto;
 font-size: 16px;
@@ -185,7 +185,7 @@ font-weight: bold;
 padding-left: 25px;
 height: 40px;
 line-height: 40px;
-color: rgb(56,117,185);
+color: rgb(255,153,51);
 
 }
 .ziwopingjia{

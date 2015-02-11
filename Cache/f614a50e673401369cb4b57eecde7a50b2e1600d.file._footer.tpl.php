@@ -1,16 +1,16 @@
-<?php /* Smarty version Smarty-3.0-RC2, created on 2015-01-22 14:53:36
+<?php /* Smarty version Smarty-3.0-RC2, created on 2015-02-10 13:47:24
          compiled from "/Users/Lev/Sites/hrPlatform/Public/html//_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:52261289554c09e7042cd36-28048802%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:922458154d99b6cc659a1-66795625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f614a50e673401369cb4b57eecde7a50b2e1600d' => 
     array (
       0 => '/Users/Lev/Sites/hrPlatform/Public/html//_footer.tpl',
-      1 => 1421909613,
+      1 => 1422850945,
     ),
   ),
-  'nocache_hash' => '52261289554c09e7042cd36-28048802',
+  'nocache_hash' => '922458154d99b6cc659a1-66795625',
   'function' => 
   array (
   ),
@@ -27,6 +27,7 @@ $_smarty_tpl->decodeProperties(array (
         <strong style="color:rgb(116,119,127);">Connect with us:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Behance</a> <br />
         <div class="copyright" style="color: #fff ">Copyright &copy; 2014 Hirelib. All rights reserved.</div>
     </div><!-- close work section -->
+    
 
     <!-- Javascript Plugins
     ================================================== -->
